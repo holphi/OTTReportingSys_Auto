@@ -1,0 +1,20 @@
+|Test Case ID     |RptTransportSetCase0800                                                          |
+|Title            |If leave ftp settings required field FTP IP blank,cannot save FTP settings.      |
+|Iteration        |                                                                                 |
+|Jira Story       |                                                                                 |
+|Requirement ID   |                                                                                 |
+|Priority         |P4                                                                               |
+|Keywords         |SMTP                                                                             |
+|Prepare Test Data|N/A                                                                              |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                          |
+|Precondition2    |Click '''Server''' -> '''Report Transport'''                                     |
+|Step1            |Leave FTP IP field blank.                                                        |
+|Step2            |In FTP Saved Path field , input a path on ftp server "/report"                   |
+|Step3            |In FTP Login User Name field , input username "bsm"                              |
+|Step4            |In FTP Login Password field,input password "bsm"                                 |
+|Step5            |Click '''Save'''                                                                 |
+|Expected Result1 |Verify return message "This field is required" on the right side of field FTP IP.|
+|Step6            |In FTP IP field, input ftp server address "vm81653"                              |
+|Step7            |Click '''Save'''                                                             |
+|Expected Result2 |Verify returns message "Save Successfully"                                       |
+|Clean Up         |N/A                                                                              |

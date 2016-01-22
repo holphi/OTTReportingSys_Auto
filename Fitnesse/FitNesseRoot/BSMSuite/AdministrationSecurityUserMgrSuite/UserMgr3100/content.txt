@@ -1,0 +1,22 @@
+
+|Test Case ID     |UserMgr3100                                                                                                                                         |
+|Title            |Pageing bar works well on User Manager.                                                                                                             |
+|Iteration        |                                                                                                                                                    |
+|Jira Story       |                                                                                                                                                    |
+|Requirement ID   |[[id][]]                                                                                                                                            |
+|Priority         |P3                                                                                                                                                  |
+|Keywords         |User, paging                                                                                                                                        |
+|Prepare Test Data|Create more than 24 users in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0300                                              |
+|Precondition1    |log in as a user "admin" with view user permission.                                                                                                 |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                                                             |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                     |                                                     |
+|Expected Result1 |Verify on paging bar, display "Records from 1 to 24",'''First'''and '''Previous''' button is disabled, '''Next''' and '''Last''' button is enabled. |
+|Step1            |Click on '''Next'''.                                                                                                                                |
+|Expected Result2 |Verify on paging bar, display "Records from 25 to 26",'''First'''and '''Previous''' button is enabled, '''Next''' and '''Last''' button is disabled.|
+|Step2            |Click on '''First'''.                                                                                                                               |
+|Expected Result3 |Verify on paging bar, display "Records from 1 to 24",'''First'''and '''Previous''' button is disabled, '''Next''' and '''Last''' button is enabled. |
+|Step3            |Click on '''Last'''.                                                                                                                                |
+|Expected Result4 |Verify on paging bar, display "Records from 25 to 26",'''First'''and '''Previous''' button is enabled, '''Next''' and '''Last''' button is disabled.|
+|Step4            |Click on '''Previous'''.                                                                                                                            |
+|Expected Result5 |Verify on paging bar, display "Records from 1 to 24",'''First'''and '''Previous''' button is disabled, '''Next''' and '''Last''' button is enabled. |
+|Clean Up         |Remove the 24 users created when prepare data. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                                        |

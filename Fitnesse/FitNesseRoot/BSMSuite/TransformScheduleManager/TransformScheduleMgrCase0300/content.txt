@@ -1,0 +1,27 @@
+|Test Case ID     |TransformScheduleMgrCase0300                                                                                                                                                        |
+|Title            |Check boxes on New event window work well.                                                        |
+|Iteration        |                                                                                                                                                                            |
+|Jira Story       |                                                                                                                                                                            |
+|Requirement ID   |[[id][]]                                                                                                                                                                    |
+|Priority         |P3                                                                                                                                                                         |
+|Keywords         |event transform check box                                                                                                                                               |
+|Prepare Test Data|N/A                                                                                                                                                                         |
+|Precondition1    |Click '''Transform Schedule Manager''' to go to Transform Schedule Manager tab.                                                                                                                 |
+|Step1            |Double click in the grid of current date.                                                                                                                                   |
+|Step2            |On the pop up New event window, click '''Select Transform''' button.                                                                                                           |
+|Step3            |On the pop up Select Tranform window, check on three transform.                                                                                        |
+|Step4            |Click '''OK''' on Select Transform window to close it.                                                                                                                         |
+|Expected Result1 |Verify transform selected in step3 display in selected transform list.                                                                                                 |
+|Step5            |Click '''Select Transform ''' button again                                                                                                                                      |
+|Step6            |Check off two of transform selected on step3.                                                                                                                       |
+|Step7            |Click '''OK''' on Select Transform window to close it.                                                                                                                       |
+|Expected Result2 |Verify transform checked off in step6 do not display in selected transform list.                                                                                                 |
+|Expected Result3 |Verify only one transform display in selected transform list.                                                                                                 |
+|Step5            |In Description box, input "event0300".                                                                                                                                      |
+|Step6            |In Time period first box, select a coming time point.                                                                                                                       |
+|Step7            |Click '''Save'''button.                                                                                                                                                     |
+|Expected Result4|Verify "event0300" display in the grid of current date.                                                                                                                     |
+|Expected Result5 |Verify DB which is trasformed to has no relative records before event is triggered.                                                                                                                     |
+|Expected Result6 |Verify DB which is transformed to has exactly the same number of records with the transform selected  |
+|Expected Result7 |Verify it has relative log on log viewer page.                                                                         |
+|Clean Up         |N/A                       |

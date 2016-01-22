@@ -1,0 +1,21 @@
+Check lists for Scheduler Manager:
+1.Tab name:"Scheduler","Log Viewer"
+2.dhtmlxscheduler
+3.New event:
+i) default description "New Event","select a Report","Data Export","Selected Reports"
+ii)Select Report dialog: title"Select Report","Report Name" "OK"
+iii)Prompt:
+      "Please select a report",
+      "Data Export",
+      "The start date you entered occurs before current date."
+      "The end date you entered is invalid,the correct date format should be mm.dd.yyyy"
+4.Edit event:
+      "Do you want to edit the whole set of repeated events?" "OK" "Cancel"
+5.Delete event:
+      "Event will be deleted permanently, are you sure?"
+6.User can input description in French and display correct in calendar cell.
+7.Log Viewer:
+i)"BMS ID","USER ID","Date","Action","Status"
+ii)Paging:"First","Previous" "Records from 1 to 4" "Next" "Last"
+iii)How about log content?
+         

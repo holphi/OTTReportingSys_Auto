@@ -1,0 +1,13 @@
+<properties>
+	<Edit />
+	<Files />
+	<Help>When user change his own password,if input wrong old password,password will not be changed.</Help>
+	<Normal />
+	<Properties />
+	<RecentChanges />
+	<Refactor />
+	<Search />
+	<Suites>P3                                                                                                  </Suites>
+	<Versions />
+	<WhereUsed />
+</properties>

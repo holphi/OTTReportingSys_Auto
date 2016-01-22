@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|HomeCase0200|
+|Title|Only authorized user can download PDI.|
+|Requirement ID||
+|Priority|P2|
+|Keywords|home ,download|
+|Prepare Test Data|!--!|
+|Precondition|!--!|
+|Steps and Expected Results|!- 1. login as admin, create role role1 , only check on permission: Home-> Download PDI.<br>2. create user user1, grant role1 to user1.<br>3. login as user1.<br> Expected result: user1 only can see only one tab---- home.<br> Expected Result: On home tab, Birt report Designer download link doesn't display. PDI download link display.<br>Expected Result:Click each download, user can download them and save it to local disk.<br>Expected Result:run the downloaded files can install birt report designer and PDI.-!|
+|Clean Up|<br>|

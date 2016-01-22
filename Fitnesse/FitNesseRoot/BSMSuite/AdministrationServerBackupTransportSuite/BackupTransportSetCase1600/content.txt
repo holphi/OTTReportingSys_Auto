@@ -1,0 +1,18 @@
+|Test Case ID     |BackupTransportSetCase1600                                                                                                            |
+|Title            |Report sending default Http value can be reset                                                           |
+|Iteration        |                                                                                                                                   |
+|Jira Story       |                                                                                                                                   |
+|Requirement ID   |                                                                                                                                   |
+|Priority         |P3                                                                                                                                 |
+|Keywords         |SMTP,Email                                                                                                                               |
+|Prepare Test Data|N/A                                                                                                                                |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                                            |
+|Precondition2    |Click '''System Maintenance'''-> '''Backup Transport Configuration'''                                                                                       |
+|Step1            |In Http Server Url field, input http url "http://vm81653/incoming/"                                                                      |
+|Step2            |In Http Server Login User Name field , input username "xampp"                                                                                |
+|Step3            |In Http Server Login Password field,input password "xampp"                  |
+|Step4            |Click '''Save'''                                                                                                                   |
+|Expected Result1 |Verify return message "Save Successfully"                                                                                          |
+|Step5            |Click '''Reset'''                                                                                                    |
+|Expected Result2 |Verify all field of Report sending default Http value are blank.                                                                                          |
+|Clean Up         |N/A                                                                                                                                |

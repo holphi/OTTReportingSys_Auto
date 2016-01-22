@@ -1,0 +1,18 @@
+|Test Case ID     |ReportMgrCase4300                                       |
+|Title            |User can add user filter condition to report template.  |
+|Iteration        |                                                        |
+|Jira Story       |                                                        |
+|Requirement ID   |[[id][]]                                                |
+|Priority         |P2                                                      |
+|Keywords         |Report, Generate                                        |
+|Prepare Test Data|N/A                                                     |
+|Precondition1    |Add report template SDP_USERS_table.rptdesign           |
+|Precondition2    |log in as user "admin" with generate report permission. |
+|Precondition4    |Click '''Report Manager''' to go to Reports Manager tab.|
+|Step1            |Click '''Setting''' link for "SDP_USERS_table.rptdesign"|
+|Step2            |Select "Data Set 3" on Data Filter Setting window       |
+|Step3            |append " and usr_name = ?"  to the query text                                                      |
+|Step4|Click "Save"|
+|Step5|Click "Generate" link for "SDP_USERS_table.rptdesign" |
+|Expected Result2 |Generated report only contains one line which usr_name is "admin"                |
+|Clean Environment|N/A                                                     |

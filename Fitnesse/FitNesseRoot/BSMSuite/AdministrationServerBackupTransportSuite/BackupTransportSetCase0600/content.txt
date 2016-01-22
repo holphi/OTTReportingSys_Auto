@@ -1,0 +1,18 @@
+|Test Case ID     |BackupTransportSetCase0600                                                   |
+|Title            |If input invalid http server url,test connection will return fail message.|
+|Iteration        |                                                                          |
+|Jira Story       |                                                                          |
+|Requirement ID   |                                                                          |
+|Priority         |P3                                                                       |
+|Keywords         |HTTP                                                                      |
+|Prepare Test Data|N/A                                                                       |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                   |
+|Precondition2    |Click '''System Maintenance'''-> '''Backup Transport Configuration'''     |
+|Step1            |In Http Server Url field, input http url "http://vm"       |
+|Step2            |In Http Server Login User Name field , input username "xampp"             |
+|Step3            |In Http Server Login Password field,input password "xampp"                |
+|Step5            |Click '''Save'''                                                          |
+|Expected Result1 |Verify return message "Save Successfully"                                 |
+|Step6            |Click '''Test Http'''                                                     |
+|Expected Result2 |Verify returns message "Http Server can't be connected,please check."                                |
+|Clean Up         |N/A                                                                       |

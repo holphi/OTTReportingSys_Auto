@@ -1,0 +1,15 @@
+|Test Case ID     |ReportMgrCase0500                                                                                                      |
+|Title            |User can download a report template.                                                                                   |
+|Iteration        |                                                                                                                       |
+|Jira Story       |                                                                                                                       |
+|Requirement ID   |[[id][]]                                                                                                               |
+|Priority         |P2                                                                                                                     |
+|Keywords         |Report, download                                                                                                       |
+|Prepare Test Data|N/A                                                                                                                    |
+|Precondition1    |log in as user "admin" with download report permission.                                                                     |
+|Precondition2    |Click '''Report Manager''' to go to Reports Manager tab.                                                              |
+|Step1            |Click report name "SDP_BUYS.rptdesign"                                                                                 |
+|Expected Result1 |Verify pop up File Download window.                                                                                    |
+|Step2            |Click '''Save''' and select a path and save downloaded report.(This step maybe a little different on different browser.)|
+|Expected Result2 |Verify downloaded report "SDP_BUYS.rptdesign" is saved in path selected in Step2.           |
+|Clean Environment|N/A                          |

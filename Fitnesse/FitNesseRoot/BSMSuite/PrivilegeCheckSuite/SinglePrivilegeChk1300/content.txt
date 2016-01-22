@@ -1,0 +1,21 @@
+|Test Case ID     |SinglePrivilegeChk1300                                                                                                                |
+|Title            |User only has create user privilege on User Manager will only can create user                                                   |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Administration                                                                                                                      |
+|Prepare Test Data|N/A                                                 |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "scrole1300",only check on Create User permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "scuser1300" only check on  role "scrole1300". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "scuser1300"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Administration''' tab are visiable.                                                                   |
+|Step5            |Click '''Administration'''.                                                                                  |
+|Expected Result2 |Verify go to User Manager page.                                                    |
+|Expected Result3 |Verify only '''User Manager''' under '''Security''' display on the left side of User Manage page.                                                    |
+|Expected Result4 |Verify there is only '''Create User''' button on User Manager page.                                                    |
+|Expected Result5 |Verify there are no '''Update User''', '''Remove User''' buttons on User Manager page.                                                |
+|Expected Result6 |Verify user could create a user.  !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100                       |
+|Clean Up         |N/A                                                                                                                                   |

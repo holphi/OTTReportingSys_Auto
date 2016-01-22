@@ -1,0 +1,13 @@
+<properties>
+  <Edit />
+  <Files />
+  <Help>Report Template can be backup by scheduler and transport backup file by email,FTP and HTTP.</Help>
+  <Normal />
+  <Properties />
+  <RecentChanges />
+  <Refactor />
+  <Search />
+  <Suites>P1</Suites>
+  <Versions />
+  <WhereUsed />
+</properties>

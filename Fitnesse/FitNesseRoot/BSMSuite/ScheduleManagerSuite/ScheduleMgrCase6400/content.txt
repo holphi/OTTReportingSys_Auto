@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|ScheduleMgrCase6400|
+|Title|Report event can generate report in CSV format with report template which has one table and transport by Email. |
+|Requirement ID||
+|Priority|P2|
+|Keywords|report event,CSV format|
+|Prepare Test Data|!--!|
+|Precondition|!-1.Add report template:SDP_USERS_table.rptdesign to Report Manager<br> -!2. Configure SMTP info and default destination Email address in Report Transport Configure.|
+|Steps and Expected Results|!-1. login as admin<br>2. Click Report Scheduler Manager to go to Report Scheduler Manager.<br>3. Double click on calendar grid to open new event window<br>4. Click "Select Report" and check on SDP_USERS.rptdesign ,then click OK<br>5. Check on format CSV.<br>6.Go to Sending to tab, check on Email.<br>7. Input event descript "report_even6400" <br>8. Select a time point in Time Period.<br>9. Click Save<br><br>Expected Results:<br>1. Report_even6400 occurd on time.<br>2. Generate report in CSV format.Table name in report template is prefix of report file name. <br>3. The email receiver got the email and the report file is attached.-!|
+|Clean Up|1.Remove generated report.<br>|

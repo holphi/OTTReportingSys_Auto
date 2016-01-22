@@ -1,0 +1,22 @@
+|Test Case ID     |UserMgr1900                                                                                              |
+|Title            |When update user, can update multiple fields one-off.                                                     |
+|Iteration        |                                                                                                         |
+|Jira Story       |                                                                                                         |
+|Requirement ID   |[[id][]]                                                                                                 |
+|Priority         |P3                                                                                                       |
+|Keywords         |User, Update                                                                                             |
+|Prepare Test Data|Create a user "test19"in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100       |
+|Precondition1    |log in as user "admin" with update user permission.                                                      |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                  |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                                |
+|Step1            |Select user "test19".                                                                                    |
+|Step2            |Click button '''Update User'''.                                                                          |
+|Step3            |Input password "456" and Confirm password "456".                                                         |
+|Step4            |Select status "Inactive".                                                                                |
+|Step5            |In Role List, check off "Admin" and check on "USER"                                                       |
+|Step6            |Click '''OK'''.                                                                                          |
+|Expected Result1 |Pop up message "Update user successfully.".                                                              |
+|Expected Result2 |Click '''OK''' to close the message, verify the message box close.                                       |
+|Expected Result3 |Double-click user "test19" in user list,verify in Role List "Admin" is checked off, "USER" is checked on.|
+|Expected Result4 |Log out , verify log in user "test19" with password "456" successfully.                                  |
+|Clean Up         |Remove user test17. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                        |

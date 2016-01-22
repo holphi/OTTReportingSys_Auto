@@ -1,0 +1,14 @@
+|Comment|
+|Test Case ID|Installation_0100|
+|Iteration|1|
+|Jira Story| |
+|Requirement ID|[[id][]]|
+|Priority| P1|
+|Keywords|Install|
+|User Role|Admin/op|
+|Title|Verify user can install bsm smoothly follow instllation guide.|
+|Precondition|!Redhat5.5 64bit-!|
+|Steps|!-1. Install bsm follow instllation guide. -!|
+|Expected Result|!-1. BSM can be installed successfully.<br>2. Service start successfully.<br>3. User can login.<br>4. User can create a event to generate report.-!|
+|Execution| manual|
+|Remarks|  h|

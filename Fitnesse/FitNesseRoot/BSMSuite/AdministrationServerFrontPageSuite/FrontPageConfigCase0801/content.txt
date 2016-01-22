@@ -1,0 +1,20 @@
+|Test Case ID     |FrontPageConfigCase0801                                                                    |
+|Title            |User cannot input non-numbers in field Margin to left of logo(px) /Margin to top of logo(px).|
+|Iteration        |                                                                                                          |
+|Jira Story       |                                                                                                          |
+|Requirement ID   |[[id][]]                                                                                                  |
+|Priority         |P3                                                                                                        |
+|Keywords         |Front page                                                                                                |
+|Prepare Test Data|N/A                                            |
+|Precondition1    |log in as user "admin" with Save Front Page Configuration permission.                                       |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                   |
+|Precondition3    |Click '''Server'''->'''Front Page'''.                                                                     |
+|Step1            |Input "abc" in the field Margin to left of logo(px) blank.                           |
+|Step2            |Input 20.3 in the field Margin to top of logo(px).                                                         |
+|Step3            |Click button '''Save'''.                                                                                |
+|Expected Result1 |Display message "There must be a non-empty number that is greater than 0 in left margin box"               |
+|Step4            |Input 20.3 in the field Margin to left of logo(px).                          |
+|Step5            |Input "@#$" in the field Margin to top of logo(px) blank.                                                          |
+|Step6            |Click button '''Save'''.                                                                                |
+|Expected Result2 |Display message "There must be a non-empty number that is greater than 0 in top margin box."               |
+|Clean Up         |N/A                                                                                                       |

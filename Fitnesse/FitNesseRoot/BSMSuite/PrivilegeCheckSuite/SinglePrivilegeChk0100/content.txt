@@ -1,0 +1,20 @@
+|Test Case ID     |SinglePrivilegeChk0100                                                                                                                |
+|Title            |User only has view schedule Manager privilege will only can view Schedule Manager.                                                    |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Schedule Manager                                                                                                                      |
+|Prepare Test Data|Creat an Event "scevent0100". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100                                                 |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "scrole0100",only check on View Schedule Manager permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "scuser0100" only check on  role "scrole0100". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "scuser0100"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Schedule Manager''' tab are visiable.                                                                   |
+|step5            |Click '''Schedule Manager''' to go to Schedule tab.                                                                                                                                                                                                                                         |
+|Step6            |Double click "scevent0100".                                                                                                           |
+|Expected Result2 |Verify the event is display.At bottom, only one button '''Cancel''' is visiable.                                                      |
+|Step7            |Double click in any calendar grid.                                                                                                    |
+|Expected Result3 |Verify new event window pop up but at bottom only one button '''Cancel''' is visiable.                                                |
+|Clean Up         |Remove "scevent0100".!See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200                                                                                                                                  |

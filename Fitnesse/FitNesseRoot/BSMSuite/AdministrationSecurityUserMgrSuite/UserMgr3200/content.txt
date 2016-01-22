@@ -1,0 +1,17 @@
+|Test Case ID     |UserMgr3200                                                                                       |
+|Title            |User "Admin" cannot be removed.                                                                       |
+|Iteration        |                                                                                                  |
+|Jira Story       |                                                                                                  |
+|Requirement ID   |[[id][]]                                                                                          |
+|Priority         |P2                                                                                                |
+|Keywords         |User, Remove                                                                                      |
+|Prepare Test Data|Create a user "test32" in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100|
+|Precondition1    |log in as a user "test32" with remove user permission.                                             |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                           |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                         |
+|Step1            |Select user "admin".                                                                             |
+|Step2            |Click button '''Remove User'''                                                                    |
+|Expected Result1 |Pop up message "Can not remove user Admin."                                                     |
+|Expected Result2 |Click '''OK''' on the message,Verify the message box close.                                       |
+|Expected Result3 |Verify user "admin" still display in user list.                                                  |
+|Clean Up         |Remove user test32. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                                                                                                    |

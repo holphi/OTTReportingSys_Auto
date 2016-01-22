@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|ReportMgrCase3900|
+|Title|When upload, if report template in zip package duplicate with existing report template, will update existings.|
+|Requirement ID||
+|Priority|P3|
+|Keywords|Report Template, bulk upload|
+|Prepare Test Data|!--!|
+|Precondition|!-1. Add report template Boolean_report.rptdesign to report Manager.<br>-!|
+|Steps and Expected Results|!-1. login as admin<br>2. Click '''Report Manager''' to Report Manager tab.<br>3. Click "Batch Upload Template"<br>'''Expected Results''':Verify upload window pop up.<br>4. In upload window, click add file<br>5. Browse to reports template zip package "ReportTemplates.zip" select it. <br>6. Click Upload button.<br>'''Expected Results''':<br>1. Verify "Done" display under package name in Upload window.<br>2. Verify all report templates are uploaded to Report Manager.<br>3. Verify Boolean_report.rptdesign is updated.<br><br>-!|
+|Clean Up|<br>|

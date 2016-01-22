@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<properties>
+	<Edit/>
+	<Files/>
+	<Help>[Repeat report event vs repeat extraction event]First report event occurrence after first extraction event occurrence but second report event occurrence before second extraction event occurrence, First report event occurrence will succeed,second report event occurrence will fail.</Help>
+	<Normal/>
+	<Properties/>
+	<RecentChanges/>
+	<Refactor/>
+	<Search/>
+	<Suites>P3</Suites>
+	<Versions/>
+	<WhereUsed/>
+</properties>

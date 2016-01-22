@@ -1,0 +1,19 @@
+|Test Case ID     |RptTransportSetCase1800                                                                                                            |
+|Title            |Report sending default Ftp value can be reset.                                                           |
+|Iteration        |                                                                                                                                   |
+|Jira Story       |                                                                                                                                   |
+|Requirement ID   |                                                                                                                                   |
+|Priority         |P3                                                                                                                                 |
+|Keywords         |SMTP,Email                                                                                                                               |
+|Prepare Test Data|N/A                                                                                                                                |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                                            |
+|Precondition2    |Click '''Server''' -> '''Report Transport'''                                                                                       |
+|Step1            |In FTP IP field, input ftp server address "vm81653"                                                                      |
+|Step2            |In FTP Saved Path field , input a path on ftp server "/report"                                                                                                    |
+|Step3            |In FTP Login User Name field , input username "bsm"                                                                                |
+|Step4            |In FTP Login Password field,input password "bsm"                  |
+|Step5            |Click '''Save'''                                                                                                                   |
+|Expected Result1 |Verify return message "Save Successfully"                                                                                          |
+|Step6            |Click '''Reset'''                                                                                                    |
+|Expected Result2 |Verify all field of Report sending default Ftp value are blank.                                                                                          |
+|Clean Up         |N/A                                                                                                                                |

@@ -1,0 +1,20 @@
+|Test Case ID     |TransformMgrCase1200                                                                                                                                               |
+|Title            |User can set schedule for certain transform                                                                                                    |
+|Iteration        |                                                                                                                                                                |
+|Jira Story       |                                                                                                                                                                |
+|Requirement ID   |[[id][]]                                                                                                                                                        |
+|Priority         |P1                                                                                                                                                              |
+|Keywords         |Transform,schedule                                                                                                                                            |
+|Prepare Test Data|N/A                                                                                                                                                             |
+|Precondition1    |log in as user "admin" with set schedule permission.                                                                                                            |
+|Precondition2    |Click '''Extraction Manager''' to go to Extraction Manager tab.                                                                                                       |
+|Step1            |Click '''Set Schedule''' link for one transform                                                                                                          |
+|Expected Result1 |Verify pop up new event window.                                                                                                                                 |
+|Expected Result2 |Verify transform chosen on step1 display in selected transform list.                                                                                            |
+|Step2            |Fill "event1200" in description box            |
+|Step3            |Choose a coming time in Time Period                                       |
+|Step4            |Click '''Save'''|
+|Expected Result3 |Verify the event created generate transform .                                                                                    |
+|Expected Result4 |Verify it has relative records on log viewer page|
+|Clean Environment|Remove event "event1200". !See .BsmSuite.TransformManagerSuite.TransformMgrCase0600|
+                                                                                                                             

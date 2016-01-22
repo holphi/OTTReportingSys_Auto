@@ -1,0 +1,21 @@
+
+|Test Case ID     |SinglePrivilegeChk0400                                                                                                                |
+|Title            |User only has delete events privilege will only can delete events.                                                    |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Schedule Manager                                                                                                                      |
+|Prepare Test Data|Creat an Event "scevent0400". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100                                                 |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "scrole0400",only check on View Schedule Manager permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "scuser0400" only check on  role "scrole0100". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "scuser0400"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Schedule Manager''' tab are visiable.                                                                   |
+|Step5            |Double click "scevent0400".                                                                                                           |
+|Expected Result2 |Verify the event is display.At bottom, only two buttons '''Cancel''' '''Delete''' are visiable.                                                      |
+|Step6            |Remove scevent0400. !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200                                                                                                     |
+|Step7            |Double click in any calendar grid.                                                                                                    |
+|Expected Result3 |Verify new event window pop up but at bottom, only two buttons '''Cancel''' '''Delete''' are visiable.                                                |
+|Clean Up         |N/A                                                                                                                                   |

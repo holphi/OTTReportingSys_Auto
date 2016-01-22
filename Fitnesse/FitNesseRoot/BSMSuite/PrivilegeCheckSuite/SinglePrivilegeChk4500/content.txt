@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|SinglePrivilegeChk4500|
+|Title|User only has Batch Upload Transform privilege on Extractiont Manager will only set private transform to public.|
+|Requirement ID||
+|Priority|5.0|
+|Keywords|privilege |
+|Prepare Test Data|!--!|
+|Precondition|!-Log in as "admin" which has permission to create role and user.<br>-!|
+|Steps and Expected Results|!-1.Create role "scrole0700",only check on Batch Upload Transform permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100<br>2.Create user "scuser0700" only check on  role "scrole0700". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              <br>3.Log out "admin".                                                                                                                      <br>4.Log in user "scuser0700"                                                                                                              <br>Expected Result1:Verify only '''Home''' and '''Extraction Manager''' tab are visiable.    <br>5.Click '''Extraction Manager''' to go toExtraction Manager page                                                                <br>Expected Result:Verify only '''Batch Upload Template''' button displays on report manager page.                                                      <br><br>-!|
+|Clean Up|<br>|

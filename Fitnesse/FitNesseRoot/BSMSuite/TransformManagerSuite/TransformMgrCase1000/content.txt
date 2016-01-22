@@ -1,0 +1,17 @@
+|Test Case ID     |TransformMgrCase1000                                                                                                                                                            |
+|Title            |Transform which is not used to any transform schedule event will not be removed if Cancel.                                                                                              |
+|Iteration        |                                                                                                                                                                             |
+|Jira Story       |                                                                                                                                                                             |
+|Requirement ID   |[[id][]]                                                                                                                                                                     |
+|Priority         |P3                                                                                                                                                                        |
+|Keywords         |Transform, Remove                                                                                                                                                                  |
+|Prepare Test Data|Add transform "TestTransformRemove1.ktr" to Transform Manager.!See .BsmSuite.TransformManagerSuite.TransformMgrCase0100 !-<br>-! ..\Fitnesse\TestResource\TestTransformRemove1.ktr|
+|Precondition1    |log in as user "admin" with add transform permission.                                                                                                                           |
+|Precondition2    |Click '''Extraction Manager''' to go to Extraction Manager tab.                                                                                                                    |
+|Step1            |Check on the check box on the left of transform name "TestTransformRemove1.ktr".                                                                                             |
+|Step2            |Click button '''Remove transform'''.                                                                                                                                            |
+|Expected Result1 |Verify pop up message "Are you sure to remove transform?"                                                                                                                       |
+|Step3            |Click '''Cancel''' on the message.                                                                                                                                           |
+|Expected Result2 |The message box close.                                                                                                                                                       |
+|Expected Result3 |Verify report "TestTransformRemove1.ktr" still list in Transform Manager.                                                                                                   |
+|Clean Environment|remove report "TestTransformRemove1.ktr". !See .BsmSuite.TransformManagerSuite.TransformMgrCase0600                                                                             |

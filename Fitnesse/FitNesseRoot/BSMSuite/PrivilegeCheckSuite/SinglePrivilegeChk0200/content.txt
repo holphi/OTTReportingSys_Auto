@@ -1,0 +1,22 @@
+|Test Case ID     |SinglePrivilegeChk0200                                                                                                                |
+|Title            |User only has create event privilege will only can create events.                                                     |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Schedule Manager                                                                                                                      |
+|Prepare Test Data|N/A                                                 |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "scrole0200",only check on Create event permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "scuser0200" only check on  role "scrole0200". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "scuser0200"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Schedule Manager''' tab are visiable.                                                                   |
+|step5            |Click '''Schedule Manager''' to go to Schedule tab.                                                                                                                                                                                                                                         |
+|Step6            |Double click any calendar grid.                                                                                                          |
+|Expected Result2 |Verify new event window pop up.At bottom, only two buttons '''Save''' '''Cancel''' are visiable.                                                      |
+|Step7            |Creat an Event "scevent0200". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100                                                                                                         |
+|Step8            |Double click "scevent0200".                                                                                                           |
+|Expected Result3 |Verify the event is display.At bottom, only one button '''Cancel''' is visiable.                                                      |
+|Clean Up         |N/A                                                                                                                                   |
+

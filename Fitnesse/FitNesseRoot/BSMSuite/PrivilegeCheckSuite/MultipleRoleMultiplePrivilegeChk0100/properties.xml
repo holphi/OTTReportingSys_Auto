@@ -1,0 +1,13 @@
+<properties>
+	<Edit />
+	<Files />
+	<Help>A user with two roles which have no same privilege will have both privileges of these two roles.(role1 has view schedule manager, create and update event privilege on Schedule manager,role2 has remove event privilege on Schedule manager).</Help>
+	<Normal />
+	<Properties />
+	<RecentChanges />
+	<Refactor />
+	<Search />
+	<Suites>P3                                                                                                                                                                           </Suites>
+	<Versions />
+	<WhereUsed />
+</properties>

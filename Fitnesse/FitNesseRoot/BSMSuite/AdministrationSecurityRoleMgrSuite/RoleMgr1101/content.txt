@@ -1,0 +1,19 @@
+|Test Case ID     |RoleMgr1101                                                                           |
+|Title            |User cannot leave role name blank when create role.                                   |
+|Iteration        |                                                                                      |
+|Jira Story       |                                                                                      |
+|Requirement ID   |[[id][]]                                                                              |
+|Priority         |P3                                                                                    |
+|Keywords         |Role, Create                                                                          |
+|Prepare Test Data|N/A                                                                                   |
+|Precondition1    |log in as user "admin" with create role permission.                                   |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                               |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                             |
+|Step1            |Click button '''Create Role'''.                                                       |
+|Step2            |leave role name blank.                                                                |
+|Step3            |Check on permissions "Schedule Manager","View Report Manager"on the Permission tree.  |
+|Step4            |Type "role name blank" in Comment box.                                                |
+|Step5            |Click '''OK'''.                                                                       |
+|Expected Result1 |Pop up message "please input role name".                                              | 
+|Expected Result2 |Click '''OK''' to close the message, verify return to create role dialog.             |      
+|Clean Environment|N/A  |

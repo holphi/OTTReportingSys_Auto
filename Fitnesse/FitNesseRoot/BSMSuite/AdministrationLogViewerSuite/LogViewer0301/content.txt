@@ -1,0 +1,14 @@
+|Test Case ID     |LogViewer0301                                                                                            |
+|Title            |Failed Operation edit event from Schedule Manager is logged correctly.                                  |
+|Iteration        |                                                                                                   |
+|Jira Story       |                                                                                                   |
+|Requirement ID   |[[id][]]                                                                                           |
+|Priority         |P5                                                     |
+|Keywords         |log                                                                                                |
+|Prepare Test Data|N/A                                                                                                |
+|Precondition1    |login as user "admin" with view log viewer permission.                                             |
+|Step1            |Edit event an event but not save the edit. !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2601|
+|Step2            |Click '''Administration''' to go to Administration tab.                                            |
+|Step3            |Click '''Log'''->'''Log Viewer'''.                                                                 |
+|Expected Result1 |Verify there is no new record for the edit event operation in Step1.                                     |
+|Clean Environment|N/A                    |

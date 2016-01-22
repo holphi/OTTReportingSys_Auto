@@ -1,0 +1,14 @@
+|Comment|
+|Test Case ID|PurgeReport_1700|
+|Iteration| |
+|Jira Story| |
+|Requirement ID|[[id][]]|
+|Priority|P5                                                                                                                                                                                                                                                                                                                                |
+|Keywords|purge report|
+|User Role|Admin/op|
+|Title|System purge report older than 0 days at 12pm (noon) every day(CRON Expression:0 0 12 * * ?) |
+|Precondition|!-1. log in as a user with save Report Purge Configuration permission.<br>2. Click Settings to go to the tab.-!|
+|Steps|!-1. Click "Report Purge Configuration".<br>2. Input 0 in "Purge Report older than * days" <br>3. In CRON Expression ,input "0 0 12 * * ?"-!|
+|Expected Result|!-1. In log viewer, a new record is added "Save report Purge scheduler".<br>2. Reports older than 0 days are purged at 12pm.<br>3. In log viewer,A record "Purge reports"when each time purge reports-!|
+|Execution| manual|
+|Remarks|  h|

@@ -1,0 +1,16 @@
+|Test Case ID       |ScheduleMgrCase4001|
+|Title              |User can not left ftp field empty if chooses sending via ftp when create an event on report schedule manager|
+|Iteration          ||
+|Jira Story         ||
+|Requirement ID     |[id][]|
+|Priority           |P3                                                                                                                                                           |
+|Keywords           |event ftp|
+|Prepare Test Data  |N/A|
+|Precondition1      |Login as admin and go to report schedule manager page|
+|Step1              |Double click grid of today|
+|Step2              |Choose a report and format on '''New event''' window.|
+|Step3              |Click '''Sending to''' button and check on ftp and make sure the ftp ip field is empty|
+|Step4              |Choose a coming time|
+|Step5              |Click '''Save''' button| 
+|Expected Result1   |Pop up a message box "Please input the FTP Url"|
+|Clean Environment  |N/A|   

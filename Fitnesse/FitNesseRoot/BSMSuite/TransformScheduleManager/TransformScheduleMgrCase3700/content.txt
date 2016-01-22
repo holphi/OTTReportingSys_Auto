@@ -1,0 +1,25 @@
+|Test Case ID     |TransformScheduleMgrCase3700                                                                 |
+|Title            |Event end date must be later than start date.                                       |
+|Iteration        |                                                                                    |
+|Jira Story       |                                                                                    |
+|Requirement ID   |[[id][]]                                                                            |
+|Priority         |P3                                                        |
+|Keywords         |event, edit,time                                                                    |
+|Prepare Test Data|N/A                                                                                 |
+|Precondition1    |Click '''Transform Schedule Manager''' to go to Transform Schedule Manager tab.                                                                               |
+|Step1            |Double click in the grid of a date later than current date.                         |
+|Step2            |On the pop up New event window, click '''select Transform''' button.                   |
+|Step3            |On the pop up Select Tranform window, check on a transform            |
+|Step4            |Click '''OK''' on Select Transform window to close it.                                 |
+|Step5            |In Description box, input "event3700".                                              |
+|Step6            |Click button '''Disabled'''                                                         |
+|Step7            |In the expand Repeat event,select radio button "Daily"                              |
+|Step8            |Select "every [] day" and input 1                                                   |
+|Step9            |Select "End by".                                                                    |
+|Expected Result1 |Verify the date in "End by" is current date.                                        |
+|Step10           |In Time period first box, select any time point.                                    |
+|Step11           |Click '''Save''' button.                                                            |
+|Expected Result2 |Verify pop up message "The end date you entered occurs before start date"         |
+|Step12           |Click '''OK''' on the message box.                                                  |
+|Expected Result3 |The message box close.                                                              |
+|Clean Up         |N/A                                                                                  |

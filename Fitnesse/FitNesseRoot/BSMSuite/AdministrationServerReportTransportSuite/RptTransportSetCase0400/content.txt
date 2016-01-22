@@ -1,0 +1,19 @@
+|Test Case ID     |RptTransportSetCase0400                                                                                                            |
+|Title            |If input invalid ftp server address,test connection will return fail message.                                                                        |
+|Iteration        |                                                                                                                                   |
+|Jira Story       |                                                                                                                                   |
+|Requirement ID   |                                                                                                                                   |
+|Priority         |P3                                                                                                                                 |
+|Keywords         |SMTP                                                                                                                               |
+|Prepare Test Data|N/A                                                                                                                                |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                                            |
+|Precondition2    |Click '''Server''' -> '''Report Transport'''                                                                                       |
+|Step1            |In FTP IP field, input an invalid ftp server address "vm"                                                                      |
+|Step2            |In FTP Saved Path field , input a path on ftp server "/report"                                                                                                    |
+|Step3            |In FTP Login User Name field , input username "bsm"                                                                                |
+|Step4            |In FTP Login Password field,input password "bsm"                  |
+|Step5            |Click '''Save'''                                                                                                                   |
+|Expected Result1 |Verify return message "Save Successfully"                                                                                          |
+|Step6            |Click '''Test FTP'''                                                                                                              |
+|Expected Result2 |Verify returns message "Can't connect the FTP server."                                                                                          |
+|Clean Up         |N/A                                                                                                                                |

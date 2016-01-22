@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|ScheduleMgrCase5000|
+|Title|User leave an required parameter blank on a report which don't have default value will not harm on system.|
+|Requirement ID||
+|Priority|P4|
+|Keywords|evernt, report, parameter|
+|Prepare Test Data|!--!|
+|Precondition|!-1. Add reports Nodefault_String_report.rptdesign to Report Manager  !See.BsmSuite.ReportManagerSuite.ReportMgrCase0100<br>-!|
+|Steps and Expected Results|!-1. login as Admin <br>2. Click "Report Schedule Manager" to go to Report Schedule Manager tab.<br>3. Double click in the grid of current String.<br>4. On the pop up New event window, click select Report button.<br>5. On the pop up Select Report window, check on one report "NoDefault_String_report.rptdesign", then click OK.<br>6. Check on report format Excel. <br>7. In Description, input "event_String_NoDefault"<br>8. In Time period first box, select a coming time point.<br>9. Click Save button.<br>Expected Results: In log viewer, the generate report status is fail.<br>-!|
+|Clean Up|Remove event and report template<br>|

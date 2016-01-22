@@ -1,0 +1,14 @@
+|Test Case ID     |ReportMgrCase0600                                        |
+|Title            |User can generate report manually.                       |
+|Iteration        |                                                         |
+|Jira Story       |                                                         |
+|Requirement ID   |[[id][]]                                                 |
+|Priority         |P1                                                       |
+|Keywords         |Report, Generate                                         |
+|Prepare Test Data|N/A                                                      |
+|Precondition1    |log in as user "admin" with generate report permission.  |
+|Precondition2    |Click '''Report Manager''' to go to Reports Manager tab.|
+|Step1            |Click '''Generate''' link for "SDP_BUYS.rptdesign"       |
+|Step2            |Click '''OK''' on Parameter window.                      |
+|Expected Result2 |Generated report display without error.                  |
+|Clean Environment|N/A                                                      |

@@ -1,0 +1,20 @@
+|Test Case ID     |SinglePrivilegeChk3000                                                                                                                |
+|Title            |User who only has view transform schedule Manager privilege will only can view transform Schedule Manager.                                                    |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |transform Schedule Manager privilege                                                                                                                      |
+|Prepare Test Data|Creat an transform event "event3000". !See .BsmSuite.TransformScheduleManager.TransformScheduleMgrCase0100                                                 |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "role0100",only check on View Transform Schedule Manager permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "user0100" only check on  role "role0100". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "user0100"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Transform Schedule Manager''' tabs are visiable.                                                                   |
+|step5            |Click '''Transform Schedule Manager''' .                                                                                                                                                                                                                                         |
+|Step6            |Double click "event3000".                                                                                                           |
+|Expected Result2 |Verify the event is display.At bottom, only one button '''Cancel''' is visiable.                                                      |
+|Step7            |Double click in any calendar grid.                                                                                                    |
+|Expected Result3 |Verify new event window pop up but at bottom only one button '''Cancel''' is visiable.                                                |
+|Clean Up         |Remove "event0100".!See .BsmSuite.TransformScheduleManager.TransformScheduleMgrCase2300                                                                                                                                  |

@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|BackupandRestoreCase1200|
+|Title|PDI transform can be restored after backup.|
+|Requirement ID||
+|Priority|P1|
+|Keywords|restore,transform|
+|Prepare Test Data|!--!|
+|Precondition|!-1. Back up Reports Template. !See .BsmSuite.BackupAndRestore.BackupandRestoreCase0500<br>2. Delete a PDI Transform.<br>3. Update a PDI Transform.<br>-!|
+|Steps and Expected Results|!-1. login as admin<br>2. Click '''Administration''' to go to Administration tab.<br>3. On left pane, Click '''System Maintenance''' -> '''PDI Transform'''->''PDI Transform Restore'''<br>4. Click '''Browse''' button ,navigate to the PDI Transform backup files and select it.<br>5. Click '''Execute Restore''' button.<br><br>'''Executed Results''': 1. Deleted PDI Transform in Precondition2 is restored.<br> 2.. In log viewer, Action PDI Transform scheduler is success<br>-!|
+|Clean Up|<br>|

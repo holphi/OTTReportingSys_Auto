@@ -1,0 +1,20 @@
+|Test Case ID     |UserMgr0500                                                                    |
+|Title            |Cannot leave password blank when create user.                           |
+|Iteration        |                                                                                |
+|Jira Story       |                                                                                |
+|Requirement ID   |[[id][]]                                                                        |
+|Priority         |P3                                                                              |
+|Keywords         |User, Create                                                                    |
+|Prepare Test Data|N/A                                                                             |
+|Precondition1    |log in as a user "admin" with create user permission.                           |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                               |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                   |
+|Step1            |Click button '''Create User'''.                                                |
+|Step2            |Input a user name "test5".                                                      |
+|Step3            |Don't input password, but input "123" in field Confirm password "123".                                |
+|Step4            |Select "Active".                                                                |
+|Step5            |Check on "Admin" in role list.                                                    |
+|Step6            |Click '''OK'''.                                                                     |
+|Expected Result1 |Pop up message "Please input password.".                                      |
+|Expected Result2 |Click '''OK''' to close the message, verify return to create user dialog.|
+|Clean Up         |N/A                                                                      |

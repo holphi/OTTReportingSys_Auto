@@ -1,0 +1,15 @@
+|Test Case ID     |RoleMgr1200                                                                     |
+|Title            |Cannot update role without select a role.                                       |
+|Iteration        |                                                                                |
+|Jira Story       |                                                                                |
+|Requirement ID   |[[id][]]                                                                        |
+|Priority         |P3                                                                             |
+|Keywords         |Role, update                                                                    |
+|Prepare Test Data|N/A                                                                             |
+|Precondition1    |log in as user "admin" with update role permission.                             |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                         |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                       |
+|Step1            |Click button '''Update Role'''.                                                 |
+|Expected Result1 |Pop up message "please select a record to edit".                                |  
+|Expected Result2 |Click '''OK''' on the message, verify the message box closed.                    |                         
+|Clean Environment|N/A |

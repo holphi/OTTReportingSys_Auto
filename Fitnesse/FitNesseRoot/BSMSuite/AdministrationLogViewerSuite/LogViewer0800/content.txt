@@ -1,0 +1,14 @@
+|Comment|
+|Test Case ID|Log_0800|
+|Iteration||
+|Jira Story|REP-9|
+|Requirement ID|[[id][]]|
+|Priority|P5                                                     |
+|Keywords|Schedule,log Viewer|
+|User Role|Admin/op|
+|Title|Operation set schedule from report manager is logged correctly.|
+|Precondition|!-1. log in with a user with permission to view log viewer.<br>2. Click Schedule Manager to go to the page.<br> 3. Click log viewer to display log-!|
+|Steps|!-1. Set an schedule from report manager.-!|
+|Expected Result|!-1. Verify create event operation is logged and event id,event description,operator are correct.-!|
+|Execution| manual|
+|Remarks|  h|

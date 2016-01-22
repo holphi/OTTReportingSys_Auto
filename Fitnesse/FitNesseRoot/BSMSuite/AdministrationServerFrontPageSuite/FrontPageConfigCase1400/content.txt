@@ -1,0 +1,19 @@
+|Test Case ID     |FrontPageConfigCase1400                                                                                   |
+|Title            |The login box can be at right bottom corner of the upload image.(Margin to left of logo is the width of the image,Margin to top of logo is the height of the image.)|
+|Iteration        |                                                                                                          |
+|Jira Story       |                                                                                                          |
+|Requirement ID   |[[id][]]                                                                                                  |
+|Priority         |P3                                                                                                      |
+|Keywords         |Front page                                                                                                |
+|Prepare Test Data|N/A                                                                                                    |
+|Precondition1    |The size of default image in login page is 700x260.                                                        |
+|Precondition2    |log in as user "admin" with Save Front Page Configuration permission.                                      |
+|Precondition3    |Click '''Administration''' to go to Administration tab.                                                   |
+|Precondition4    |Click '''Server'''->'''Front Page'''.                                                                     |
+|Step1            |Input 720 in the field Margin to left of logo(px) .                                                   |
+|Step2            |Input 260 in the field Margin to top of logo(px).                                                         |
+|Step3            |Click button '''Save'''.                                                                                |
+|Expected Result1 |Display message "Save successfully"                                                                     |
+|Expected Result2 |log out and reload login page,verify the login box is displaying at right bottom corner of the image.         |
+|Expected Result3 |Verify the username and password input box is displaying correctly and works well,user "admin" can log in.|
+|Clean Up         |N/A                                                                                                       |

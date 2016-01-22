@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|BackupandRestoreCase0200|
+|Title|BSM configuration can be backup by scheduler and transport backup file by email,FTP and HTTP.|
+|Requirement ID||
+|Priority|P1|
+|Keywords|backup,BSM configuration,scheduler|
+|Prepare Test Data|!--!|
+|Precondition|!-1. Upload a picture to replace frontpage !See .BsmSuite.AdministrationServerFrontPageSuite.FrontPageConfigCase0100<br>2. Create a role br0100. !See BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100<br>3. Create a user bu0100. !See BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100<br>4. Configure Backup Transport Configuration<br>-!|
+|Steps and Expected Results|!-1. login as admin<br>2. Click '''Administration''' to go to Administration tab.<br>3. On left pane, Click '''System Maintenance''' -> '''BSM Configuration'''->''BSM Configuration Backup'''<br>4. In section '''Select Operation Type''',select '''Scheduler'''<br>5. In '''CORN Expression''', Input a expression "0 0 12 * * ? "<br>6. Change the BSM server time to 11:59:55<br><br>'''Expected Results''': 1.From log Viewer, BSM configuration is backuped On 12:00:00.<br>2.BSM configuration backup file is transport by types configured in Precondition4.<br>3.In log viewer, Action Backup BSM Configuration Manually is success.<br>4.In log viewer, Action Backup BSM Configuration transport is success<br>-!|
+|Clean Up|<br>|

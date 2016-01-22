@@ -1,0 +1,29 @@
+|Test Case ID     |SinglePrivilegeChk0700                                                                                                                |
+|Title            |User only has add report privilege on Report Manager will only can add report.                                                   |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Report Manager                                                                                                                     |
+|Prepare Test Data|N/A                                                |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "scrole0700",only check on Add Report permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "scuser0700" only check on  role "scrole0700". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "scuser0700"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Report Manager''' tab are visiable.                                                                   |
+|Step5            |Click '''Report Manager''' to go to Report Manager page                                                                                 |
+|Expected Result2 |Verify '''Add Report''' button displays above "Report Name".                                                                          |
+|Expected Result3 |Verify '''Remove Report''' button does not display on Report Manager page.                                                                          |
+|Step6            |Add a report. !See .BsmSuite.ReportManagerSuite.ReportMgrCase0100|
+|Step7            |Click '''Update''' button on Report Manager page|
+|Expected Result4 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step8            |Click '''Generate''' button on Report Manager page|
+|Expected Result5 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step9            |Click '''Set Schedule''' button on Report Manager page| 
+|Expected Result6 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step10           |Click '''View''' button on Report Manager page|
+|Expected Result7 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step10           |Click "Activation_count.rptdesign" on Report Manager page| 
+|Expected Result8 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Clean Up         |N/A                                                                                                                                   |

@@ -1,0 +1,16 @@
+|Test Case ID     |LogViewer1000                                                                                            |
+|Title            |Operation update role is logged correctly.                                  |
+|Iteration        |                                                                                                   |
+|Jira Story       |                                                                                                   |
+|Requirement ID   |[[id][]]                                                                                           |
+|Priority         |P5                                                     |
+|Keywords         |log                                                                                                |
+|Prepare Test Data|Create role "log1000" from role Manager.!See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100.!-<br>-! Update role "log1000" from role Manager.!See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr1500|
+|Precondition1    |login as user "admin" with view log viewer permission.                                             |
+|Step1            |Click '''Administration''' to go to Administration tab.                                            |
+|Step2            |Click '''Log'''->'''Log Viewer'''.                                                                 |
+|Expected Result1 |Verify there is a new record:action is "Update role"                                     |
+|Expected Result2 |Verify the new record:Description contains role name "log1000"     |
+|Expected Result3 |Verify the new record:Operator is "admin".                                                                    |
+|Expected Result4 |Verify the new record:status is "success".                                                                    |
+|Clean Environment|Remove role "log1000".!See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000                    |

@@ -1,0 +1,16 @@
+|Test Case ID     |UserMgr1503                                                                                         |
+|Title            |When user change his own password,cannot input different value in New Password and Confirm Password.                                  |
+|Iteration        |                                                                                                    |
+|Jira Story       |                                                                                                    |
+|Requirement ID   |[[id][]]                                                                                            |
+|Priority         |P3                                                                                                  |
+|Keywords         |User, password                                                                                      |
+|Prepare Test Data|Create a user "test1503"in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100|
+|Precondition1    |log in as user "test1503".                                                                          |
+|Step1            |Click on user name "test1503" on right top corner.                                                  |
+|Step2            |On the pop up menu,click on '''Change Password'''.                                                  |
+|Step3            |On the pop up window,input old password "123".                                                      |
+|Step4            |Input "456" in new password and "567" in Confirm Password.                                             |
+|Step5            |Click '''OK'''.                                          |                                          |
+|Expected Result1 |Pop up message "The two password you input is not the same"                                                   |
+|Clean Up         |Remove user test1503. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                 |

@@ -1,0 +1,18 @@
+|Test Case ID     |RoleMgr0500                                                                     |
+|Title            |User cannot create a role with an existing role name.                           |
+|Iteration        |                                                                                |
+|Jira Story       |                                                                                |
+|Requirement ID   |[[id][]]                                                                        |
+|Priority         |P3                                                                              |
+|Keywords         |Role, Create                                                                    |
+|Prepare Test Data|Create a role named role5. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100                                                     |
+|Precondition1    |log in as user "admin" with create role permission.                             |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                         |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                       |
+|Step1            |Click button '''Create Role'''.                                                 |
+|Step2            |Input a role name "role5".                                                      |
+|Step3            |Check on permissions "Schedule Manager","Report Manager"on the Permission tree. |
+|Step4            |Type "role5" in Comment box.                                                    |
+|Step5            |Click '''OK'''.                                                                 |
+|Expected Result1 |Pop up message "The role name you entered exits,please choose another one".     |
+|Clean Environment|Remove role5. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000                                      |

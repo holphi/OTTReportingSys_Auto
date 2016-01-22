@@ -1,0 +1,15 @@
+|Test Case ID     |TransformMgrCase0700                                                                                                                                                          |
+|Title            |User must choose a transform when remove a transform                                                                                                          |
+|Iteration        |                                                                                                                                                                           |
+|Jira Story       |                                                                                                                                                                           |
+|Requirement ID   |[[id][]]                                                                                                                                                                   |
+|Priority         |P3                                                                                                                                                                        |
+|Keywords         |Transform, Remove                                                                                                                                                             |
+|Prepare Test Data|N/A|
+|Precondition1    |log in as user "admin" with remove transform permission.                                                                                                                      |
+|Precondition2    |Click '''Extraction Manager''' to go to Extraction Manager tab.                                                                                                                  |
+|Step1            |Click button '''Remove transform'''.                                                                                                                                          |
+|Expected Result1 |Verify pop up message "Please select transforms to remove."                                                                                                                     |
+|Step2            |Click '''OK''' on the message.                                                                                                                                             |
+|Expected Result2 |The message box close.                                                                                                                                                     |
+|Clean Environment|N/A                                                                           |

@@ -1,0 +1,13 @@
+|Test Case ID     |ReportMgrCase3100                                                                                           |
+|Title            |User must choose one or more report templates if he want to set private report template to public                          |
+|Iteration        |                                                                                                            |
+|Jira Story       |                                                                                                            |
+|Requirement ID   |[[id][]]                                                                                                    |
+|Priority         |P3                                                                                                          |
+|Keywords         |Report, Remove                                                                                                 |
+|Prepare Test Data|Upload a report template "TestReportAdd.rptdesign" as admin|
+|Precondition1    |log in as user "admin" .                                                          |
+|Precondition2    |Click '''Report Manager''' to go to Reports Manager tab.                                                   |
+|Step1            |Click button '''Set to Public'''.                                                                              |
+|Expected Result1 |Verify pop up window "Please select reports to operate".                                                                              |
+|Clean Environment|Remove report "TestReportAdd.rptdesign". !See .BsmSuite.ReportManagerSuite.ReportMgrCase0900                |

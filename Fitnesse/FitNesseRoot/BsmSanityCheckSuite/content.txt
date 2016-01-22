@@ -1,0 +1,48 @@
+!See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100
+!See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0600
+!See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2500
+!See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2900
+!See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase4100
+!See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase5500
+!See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase6800
+
+!See .BsmSuite.ReportManagerSuite.ReportMgrCase0100
+!See .BsmSuite.ReportManagerSuite.ReportMgrCase0600
+!See .BsmSuite.ReportManagerSuite.ReportMgrCase0900
+!See .BsmSuite.ReportManagerSuite.ReportMgrCase1600
+!See .BsmSuite.ReportManagerSuite.ReportMgrCase2800
+!See .BsmSuite.ReportManagerSuite.ReportMgrCase3700
+
+!See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0600
+
+!See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100
+!See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200
+
+!See .BsmSuite.PrivilegeCheckSuite.MultiplePrivilegeChk0100
+!See .BsmSuite.PrivilegeCheckSuite.MultipleRoleMultiplePrivilegeChk0100
+
+!See .BsmSuite.AdministrationServerFrontPageSuite.FrontPageConfigCase0200
+
+!See .BsmSuite.AdministrationScheduledTasksSuite.PurgeReportCase0100
+
+!See .BsmSuite.AdministrationLogViewerSuite.LogViewer0200
+
+!See .BsmSuite.TransformManagerSuite.TransformMgrCase0100
+!See .BsmSuite.TransformManagerSuite.TransformMgrCase1100
+!See .BsmSuite.TransformManagerSuite.TransformMgrCase1700
+!See .BsmSuite.TransformManagerSuite.TransformMgrCase2900
+!See .BsmSuite.TransformManagerSuite.TransformMgrCase4000
+
+!See .BsmSuite.TransformScheduleManager.TransformScheduleMgrCase0100
+!See .BsmSuite.TransformScheduleManager.TransformScheduleMgrCase2300
+!See .BsmSuite.TransformScheduleManager.TransformScheduleMgrCase4400
+
+!See .BsmSuite.BackupAndRestore.BackupandRestoreCase0100
+!See .BsmSuite.BackupAndRestore.BackupandRestoreCase0400
+!See .BsmSuite.BackupAndRestore.BackupandRestoreCase0500
+!See .BsmSuite.BackupAndRestore.BackupandRestoreCase0800
+!See .BsmSuite.BackupAndRestore.BackupandRestoreCase0900
+!See .BsmSuite.BackupAndRestore.BackupandRestoreCase1200
+
+!See .BsmSuite.HomeSuite.HomeCase0100
+!See .BsmSuite.HomeSuite.HomeCase0200

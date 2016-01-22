@@ -1,0 +1,14 @@
+|Test Case ID     |RptTransportSetCase1701                                     |
+|Title            |Field Repeat Count can be zero.|
+|Iteration        |                                                            |
+|Jira Story       |                                                            |
+|Requirement ID   |                                                            |
+|Priority         |P4                                                          |
+|Keywords         |SMTP,Email                                                  |
+|Prepare Test Data|N/A                                                         |
+|Precondition1    |Click '''Administration''' to go to Administration tab.     |
+|Precondition2    |Click '''Server''' -> '''Report Transport'''                |
+|Step1            |In field Repeat Count field input "0".                    |
+|Step2            |Click '''Save'''                                                                                                                                             |
+|Expected Result1 |Verify return message "Repeat count must greater than 0."                                                                                                                    |
+|Clean Up         |N/A                                                         |

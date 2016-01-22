@@ -1,0 +1,16 @@
+|Test Case ID     |BackupTransportSetCase1300                                                                                  |
+|Title            |Sending report repeat times can be reset.                                                                |
+|Iteration        |                                                                                                         |
+|Jira Story       |                                                                                                         |
+|Requirement ID   |                                                                                                         |
+|Priority         |P3                                                                                                       |
+|Keywords         |SMTP,Email                                                                                               |
+|Prepare Test Data|N/A                                                                                                      |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                  |
+|Precondition2    |Click '''System Maintenance'''-> '''Backup Transport Configuration'''                                                             |
+|Step1            |In Repeat count field,input "3"                                                                          |
+|Step2            |Click '''Save'''                                                                                         |
+|Expected Result1 |Verify return message "Save Successfully"                                                                |
+|Step3            |Click '''Reset'''                                                                                        |
+|Expected Result2 |Verify all field of SMTP Settings are blank                                                              |
+|Clean Up         |N/A                                                                                                      |

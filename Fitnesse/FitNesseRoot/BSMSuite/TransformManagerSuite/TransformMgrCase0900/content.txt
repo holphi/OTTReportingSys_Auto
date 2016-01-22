@@ -1,0 +1,19 @@
+|Test Case ID     |TransformMgrCase0900                                                                                                                                                          |
+|Title            |User can not remove transform which is used to an event.                                                                                                          |
+|Iteration        |                                                                                                                                                                           |
+|Jira Story       |                                                                                                                                                                           |
+|Requirement ID   |[[id][]]                                                                                                                                                                   |
+|Priority         |P3                                                                                                                                                                        |
+|Keywords         |Transform, Remove                                                                                                                                                             |
+|Prepare Test Data|Add transform "TestTransformRemove.ktr" to Transform Manager.!See .BsmSuite.TransformManagerSuite.TransformMgrCase0100 !-<br>-! ..\Fitnesse\TestResource\TestTransformRemove.ktr!-<br>-! Create a transform schedule event with TestTransfomRemove.ktr.!See .BsmSuite.TransformScheduleManager.TransformScheduleMgrCase0100|
+|Precondition1    |log in as user "admin" with remove transform permission.                                                                                                                      |
+|Precondition2    |Click '''Extraction Manager''' to go to Extraction Manager tab.                                                                                                                  |
+|Step1            |Check on the check box on the left of report name "TestTransformRemove.ktr".                                                                                            |
+|Step2            |Click button '''Remove transform'''.                                                                                                                                          |
+|Expected Result1 |Verify pop up message "Are you sure to remove transform?"                                                                                                                     |
+|Step3            |Click '''OK''' on the message.                                                                                                                                             |
+|Expected Result2 |Pop up message "The transform TestTransformRemove.ktr is reference by 1 schedule event, and can not be reomved."                                                                                                                               |
+|Step4            |Click '''OK''' on the message box.                                                                                                                                             |
+|Expected Result3 |The message box close.                                                                                                                                                     |
+|Expected Result4 |Verify report "TestTransformRemove.ktr" still list in transform Manager.                                                                                                 |
+|Clean Environment|N/A                                                                           |

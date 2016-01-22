@@ -1,0 +1,21 @@
+|Test Case ID     |TransformScheduleMgrCase3600                                                                 |
+|Title            |Event start time must be later than current time.                                   |
+|Iteration        |                                                                                    |
+|Jira Story       |                                                                                    |
+|Requirement ID   |[[id][]]                                                                            |
+|Priority         |P3                                                        |
+|Keywords         |event, edit,time                                                                    |
+|Prepare Test Data|N/A                                                                                 |
+|Precondition1    |Click '''Transform Schedule Manager''' to go to Transform Schedule Manager tab.     |
+|Step1            |Double click in the grid of a date before current date.                             |
+|Step2            |On the pop up New event window, click '''select Transform''' button.                   |
+|Step3            |On the pop up Select Transform window, check on a transform            |
+|Step4            |Click '''OK''' on Select Transform window to close it.                                 |
+|Step6            |In Description box, input "event3600".                                              |
+|Step7            |In Time period first box, select time before current time.                                          |
+|Step8            |Click '''Save''' button.                                                            |
+|Expected Result1 |Verify pop up message "The start date you entered occurs before current date"       |
+|Step9            |Click '''OK''' on the message box.                                                  |
+|Expected Result2 |The message box close.                                                              |
+|Clean Up         |N/A                                                                                 |
+

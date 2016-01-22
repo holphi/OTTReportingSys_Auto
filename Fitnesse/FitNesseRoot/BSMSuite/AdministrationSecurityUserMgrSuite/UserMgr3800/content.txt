@@ -1,0 +1,14 @@
+|Test Case ID     |UserMgr3800                                                                                                     |
+|Title            |User can not login after click cancel.                                                             |
+|Iteration        |                                                                                                                |
+|Jira Story       |                                                                                                                |
+|Requirement ID   |[[id][]]                                                                                                        |
+|Priority         |P4                                                                                                              |
+|Keywords         |User, login                                                                                                    |
+|Prepare Test Data|N/A                                                                                                             |
+|Precondition1    |Create a user "usertest" with password "usertest". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100 |
+|Step1            |Input "usertest" in username field. Input "usertest" in password field.                                                                                 |
+|Step2            |Click '''Cancel''' button |
+|Expected Result1 |Verify username and password inputboxes change to be empty                                      |
+|Expected Result2 |Verify user can not login                                      |
+|Clean Up         |N/A                                                                                                             |

@@ -1,0 +1,23 @@
+|Test Case ID     |MultipleRoleMultiplePrivilegeChk0100                                                                                                                                                     |
+|Title            |A user with two roles which have no same privilege will have both privileges of these two roles.(role1 has view schedule manager, create and update event privilege on Schedule manager,role2 has remove event privilege on Schedule manager).|
+|Iteration        |                                                                                                                                                                             |
+|Jira Story       |                                                                                                                                                                             |
+|Requirement ID   |                                                                                                                                                                             |
+|Priority         |P3                                                                                                                                                                           |
+|Keywords         |multiple role,multiple Privilege                                                                                                                                                             |
+|Prepare Test Data|Creat an Event "mcevent0100". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100                                                                                        |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                                                              |
+|Step1            |Create role "mcrole0100",check on permissions :View Schedule Manager, Create event and Update event under Schedule Manager. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100           |
+|Step2            |Create role "mcrole0100a",check on permissions :Remove event under Schedule Manager. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100           |
+|Step3            |Create user "mcuser0100" only check on  role "mcrole0100" and "mcrole0100a". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100                                                     |
+|Step4           |Log out "admin".                                                                                                                                                             |
+|Step5            |Log in user "mcuser0100"                                                                                                                                                     |
+|Expected Result1 |Verify only '''Home''' and '''Schedule Manager''' tab are visible.                                                                                                          |
+|step6            |Click '''Schedule Manager''' to go to Schedule tab.|
+|Step7            |Double click "mcevent0100".                                                                                                                                                  |
+|Expected Result2 |Verify the event is display.At bottom, buttons '''Cancel''' and '''Save''', '''Delete''' are visible.                                          |
+|Expected Result3 |Verify user "mcuser0100" can Update event "mcevent0100".!See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2700.                                                             |
+|Expected Result4 |Verify user "mcuser0100" can create an event "mcevent0100a". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100                                                                                      |
+|Expected Result5 |Verify user "mcuser0100" can remove event "mcevent0100a". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200                                                                                       |
+|Clean Up         |Remove "mcevent0100" .!See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200 !-<br>-!Remove user "mcuser0100".!See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200!-<br>-!Remove role "mcrole0100","mcrole0100a" !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000                                                                                                                                                                     |
+

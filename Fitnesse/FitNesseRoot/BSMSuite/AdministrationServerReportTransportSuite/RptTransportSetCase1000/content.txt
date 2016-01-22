@@ -1,0 +1,18 @@
+|Test Case ID     |RptTransportSetCase1000                                                                                       |
+|Title            |If leave required field destination Email address,cannot save destination Email address.                      |
+|Iteration        |                                                                                                              |
+|Jira Story       |                                                                                                              |
+|Requirement ID   |                                                                                                              |
+|Priority         |P4                                                                                                            |
+|Keywords         |SMTP,Email                                                                                                    |
+|Prepare Test Data|N/A                                                                                                           |
+|Precondition0    |Configure SMTP Settings.  !See .BsmSuite.AdministrationServerReportTransportSuite.RptTransportSetCase0100     |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                       |
+|Precondition2    |Click '''Server''' -> '''Report Transport'''                                                                  |
+|Step1            |Leave Destination Email Address field blank.                                                                  |
+|Step2            |Click '''Save'''                                                                                              |
+|Expected Result1 |Verify returns message "This field is required" on the right side of field destination Email address.         |
+|Step3            |In Destination Email Address field, input an valid Email address(Usually, use tester's company email address).|
+|Step4            |Click '''Save'''                                                                                              |
+|Expected Result2 |Verify return message "Save Successfully".                                                                    |
+|Clean Up         |N/A                                                                                                           |

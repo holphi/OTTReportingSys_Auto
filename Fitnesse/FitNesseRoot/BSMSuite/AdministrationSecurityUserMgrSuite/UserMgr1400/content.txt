@@ -1,0 +1,20 @@
+|Test Case ID     |UserMgr1400                                                                                       |
+|Title            |Admin user  can update user's password.                                                           |
+|Iteration        |                                                                                                  |
+|Jira Story       |                                                                                                  |
+|Requirement ID   |[[id][]]                                                                                          |
+|Priority         |P3                                                                                                |
+|Keywords         |User, Update                                                                                      |
+|Prepare Test Data|Create a user "test14"in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100|
+|Precondition1    |log in as a user "admin" with update user permission.                                             |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                           |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                         |
+|Step1            |Select a user "test14".                                                                           |
+|Step2            |Click button '''Update User'''.                                                                   |
+|Step3            |Click in Password field, input new password "456".                                                |
+|Step4            |Click in Confirm Password field, input new password "456".                                        |
+|Step5            |Click '''OK'''.                                                                                  |
+|Expected Result1 |Pop up message "Update user successfully."                                                        |
+|Expected Result2 |Click '''OK''' on the message, verify the message box close.                                      |
+|Expected Result3 |Log out ,Verify log in user "test14" with new password "456" successfully.                        |
+|Clean Up         |Remove user test14. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                 |

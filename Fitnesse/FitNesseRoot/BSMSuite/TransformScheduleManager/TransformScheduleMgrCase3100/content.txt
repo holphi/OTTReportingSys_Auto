@@ -1,0 +1,23 @@
+|Test Case ID     |TransformScheduleMgrCase3100                                                                          |
+|Title            |User can change repeat rule when edit event.                                             |
+|Iteration        |                                                                                              |
+|Jira Story       |                                                                                              |
+|Requirement ID   |[[id][]]                                                                                      |
+|Priority         |P3                                                                                            |
+|Keywords         |event, edit                                                             |
+|Prepare Test Data|Create a repeat event "event3100". !See .BsmSuite.TransformScheduleManager.TransformMgrCase0500|
+|Precondition1    |Click '''Transform Schedule Manager''' to go to Transform Schedule Manager tab.                                   |
+|Step1            |Change BSM server system clock to make "event3100" occur once.                                                                                                          |
+|Step2            |Double click on any instance of "event3100" in calendar grid                                                                                                 |
+|Step3            |In Description, append "update"                                                                                                                             |
+|Step4            |In the expand Repeat event,select radio button "Weekly"                                                                                                      |
+|Step5            |In "Repeat every [] week next days:" and input "1".                                                                                                          |
+|Step6            |Check on "Friday"                                                                                                                                            |
+|Step7            |Select "After [] occurrences" and input 3                                                                                                                    |
+|Step8            |Click '''Save'''button.                                                                                                                                      |
+|Expected Result1 |Verify "event3100update" display in the grids of each expected occurrences date.                                                                                                                     |
+|Expected Result2 |Verify DB which is transformed to has no relative records before event is triggered.                                                                                                                    |
+|Expected Result3 |Verify start from Friday selected , every Friday in following two weeks at the time selected, generate transform,and DB which is transformed to has exactly the same records with transform selected in event|
+|Expected Result4 |Verify the event will not occur on Thursday and Saturday and not occur on the fourth Friday.                                                                                                                                                                                                                                         |
+|Expected Result5 |Verify it has relative records on log viewer page(including update event and generate transform).|
+|Clean Up         |Remove "event3100update".!See .BsmSuite.TransformScheduleManager.TransformMgrCase2300                                                                                          |

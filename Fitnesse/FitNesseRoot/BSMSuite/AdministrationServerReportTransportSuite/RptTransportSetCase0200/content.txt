@@ -1,0 +1,20 @@
+|Test Case ID     |RptTransportSetCase0200                                                                                                            |
+|Title            |If input wrong smtp settings,test SMTP will return fail.                                                                        |
+|Iteration        |                                                                                                                                   |
+|Jira Story       |                                                                                                                                   |
+|Requirement ID   |                                                                                                                                   |
+|Priority         |P3                                                                                                                                 |
+|Keywords         |SMTP                                                                                                                               |
+|Prepare Test Data|N/A                                                                                                                                |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                                            |
+|Precondition2    |Click '''Server''' -> '''Report Transport'''                                                                                       |
+|Step1            |In Smpt field, input invalid smtp server address "srv"                                                                      |
+|Step2            |In Smtp Port field , input "25"                                                                                                    |
+|Step3            |In Sender Email Address field , input "BSM@nagra.com"                                                                               |
+|Step4            |In Username and Password field,input username and password for smtp server.(Usually, use tester's domain account)                  |
+|Step5            |Click '''Save'''                                                                                                                   |
+|Expected Result1 |Verify return message "Save Successfully"                                                                                          |
+|Step6            |Click '''Test SMTP'''                                                                                                              |
+|Step7            |On pup up Validate SMTP Settings window  ,input an email address.(Usually, use tester's company email address),Click '''Validate'''|
+|Expected Result2 |Verify returns message "can't send test email to the email adress, please check."                                                                                          |
+|Clean Up         |N/A                                                                                                                                |

@@ -1,0 +1,18 @@
+|Test Case ID     |UserMgr1500                                                                                      |
+|Title            |Any user can change his own password.                                                                     |
+|Iteration        |                                                                                                  |
+|Jira Story       |                                                                                                  |
+|Requirement ID   |[[id][]]                                                                                          |
+|Priority         |P2                                                                                                |
+|Keywords         |User, password                                                                                      |
+|Prepare Test Data|Create a user "test15"in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100|
+|Precondition1    |log in as user "test15".                                             |
+|Step1            |Click on user name "test15" on right top corner.                                                                           |
+|Step2            |On the pop up menu,click on '''Change Password'''.                                                                   |
+|Step3            |On the pop up window,input old password "123".                                                |
+|Step4            |Input new password "456"and Confirm Password "456".                                        |
+|Step5            |Click '''OK'''.                                         |                                         |
+|Expected Result1 |Pop up message "change password successfully."                                                        |
+|Expected Result2 |Click '''OK''' on the message, verify the message box close.    |
+|Expected Result3 |Log out ,Verify log in user "test15" with new password "456" successfully.|
+|Clean Up         |Remove user test15. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                 |

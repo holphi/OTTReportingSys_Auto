@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|BackupandRestoreCase0300|
+|Title|BSM configuration backup scheduler can be set to empty to stop Scheuler.|
+|Requirement ID||
+|Priority|P3|
+|Keywords|backup,BSM configuration,scheduler|
+|Prepare Test Data|!--!|
+|Precondition|!-<br>-!|
+|Steps and Expected Results|!-1. login as admin<br>2. Click '''Administration''' to go to Administration tab.<br>3. On left pane, Click '''System Maintenance''' -> '''BSM Configuration'''->''BSM Configuration Backup'''<br>4. In section '''Select Operation Type''',select '''Scheduler'''<br>5. In '''CORN Expression''', clean input.<br>6. Click '''Save''' button<br>7. Change the BSM server time to 11:59:55<br><br>'''Expected Results''': 1.From log Viewer, there is no BSM configuration is backuped action On 12:00:00.<br><br>-!|
+|Clean Up|<br>|

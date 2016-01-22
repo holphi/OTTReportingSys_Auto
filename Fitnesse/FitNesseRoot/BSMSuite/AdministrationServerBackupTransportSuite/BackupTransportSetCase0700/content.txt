@@ -1,0 +1,17 @@
+|Test Case ID     |BackupTransportSetCase1100                                                                                                                                      |
+|Title            |When transport report by FTP,if fail it will try repeat times set in "Sending report repeat times".                                                          |
+|Iteration        |                                                                                                                                                             |
+|Jira Story       |                                                                                                                                                             |
+|Requirement ID   |                                                                                                                                                             |
+|Priority         |P3                                                                                                                                                           |
+|Keywords         |SMTP,Email                                                                                                                                                   |
+|Prepare Test Data|N/A                                                                                                                                                          |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                                                                      |
+|Precondition2    |Click '''System Maintenance'''-> '''Backup Transport Configuration'''                                                                                                                 |
+|Step1            |In Repeat count field,input "3"                                                                                                                              |
+|Step2            |Click '''Save'''                                                                                                                                             |
+|Expected Result1 |Verify return message "Save Successfully"                                                                                                                    |
+|Step3            |Create an event transport report by FTP, when configure the FTP settings ,input an invalid FTP server. !See.BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0200|
+|Step4            |Change the BSM server system clock to trigger the event created in step3.                                                                                    |
+|Expected Result2 |Navigate to '''Administration''' -> '''Log''' -> '''Log Viewer''' to check the log, there should be three records show that the event created in Step3 send report to the FTP server 3 times and fail 3 times.                                                                                                       |
+|Clean Up         |N/A                                                                                                                                                          |

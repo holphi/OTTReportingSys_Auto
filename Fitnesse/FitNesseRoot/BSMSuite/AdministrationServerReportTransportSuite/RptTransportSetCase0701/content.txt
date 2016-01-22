@@ -1,0 +1,20 @@
+|Test Case ID     |RptTransportSetCase0701                                                                                                            |
+|Title            |If leave smtp settings required field Smpt Port blank, cannot save Smtp settings.                                                                      |
+|Iteration        |                                                                                                                                   |
+|Jira Story       |                                                                                                                                   |
+|Requirement ID   |                                                                                                                                   |
+|Priority         |P4                                                                                                                                 |
+|Keywords         |SMTP                                                                                                                               |
+|Prepare Test Data|N/A                                                                                                                                |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                                            |
+|Precondition2    |Click '''Server''' -> '''Report Transport'''                                                                                       |
+|Step1            |In Smpt field, input smtp server address "srv-smtp1.hq.k.grp"                                                                                                            |
+|Step2            |Leave Smtp Port field blank.                                                                                                    |
+|Step3            |In Sender Email Address field , input "BSM@nagra.com"                                                                              |
+|Step4            |In Username and Password field,input username and password for smtp server.(Usually, use tester's domain account)                  |
+|Step5            |Click '''Save'''                                                                                                                   |
+|Expected Result1 |Verify return message "This field is required" on the right side of field Smtp Port.                                                    |
+|Step6            |In Smtp Port field , input "25"                                                                      |
+|Step7            |Click '''Save'''                                                                                                                   |
+|Expected Result2 |Verify returns message "Save Successfully"                                                                               |
+|Clean Up         |N/A                                                                                                                                |

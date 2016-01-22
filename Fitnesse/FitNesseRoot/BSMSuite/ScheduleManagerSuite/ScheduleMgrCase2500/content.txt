@@ -1,0 +1,16 @@
+|Test Case ID     |ScheduleMgrCase2500                                                                           |
+|Title            |User can delete a repeat event.                                             |
+|Iteration        |                                                                                              |
+|Jira Story       |                                                                                              |
+|Requirement ID   |[[id][]]                                                                                      |
+|Priority         |P2                                                                                            |
+|Keywords         |repeat event, Delete                                                             |
+|Prepare Test Data|Create a repeat event "event2500". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0600|
+|Precondition1    |Click '''Schedule Manager''' to go to Schedule Manager tab.                                   |
+|Step1            |Double click on any instance of "event2500"                                                                      |
+|Step2            |On the pop up window, click '''Delete''' button on the bottom of the window.        |
+|Expected Result1 |Verify pop up message "Event will be deleted permanently,are you sure?"                       |
+|Step3            |Click on '''OK''' on the message.                                                             |
+|Expected Result2 |Verify message box and window open in step2 close.                                            |
+|Expected Result3 |Verify "event 2500" don't display in calendar grid.                                           |
+|Clean Up         |N/A                                                                                           |

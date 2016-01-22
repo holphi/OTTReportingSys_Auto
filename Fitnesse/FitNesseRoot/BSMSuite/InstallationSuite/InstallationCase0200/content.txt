@@ -1,0 +1,14 @@
+|Comment|
+|Test Case ID|Installation_0200|
+|Iteration|1|
+|Jira Story| |
+|Requirement ID|[[id][]]|
+|Priority| P1|
+|Keywords|Install|
+|User Role|Admin/op|
+|Title|Verify instllation guide is correct and complete.|
+|Precondition|1.|
+|Steps|1. Follow instllation guide to install BSM. |
+|Expected Result|!-1. Verify all info in installation guide is correct.<br>2. Verify nothing nessary is missing in installation guide.-!|
+|Execution| manual|
+|Remarks|  h|

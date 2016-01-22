@@ -1,0 +1,22 @@
+|Test Case ID     |FrontPageConfigCase0700                                                                    |
+|Title            |If user upload a jpg image which size(170x120) is smaller than the login field,the login fields still works.|
+|Iteration        |                                                                                                          |
+|Jira Story       |                                                                                                          |
+|Requirement ID   |[[id][]]                                                                                                  |
+|Priority         |P3                                                                                                        |
+|Keywords         |Front page                                                                                                |
+|Prepare Test Data|The image to be upload is ..\Fitnesse\TestResource\170x120.jpg                                            |
+|Precondition1    |log in as user "admin" with Upload Front Page Image permission.                                           |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                   |
+|Precondition3    |Click '''Server'''->'''Front Page'''.                                                                     |
+|Step1            |Click button '''Browse''',navigate to the folder which store image 170x120.jpg                            |
+|Step2            |Select image 170x120.jpg and click '''open'''.                                                            |
+|Step3            |Click button '''Upload'''.                                                                                |
+|Expected Result1 |Display message "Upload successfully"                                                                     |
+|Expected Result2 |Current background image change to "imgs/login/170x120.jpg"                                               |
+|Expected Result3 |Image width(px) change to "170.0"                                                                         |
+|Expected Result4 |Image height(px) change to "120.0"                                                                        |
+|Expected Result5 |log out and reload login page,the background change to be the uploaded image.                             |
+|Expected Result6 |Verify the image size is 170x120.                                                                         |
+|Expected Result7 |Verify the username and password input box is displaying correctly and works well,user "admin" can log in.|
+|Clean Up         |N/A                                                                                                       |

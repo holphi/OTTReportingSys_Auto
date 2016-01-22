@@ -1,0 +1,19 @@
+|Test Case ID     |TransformMgrCase1300                                                                                           |
+|Title            |User cannot only upload .ktr file.                                                                             |
+|Iteration        |                                                                                                            |
+|Jira Story       |                                                                                                            |
+|Requirement ID   |[[id][]]                                                                                                    |
+|Priority         |P3                                                                                                          |
+|Keywords         |transform, Add,non-ktr                                                                                                 |
+|Prepare Test Data|The report to be uploaded is ..\Fitnesse\TestResource\1024x768.jpg                                 |
+|Precondition1    |log in as user "admin" with add transform permission.                                                          |
+|Precondition2    |Click '''Extraction Manager''' to go to Extraction Manager tab.                                                   |
+|Step1            |Click button '''Add Transform'''.                                                                              |
+|Expected Result1 |Verify pop up window "Upload".                                                                              |
+|Step2            |Click '''Add file''' on "Upload" window.                                                                    |
+|Step3            |Browse to the file "1024x768.jpg",select it and click Open.                      |
+|Expected Result2 |Verify pop up message box "You may upload only .ktr file, please retry.".|
+|Step4            |Close the window.                                                                                  |
+|Step5            |Press '''F5''' to refresh page and click '''Extraction Manager''' to go to Extraction Manager tab.                |
+|Expected Result3 |Verify "1024x768.jpg" doesn't list in transform list.                                                       |
+|Clean Environment|N/A                |

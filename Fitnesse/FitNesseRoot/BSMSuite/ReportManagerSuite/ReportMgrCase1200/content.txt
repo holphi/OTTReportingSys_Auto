@@ -1,0 +1,18 @@
+|Test Case ID     |ReportMgrCase1200                                                                                                                                                            |
+|Title            |User cannot remove a report which is last report of a schedule event.                                                                                                        |
+|Iteration        |                                                                                                                                                                             |
+|Jira Story       |                                                                                                                                                                             |
+|Requirement ID   |[[id][]]                                                                                                                                                                     |
+|Priority         |P2                                                                                                                                                                           |
+|Keywords         |Report, Remove                                                                                                                                                               |
+|Prepare Test Data|Add report "TestReportRemove5.rptdesign" to Reports Manager.!See .BsmSuite.ReportManagerSuite.ReportMgrCase0100 !-<br>-! ..\Fitnesse\TestResource\TestReportRemove2.rptdesign|
+|Precondition1    |log in as user "admin" with remove report permission.                                                                                                                        |
+|Step1            |Create a event "RptMgr1200" with report "TestReportRemove5.rptdesign". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100                                               |
+|step2            |Click '''Report Manager''' to go to Reports Manager tab.                                                                                                                    |
+|Step3            |Check on the check box on the left of report name "TestReportRemove5.rptdesign".                                                                                              |
+|Step4            |Click button '''Remove Report Template.                                                                                                                                            |
+|Expected Result1 |Verify pop up message "The report TestReportRemove5.rptdesign is the last report of scheduler event RptMgr1200(event id: ***********)cannot be removed."                                                                                                                                                     |
+|Step5            |Click '''OK''' on the message.                                                                                                                                               |
+|Expected Result2 |Verify the message box close.                                                                                                                         |
+|Expected Result3 |Verify report "TestReportRemove5.rptdesign" still list in Reports Manager.                                                                                                |
+|Clean Environment|N/A                                                                                                                                                                          |

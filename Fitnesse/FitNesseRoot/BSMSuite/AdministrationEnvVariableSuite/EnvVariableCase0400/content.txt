@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|EnvVariableCase0400|
+|Title|Delete MongoDB transform variable ${hostname} successfully.|
+|Requirement ID||
+|Priority|P3|
+|Keywords|env variable|
+|Prepare Test Data|!--!|
+|Precondition|!-1. Add transform  TransformMongoVariable.ktr to Extraction Manager  !See BsmSuite.TransformManagerSuite.TransformMgrCase0100<br>-!|
+|Steps and Expected Results|!-1. login as Admin<br>2. Click ""Administration"" to go to Administration tab. <br>3. Click Environment Variable -> Transform Variable<br>4. Click ""Create"" button.<br>5. In Variable Name ,input ""hostname""(Please use the variable name define in transform ktr file.)<br>6. In Variable Value, input ""172.22.2.133""(Input the transform expected mongo db address)<br>7. Click OK.<br>Expected Results: verify variable "mongo_hostname" list on the page<br>8. Click on variable name "mongo_hostname"<br>9. Click on "Delete"<br>Expected Results: verify variable "mongo_hostname" don't list on the page<br>-!|
+|Clean Up|Remove transform and variable<br>|

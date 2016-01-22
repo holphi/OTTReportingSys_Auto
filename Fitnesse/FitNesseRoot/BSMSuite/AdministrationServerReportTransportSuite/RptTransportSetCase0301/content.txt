@@ -1,0 +1,20 @@
+|Test Case ID     |RptTransportSetCase0301                                                                           |
+|Title            |If input valid ftp settings,test connection will return success(with blank username and password).|
+|Iteration        |                                                                                                  |
+|Jira Story       |                                                                                                  |
+|Requirement ID   |                                                                                                  |
+|Priority         |P3                                                                                                |
+|Keywords         |SMTP                                                                                              |
+|Prepare Test Data|N/A                                                                                               |
+|Precondition0    |The FTP server for test accept anonymous.                                                         |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                           |
+|Precondition2    |Click '''Server''' -> '''Report Transport'''                                                      |
+|Step1            |In FTP IP field, input ftp server address "vm81653"                                               |
+|Step2            |In FTP Saved Path field , input a path on ftp server "/report"                                    |
+|Step3            |Leave FTP Login User Name field blank.                                               |
+|Step4            |Leave FTP Login Password field blank.                                                  |
+|Step5            |Click '''Save'''                                                                                  |
+|Expected Result1 |Verify return message "Save Successfully"                                                         |
+|Step6            |Click '''Test FTP'''                                                                              |
+|Expected Result2 |Verify returns message "Test successfully"                                                        |
+|Clean Up         |N/A                                                                                               |

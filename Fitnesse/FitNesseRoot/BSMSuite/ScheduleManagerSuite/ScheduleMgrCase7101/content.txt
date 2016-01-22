@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|ScheduleMgrCase7101|
+|Title|Report event can generate report in text format using mongo DB report template. |
+|Requirement ID||
+|Priority|P3|
+|Keywords|report event,text format|
+|Prepare Test Data|!--!|
+|Precondition|!-1.Add report template:mongo_cor_device.rptdesign to Report Manager<br> -!|
+|Steps and Expected Results|!-1. login as admin<br>2. Click Report Scheduler Manager to go to Report Scheduler Manager.<br>3. Double click on calendar grid to open new event window<br>4. Click "Select Report" and check on mongo_cor_device.rptdesign ,then click OK<br>5. Check on format TEXT.<br>7. Input event descript "report_even7101" <br>8. Select a time point in Time Period.<br>9. Click Save<br><br>Expected Results:<br>1. Report_even7101 occurd on time.<br>2. Generate report in TEXT format. -!|
+|Clean Up|1.Remove generated report.|

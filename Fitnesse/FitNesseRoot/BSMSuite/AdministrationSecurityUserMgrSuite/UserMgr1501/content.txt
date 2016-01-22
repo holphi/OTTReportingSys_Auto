@@ -1,0 +1,16 @@
+|Test Case ID     |UserMgr1501                                                                                         |
+|Title            |When user change his own password,if input wrong old password,password will not be changed.         |
+|Iteration        |                                                                                                    |
+|Jira Story       |                                                                                                    |
+|Requirement ID   |[[id][]]                                                                                            |
+|Priority         |P3                                                                                                  |
+|Keywords         |User, password                                                                                      |
+|Prepare Test Data|Create a user "test1501"in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100|
+|Precondition1    |log in as user "test1501".                                                                          |
+|Step1            |Click on user name "test1501" on right top corner.                                                  |
+|Step2            |On the pop up menu,click on '''Change Password'''.                                                  |
+|Step3            |On the pop up window,input wrong old password "789".                                                |
+|Step4            |Input new password "456"and Confirm Password "456".                                                 |
+|Step5            |Click '''OK'''.                                          |                                          |
+|Expected Result1 |Pop up message "Old password does not match."                                                       |
+|Clean Up         |Remove user test1501. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                   |

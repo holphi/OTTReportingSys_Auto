@@ -1,0 +1,17 @@
+|Test Case ID     |ScheduleMgrCase2401                                                                              |
+|Title            |User can delete a repeat event in day view.                                                |
+|Iteration        |                                                                                                 |
+|Jira Story       |                                                                                                 |
+|Requirement ID   |[[id][]]                                                                                         |
+|Priority         |P3                                                                                               |
+|Keywords         |event, Delete, day view                                                                 |
+|Prepare Test Data|Create an repeat event in day view "event2401". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2100 !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0600|
+|Precondition1    |Click '''Schedule Manager''' to go to Schedule Manager tab.                                      |
+|Step1            |Click on '''Day''' on the top of calendar grids to go to day view.                             |
+|Step2            |Double click any instance of "event2401"                                                                         |
+|Step3            |On the pop up window, click '''Delete''' button on the bottom of the window.                     |
+|Expected Result1 |Verify pop up message "Event will be deleted permanently,are you sure?"                          |
+|Step3            |Click on '''OK''' on the message.                                                                |
+|Expected Result2 |Verify message box and window open in step2 close.                                               |
+|Expected Result3 |Verify "event 2401" don't display in calendar grid.                                              |
+|Clean Up         |N/A                                                                                              |

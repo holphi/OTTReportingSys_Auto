@@ -1,0 +1,15 @@
+|Test Case ID     |TransformMgrCase0500                                                                                                      |
+|Title            |User can download a transform.                                                                                   |
+|Iteration        |                                                                                                                       |
+|Jira Story       |                                                                                                                       |
+|Requirement ID   |[[id][]]                                                                                                               |
+|Priority         |P2                                                                                                                                                                                                     |
+|Keywords         |transform, download                                                                                                       |
+|Prepare Test Data|N/A                                                                                                                    |
+|Precondition1    |log in as user "admin" with download transform permission.                                                                     |
+|Precondition2    |Click '''Extraction Manager''' to go to Extraction Manager tab.                                                              |
+|Step1            |Click tramsfpr, name "aaa.ktr"                                                                                 |
+|Expected Result1 |Verify pop up File Download window.                                                                                    |
+|Step2            |Click '''Save''' and select a path and save downloaded transform.(This step maybe a little different on different browser.)|
+|Expected Result2 |Verify downloaded transform "aaa.ktr is saved in path selected in Step2.           |
+|Clean Environment|N/A                          |

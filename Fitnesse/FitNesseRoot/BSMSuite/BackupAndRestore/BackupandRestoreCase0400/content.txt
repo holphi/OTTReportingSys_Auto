@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|BackupandRestoreCase0400|
+|Title|BSM configuration can be restored after backup.|
+|Requirement ID||
+|Priority|P1|
+|Keywords|restore BSM configuration|
+|Prepare Test Data|!--!|
+|Precondition|!-1. Back up BSM configuration. !See .BsmSuite.BackupAndRestore.BackupandRestoreCase0300<br>2. Upload the original image to frontpage.<br>3. clean the user and role in precondition1.<br>-!|
+|Steps and Expected Results|!-1. login as admin<br>2. Click '''Administration''' to go to Administration tab.<br>3. On left pane, Click '''System Maintenance''' -> '''BSM Configuration'''->''BSM Configuration Restore'''<br>4. Click '''Browse''' button ,navigate to the BSM configuration backup files and select it.<br>5. Click '''Execute Restore''' button.<br><br>'''Executed Results''': 1. frontpage image is restored.<br>2. User is restored.<br>3. roles is restores.<br>3. In log viewer, Action BSM configuration restore is success.<br> <br>-!|
+|Clean Up|<br>|

@@ -1,0 +1,15 @@
+|Comment|
+|Test Case ID|Installation_0300|
+|Iteration|1|
+|Jira Story| |
+|Requirement ID|[[id][]]|
+|Priority| P1|
+|Keywords|Install,Upgrade|
+|User Role|Admin/op|
+|Title|Verify can upgrade install from BSM1.7STD1 to latest version directly(one-stop).|
+|Precondition|1.Stop existing BSM service.|
+|Steps|1. install the latest BSM version. |
+|Steps|2. start BSM service.|
+|Expected Result|!-1. BSM service is running.<br>2. All inherited features and new features works well.-!|
+|Execution| manual|
+|Remarks|  h|

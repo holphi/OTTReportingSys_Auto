@@ -1,0 +1,27 @@
+|Test Case ID     |RptTransportSetCase1001                                                                                       |
+|Title            |In field destination Email address, if input email address in wrong format,will get remind message.                      |
+|Iteration        |                                                                                                              |
+|Jira Story       |                                                                                                              |
+|Requirement ID   |                                                                                                              |
+|Priority         |P3                                                                                                            |
+|Keywords         |SMTP,Email                                                                                                    |
+|Prepare Test Data|N/A                                                                                                           |
+|Precondition0    |Configure SMTP Settings.  !See .BsmSuite.AdministrationServerReportTransportSuite.RptTransportSetCase0100     |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                       |
+|Precondition2    |Click '''Server''' -> '''Report Transport'''                                                                  |
+|Step1            |In Destination Email Address field,input "abc".                                                                  |
+|Step2            |Click '''Save'''                                                                                              |
+|Expected Result1 |Verify returns message "Email format is not correct." on the right side of field destination Email address.         |
+|Step3            |In Destination Email Address field,input "abc@".                                                                  |
+|Step4            |Click '''Save'''                                                                                              |
+|Expected Result2 |Verify returns message "Email format is not correct." on the right side of field destination Email address.         |
+|Step5            |In Destination Email Address field,input "abc@nagra".                                                                  |
+|Step6            |Click '''Save'''                                                                                              |
+|Expected Result3 |Verify returns message "Email format is not correct." on the right side of field destination Email address.         |
+|Step7            |In Destination Email Address field,input "@nagra.com".                                                                  |
+|Step8            |Click '''Save'''                                                                                              |
+|Expected Result4 |Verify returns message "Email format is not correct." on the right side of field destination Email address.         |
+|Step9            |In Destination Email Address field, input "abc@nagra.com".|
+|Step10            |Click '''Save'''                                                                                              |
+|Expected Result5 |Verify return message "Save Successfully".                                                                    |
+|Clean Up         |N/A                                                                                                           |

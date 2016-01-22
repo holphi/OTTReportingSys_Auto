@@ -1,0 +1,29 @@
+|Test Case ID     |ScheduleMgrCase2000                                                                                                                                                          |
+|Title            |User can create event on Week View and send report to multiple Email address.                                                                                                |
+|Iteration        |                                                                                                                                                                             |
+|Jira Story       |                                                                                                                                                                             |
+|Requirement ID   |[[id][]]                                                                                                                                                                     |
+|Priority         |P2                                                                                                                                                                           |
+|Keywords         |event, Create, week view ,email                                                                                                                                              |
+|Prepare Test Data|N/A                                                                                                                                                                          |
+|Precondition1    |Configure SMTP Settings.  !See .BsmSuite.AdministrationServerReportTransportSuite.RptTransportSetCase0100                                                                    |
+|Precondition2    |Configure default destination email address. !See .BsmSuite.AdministrationServerReportTransportSuite.RptTransportSetCase1400                                                 |
+|Precondition3    |Click '''Schedule Manager''' to go to Schedule Manager tab.                                                                                                                  |
+|Step1            |Click on '''Week''' on the top of calendar grids to go to week view.                                                                                                         |
+|Step2            |Double click in a grid of current date.                                                                                                                                      |
+|Step3            |On the pop up New event window, click '''select Report''' button.                                                                                                            |
+|Step4            |On the pop up Select Report window, check on one report "Activation_count.rptdesign"                                                                                         |
+|Step5            |Click '''OK''' on Select Report window to close it.                                                                                                                          |
+|Expected Result1 |Verify report "Activation_count.rptdesign" display in selected report list.                                                                                                  |
+|Step6            |Check on check box of Excel on the right side of report "Activation_count.rptdesign"                                                                                         |
+|Step7            |Click '''Sending to''' to got to Sending to tab.                                                                                                                             |
+|Step8            |Check on Email.                                                                                                                                                              |
+|Step9            |Clean default value of email address and input three valid email address, separate by ";".For example "abc@nagra.com;efg@nagra.com;jpg@nagra.com"                            |
+|Step10           |In Description box, input "event2000".                                                                                                                                       |
+|Step11           |In Time period first box, select a coming time point.                                                                                                                        |
+|Step12           |Click '''Save'''button.                                                                                                                                                      |
+|Expected Result2 |Verify "event2000" display in the grid of time selected in step11 of current date.                                                                                           |
+|Expected Result3 |Verify in current date at the time selected in step11, generate a report which name start with "Activation_count" stored on on BSM server /soft/bsmsoft/bsm1/bsm/Current/data|
+|Expected Result4 |Verify the Generated report is in Excel format and can be opened successfully by software MS Excel.                                                                          |
+|Expected Result5 |Verify each email address input in Step9 receive an eamil,the email attachment is the generated report and can be viewed by MS Excel.                                        |
+|Clean Up         |Remove event2000. !See .BBsmSuite.ScheduleManagerSuite.ScheduleMgrCase2300 !-<br>-!Clear reports on on BSM server /soft/bsmsoft/bsm1/bsm/Current/data                        |

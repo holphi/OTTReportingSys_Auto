@@ -1,0 +1,14 @@
+|Test Case ID     |BackupTransportSetCase1200                                                                                  |
+|Title            |Smtp settings can be reset.                                                                              |
+|Iteration        |                                                                                                         |
+|Jira Story       |                                                                                                         |
+|Requirement ID   |                                                                                                         |
+|Priority         |P3                                                                                                       |
+|Keywords         |SMTP,Email                                                                                               |
+|Prepare Test Data|N/A                                                                                                      |
+|Precondition0    |Configure SMTP Settings.  !See .BsmSuite.AdministrationServerReportTransportSuite.RptTransportSetCase0100|
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                  |
+|Precondition2    |Click '''System Maintenance'''-> '''Backup Transport Configuration'''                                                             |
+|Step1            |Click '''Reset''' button for SMTP Settings.                                                                                                         |
+|Expected Result1 |Verify all field of SMTP Settings are blank.                                                              |
+|Clean Up         |N/A                                                                                                      |

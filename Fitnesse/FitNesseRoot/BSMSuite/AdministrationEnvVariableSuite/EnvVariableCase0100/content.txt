@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|EnvVariableCase0100|
+|Title|To MongoDB transform use variable ${hostname} and ${port} successfully.|
+|Requirement ID||
+|Priority|P1|
+|Keywords|env variable|
+|Prepare Test Data|!--!|
+|Precondition|!-1. Add transform  TransformMongoVariable.ktr to Extraction Manager  !See BsmSuite.TransformManagerSuite.TransformMgrCase0100<br>-!|
+|Steps and Expected Results|!-1. login as Admin<br>2. Click "Administration" to go to Administration tab. <br>3. Click Environment Variable -> Transform Variable<br>4. Click "Create" button.<br>5. In Variable Name ,input "mongo_hostname"(Please use the variable name define in transform ktr file.)<br>6. In Variable Value, input "172.22.2.133"(Input the transform expected mongo db address)<br>7. Click OK.<br>8. Repeat step4~7 to create another variable, name is mongo_port, value is 27017<br>9. Click "Extraction Manager" to go to Extraction Manager tab.<br>10. Click on Execute on right side of transform TransformMongoVariable.ktr<br>Expected Results: verify ,pop up message "Execute successfully"<br>-!|
+|Clean Up|Remove transform and variable<br>|

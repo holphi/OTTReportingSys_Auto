@@ -1,0 +1,21 @@
+
+|Test Case ID     |SinglePrivilegeChk2400                                                                                                                |
+|Title            |A user only has save Report Transport configuration privilege will only change config Report Transport configuration.                    |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Administration                                                                                                                      |
+|Prepare Test Data|N/A                                                 |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "scrole2400",only check on Save Report Transport Configuration permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "scuser2400" only check on  role "scrole2400". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "scuser2400"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Administration''' tab are visiable.                                                                   |
+|Step5            |Click '''Administration'''.                                                                                                           |
+|Expected Result2 |Verify go to Report Transport Configuration page.                                                    |
+|Expected Result3 |Verify only '''Report Transport Configuration ''' under '''Server''' display on the left side of Report Transport Configuration page.                  |
+|Expected Result4 |Verify there are '''Save''', '''Test SMTP''', '''Test Email''','''Test Ftp''', '''Test Http''' buttons on Report Purge Configuration page.                   |
+|Expected Result5 |Config report Transport. !See .BsmSuite.AdministrationServerReportTransportSuite.RptTransportSetCase0100            |
+|Clean Up         |N/A                                                                                                                                   |

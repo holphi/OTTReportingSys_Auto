@@ -1,0 +1,19 @@
+|Test Case ID     |RoleMgr2700                                                                                                       |
+|Title            |Role name should only contains letters and numbers.                                                               |
+|Iteration        |                                                                                                                  |
+|Jira Story       |                                                                                                                  |
+|Requirement ID   |[[id][]]                                                                                                          |
+|Priority         |P3                                                                                                                |
+|Keywords         |Role, Create                                                                                                      |
+|Prepare Test Data|N/A                                                                                                               |
+|Precondition1    |log in as user "admin" with create role permission.                                                               |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                           |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                                                         |
+|Step1            |Click button '''Create Role'''.                                                                                   |
+|Step2            |Input a role name "role27#"(Or other name contains special character,for example :@ # $ % ^ & * ( ) ! ~ / \ ?...).|
+|Step3            |Check on permissions "Schedule Manager","View Report Manager"on the Permission tree.                              |
+|Step4            |Type "role27#" in Comment box.                                                                                    |
+|Step5            |Click '''OK'''.                                                                                                   |
+|Expected Result1 |Verify pop up message "The valid role name only contains numbers and characters".                                        |
+|Expected Result2 |Click '''OK''' on the message box, verify return to create role dialog.                                           |
+|Clean Environment|N/A                                                                                                               |

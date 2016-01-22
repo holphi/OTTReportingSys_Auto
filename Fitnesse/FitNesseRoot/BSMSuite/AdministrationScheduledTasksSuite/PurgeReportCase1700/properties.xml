@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<properties>
+	<Edit/>
+	<Files/>
+	<Help>System purge report older than 0 days at 12pm (noon) every day(CRON Expression:0 0 12 * * ?)</Help>
+	<Normal/>
+	<Properties/>
+	<RecentChanges/>
+	<Refactor/>
+	<Search/>
+	<Suites>P5</Suites>
+	<Versions/>
+	<WhereUsed/>
+</properties>

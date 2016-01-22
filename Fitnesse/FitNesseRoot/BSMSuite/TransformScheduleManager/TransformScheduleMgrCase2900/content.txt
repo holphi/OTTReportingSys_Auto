@@ -1,0 +1,22 @@
+|Test Case ID     |TransformScheduleMgrCase2900                                                                          |
+|Title            |User can change non-repeat event to repeat event when edit event.                                             |
+|Iteration        |                                                                                              |
+|Jira Story       |                                                                                              |
+|Requirement ID   |[[id][]]                                                                                      |
+|Priority         |P3                                                                                            |
+|Keywords         |event, edit                                                             |
+|Prepare Test Data|Create a non-repeat event "event2900". !See .BsmSuite.TransformScheduleManager.TransformMgrCase0100|
+|Precondition1    |Click '''Transform Schedule Manager''' to go to Transform Schedule Manager tab.                                   |
+|Step1            |Double click "event2900".                                                                      |
+|Step2            |Click button '''Disable'''                                                                                                                                              |
+|Step3            |In the expand Repeat event,select radio button "Daily"                                                                                                                  |
+|Step4            |Select "every [] day" and input 1                                                                                                                                       |
+|Step5            |Select "After [] occurrences" and input 3                                                                                                                               |
+|Step6            |Click '''Save'''button.                                                                                                                                                 |
+|Step7            |Append "update" in description field                                                             |
+|Step6            |Click "Save" on new event window                                                          |
+|Expected Result1 |Verify "event2900update" display in the grids of each expected occurrences date.                                                                                                                     |
+|Expected Result2 |Verify DB which is transformed to has no relative records before event is triggered.                                                                                                                    |
+|Expected Result3 |Verify start from current date,every 1 day at the time selected in event, event is triggered and transform is generated.|
+|Expected Result4 |Verify it has relative log on log viewer page(including update event and generate event).|
+|Clean Up         |Remove "event2900update".!See .BsmSuite.TransformScheduleManager.TransformMgrCase2300                                                                                          |

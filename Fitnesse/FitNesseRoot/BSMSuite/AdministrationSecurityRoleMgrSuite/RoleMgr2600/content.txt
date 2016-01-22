@@ -1,0 +1,16 @@
+|Test Case ID     |RoleMgr2600                                                                           |
+|Title            |Double click can view role info.|
+|Iteration        |                                                                                      |
+|Jira Story       |                                                                                      |
+|Requirement ID   |[[id][]]                                                                              |
+|Priority         |P3                                                                                   |
+|Keywords         |Role, view                                                                            |
+|Prepare Test Data|Create a role "role26". !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100.|
+|Precondition1    |log in as user "admin" with view role manager permission.                             |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                               |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                             |
+|Step1            |Double Click "role26" in role list.                                                   |
+|Expected Result1 |verify role info box display.                                                         |
+|Step2            |Click the '''x''' button on the right top corner of role info box                     |
+|Expected Result2 |Verify role info box close.                                                           |
+|Clean Environment|Remove role role26. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000     |

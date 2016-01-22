@@ -1,0 +1,17 @@
+|Test Case ID     |ReportMgrCase0700                                                                                                                                               |
+|Title            |User can set schedule for a certain report template.                                                                                                            |
+|Iteration        |                                                                                                                                                                |
+|Jira Story       |                                                                                                                                                                |
+|Requirement ID   |[[id][]]                                                                                                                                                        |
+|Priority         |P1                                                                                                                                                              |
+|Keywords         |Report, Set Schedule                                                                                                                                            |
+|Prepare Test Data|N/A                                                                                                                                                             |
+|Precondition1    |log in as user "admin" with set schedule permission.                                                                                                            |
+|Precondition2    |Click '''Report Manager''' to go to Reports Manager tab.                                                                                                       |
+|Step1            |Click '''Set Schedule''' link for "SDP_BUYS.rptdesign"                                                                                                          |
+|Expected Result1 |Verify pop up new event window.                                                                                                                                 |
+|Expected Result2 |Verify report "SDP_BUYS.rptdesign" display in selected reports list.                                                                                            |
+|Step2            |Fill in the new event box to create event "Rptevent0700" with report "SDP_BUYS.rptdesign". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100              |
+|Expected Result3 |Verify the event created in Step2 generate report with "SDP_BUYS.rptdesign".                                                                                    |
+|Clean Environment|Remove event "Rptevent0700". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200 !-<br>-! Clear reports on on BSM server /soft/bsmsoft/bsm1/bsm/Current/data|
+                                                                                                                             

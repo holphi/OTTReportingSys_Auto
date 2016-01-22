@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<properties>
+	<Edit/>
+	<Files/>
+	<Help>When extract data to mongo db,only append new data  to the existing, remove on legacy data in source db will not affact.</Help>
+	<Normal/>
+	<Properties/>
+	<RecentChanges/>
+	<Refactor/>
+	<Search/>
+	<Suites>P3</Suites>
+	<Versions/>
+	<WhereUsed/>
+</properties>

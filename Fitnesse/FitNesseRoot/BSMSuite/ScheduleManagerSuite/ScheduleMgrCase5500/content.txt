@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|ScheduleMgrCase5500|
+|Title|[Non-repeat report event vs non-repeat extraction event]Report event after extraction event done will generate report successfully.|
+|Requirement ID||
+|Priority|P1|
+|Keywords|report event,extraction event|
+|Prepare Test Data|!--!|
+|Precondition|!-1.Add report template:TransformAndReport.rptdesign <br>2.Add transform:TransformExecuteToOracle.ktr<br>-!|
+|Steps and Expected Results|!-1. login as admin<br>2. On Extraction Schedule Manager, create an non-repeat event "extraction_event1" with transform TransformExecuteToOracle.ktr(transform data to table fortest)<br>3. On Report Schedule Manager, double click on calendar grid to open new event window<br>4. Click "Select Report" and check on TransformAndReport.rptdesign ,then click OK<br>5. Click "Select Extraction event" and check on event created in step2 "extraction_event1",then click OK.<br>6. Check on format Excel.<br>7. Input event descript "report_even1" and select a time which is after time point in transform event created in extraction_event1.<br><br>Expected Results:<br>1. extraction_event1 occured on time.<br>2. report_even1 occurd on time.<br>3. report_even1 generate report with data transformed in extraction_event1.<br><br>-!|
+|Clean Up|1.Clean data transformed in extraction_event1 in target tables.<br>|

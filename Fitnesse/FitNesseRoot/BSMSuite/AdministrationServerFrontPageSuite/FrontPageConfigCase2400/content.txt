@@ -1,0 +1,16 @@
+|Test Case ID     |FrontPageConfigCase2400                                                                   |
+|Title            |User can not upload a non-image to replace default background image on login page  |
+|Iteration        |                                                                                                          |
+|Jira Story       |                                                                                                          |
+|Requirement ID   |[[id][]]                                                                                                  |
+|Priority         |P3                                                                                                        |
+|Keywords         |Front page                                                                                                |
+|Prepare Test Data|The file to be upload is ..\Fitnesse\TestResource\test.txt                                           |
+|Precondition1    |log in as user "admin" with Upload Front Page Image permission.                                           |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                   |
+|Precondition3    |Click '''Server'''->'''Front Page'''.                                                                     |
+|Step1            |Click button '''Browse''' besides Upload background image field,navigate to the folder which store file test.txt      |
+|Step2            |Select image test.txt and click '''open'''.                                                            |
+|Step3            |Click button '''Upload'''.                                                                                |
+|Expected Result1 |Return message "The image file should be .png,.gif,.jpg or .bmp" .                                         |
+|Clean Up         |N/A                                                                                      |

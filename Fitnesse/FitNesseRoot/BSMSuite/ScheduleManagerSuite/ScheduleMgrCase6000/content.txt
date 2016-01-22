@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|ScheduleMgrCase6000|
+|Title|[Non-repeat report event vs repeat extraction event]Report event after first extraction event occurrence done will generate report successfully.Another report event before second  extraction event occurrence done also will generate report failed.|
+|Requirement ID||
+|Priority|P3|
+|Keywords|report event,extraction event|
+|Prepare Test Data|!--!|
+|Precondition|!-1.Add report template:TransformAndReport.rptdesign <br>2.Add transform:TransformExecuteToOracle.ktr<br>-!|
+|Steps and Expected Results|!-1. login as admin<br>2. On Extraction Schedule Manager,in grid of current date create an repeat event "extraction_event6" with transform ,repeat every 1 day 00:05. TransformExecuteToOracle.ktr(transform data to table fortest)<br>3. On Report Schedule Manager,in grid of current date double click on calendar grid to open new event window<br>4. Click "Select Report" and check on TransformAndReport.rptdesign(retrieve data both from table fortest and cor_device_test) ,then click OK<br>5. Click "Select Extraction event" and check on event created in step2 "extraction_event6",then click OK.<br>6. Check on format Excel.<br>7. Input event descript "report_even6a" and select a time which is after transform event "extraction_event6" first occurrence and before second occurrence.<br>8. Repeat steps from step3 to step7 to create "report_even6b" and select a time which is after report_event6a and before transform event "extraction_event6" second occurrence. <br><br>Expected Results:<br>1. extraction_event6 occured on time.<br>2. report_even6a  will occurd on time.<br>3. report_even6a  generate report with data transformed in "extraction_event5" each occurrence. <br>4. report_even6b  will not occurd on time.<br><br><br><br>-!|
+|Clean Up|1.Clean data transformed in extraction_event1 in target tables fortest and cor_device_test.<br>|

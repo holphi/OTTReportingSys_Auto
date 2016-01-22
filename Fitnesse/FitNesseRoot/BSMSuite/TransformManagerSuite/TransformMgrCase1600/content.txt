@@ -1,0 +1,16 @@
+|Test Case ID     |TransformMgrCase1600                                                                                        |
+|Title            |Default status of transform which is uploaded is private.                                                   |
+|Iteration        |                                                                                                            |
+|Jira Story       |                                                                                                            |
+|Requirement ID   |[[id][]]                                                                                                    |
+|Priority         |P3                                                                                                          |
+|Keywords         |transform, Add                                                                                               |
+|Prepare Test Data|The report to be upload is ..\Fitnesse\TestResource\TestTransformAdd.ktr.Create a role "role1" with permission of extraction manager.!See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100.Create a user "user1" granted to role "role1".!See .BsmSuite.AdministrationSecurityUserMgrSuite    |
+|Precondition1    |log in as user "admin" with add report permission.                                                          |
+|Precondition2    |Click '''Extraction Manager''' to go to Extraction Manager tab.                                             |
+|Step1            |Add a transform "TestTransform.ktr".!See .BsmSuite.TransformManagerSuite.TransformMgrCase1600               |
+|Expected Result1 |Verify column "Generic" of "TestTramsform.ktr" is "No"                                                       |
+|Step2            |Log out and login as user1                                                                                           |
+|Step3            |Go to "Extraction manager" page                                                                             |
+|Expected Result2 |Verify "TestTransform.ktr" is not on the extraction manager page.|
+|Clean Environment|Remove transform "TestTransformAdd.ktr". !See .BsmSuite.TransformManagerSuite.TransformMgrCase0600         |

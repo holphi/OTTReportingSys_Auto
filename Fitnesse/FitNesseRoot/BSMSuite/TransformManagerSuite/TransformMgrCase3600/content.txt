@@ -1,0 +1,18 @@
+|Test Case ID     |TransformMgrCase3600                                                                                           |
+|Title            |User can not upload two transforms with the same name,when he addes transforms.                  |
+|Iteration        |                                                                                                            |
+|Jira Story       |                                                                                                            |
+|Requirement ID   |[[id][]]                                                                                                    |
+|Priority         |P3                                                                                                          |
+|Keywords         |Transform, Add                                                                                                 |
+|Prepare Test Data|The transform to be upload is ..\Fitnesse\TestResource\TestTransformAdd.ktr                                 |
+|Precondition1    |log in as user "admin" with add transform permission.                                                          |
+|Precondition2    |Click '''Extraction Manager''' to go to Extraction Manager tab.                                                   |
+|Step1            |Click button '''Add Transform'''.                                                                              |
+|Expected Result1 |Verify pop up window "Upload".                                                                              |
+|Step2            |Click '''Add file''' on "Upload" window.                                                                    |
+|Step3            |Browse to the transform file "TestTransformAdd.ktr",select it and click Open.                      |
+|Step7            |Click '''Add file''' on "Upload" window.                |
+|Step6            |Choose report template "TestTransformAdd.ktr" again               |
+|Expected Result3 |Verify alert window poped up "A PDI transform with same name has been added in upload list. "                                                       |
+|Clean Environment|Remove "TestTransformAdd.ktr".!See .BsmSuite.TransformManagerSuite.TransformMgrCase0600               |

@@ -1,0 +1,17 @@
+|Test Case ID     |ScheduleMgrCase2400                                                                              |
+|Title            |User can delete a non-repeat event in day view.                                                |
+|Iteration        |                                                                                                 |
+|Jira Story       |                                                                                                 |
+|Requirement ID   |[[id][]]                                                                                         |
+|Priority         |P2                                                                                               |
+|Keywords         |event, Delete, day view                                                                 |
+|Prepare Test Data|Create an event in Week view "event2400". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100|
+|Precondition1    |Click '''Schedule Manager''' to go to Schedule Manager tab.                                      |
+|Step1            |Click on '''Day''' on the top of calendar grids to go to week view.                             |
+|Step2            |Double click "event2400"                                                                         |
+|Step3            |On the pop up window, click '''Delete''' button on the bottom of the window.                     |
+|Expected Result1 |Verify pop up message "Event will be deleted permanently,are you sure?"                          |
+|Step3            |Click on '''OK''' on the message.                                                                |
+|Expected Result2 |Verify message box and window open in step2 close.                                               |
+|Expected Result3 |Verify "event 2400" don't display in calendar grid.                                              |
+|Clean Up         |N/A                                                                                              |

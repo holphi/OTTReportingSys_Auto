@@ -1,0 +1,19 @@
+|Test Case ID     |ReportMgrCase0900                                                                                                                                                          |
+|Title            |User can remove report which don't be used to any schedule event.                                                                                                          |
+|Iteration        |                                                                                                                                                                           |
+|Jira Story       |                                                                                                                                                                           |
+|Requirement ID   |[[id][]]                                                                                                                                                                   |
+|Priority         |P2                                                                                                                                                                         |
+|Keywords         |Report, Remove                                                                                                                                                             |
+|Prepare Test Data|Add report "TestReportRemove.rptdesign" to Reports Manager.!See .BsmSuite.ReportManagerSuite.ReportMgrCase0100 !-<br>-! ..\Fitnesse\TestResource\TestReportRemove.rptdesign|
+|Precondition1    |log in as user "admin" with remove report permission.                                                                                                                      |
+|Precondition2    |Click '''Report Manager''' to go to Reports Manager tab.                                                                                                                  |
+|Step1            |Check on the check box on the left of report name "TestReportRemove.rptdesign".                                                                                            |
+|Step2            |Click button '''Remove report Template'''.                                                                                                                                          |
+|Expected Result1 |Verify pop up message "Are you sure to remove report?"                                                                                                                     |
+|Step3            |Click '''OK''' on the message.                                                                                                                                             |
+|Expected Result2 |Pop up message "Remove report successfully."                                                                                                                               |
+|Step4            |Click '''OK''' on the message box.                                                                                                                                             |
+|Expected Result3 |The message box close.                                                                                                                                                     |
+|Expected Result4 |Verify report "TestReportRemove1.rptdesign" doesn't list in Reports Manager.                                                                                                 |
+|Clean Environment|N/A                                                                           |

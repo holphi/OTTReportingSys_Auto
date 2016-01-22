@@ -1,0 +1,21 @@
+|Test Case ID     |UserMgr0700                                                                    |
+|Title            |Can create user <test7> without any role.                             |
+|Iteration        |                                                                                |
+|Jira Story       |                                                                                |
+|Requirement ID   |[[id][]]                                                                        |
+|Priority         |P3                                                                              |
+|Keywords         |User, Create                                                                    |
+|Prepare Test Data|N/A                                                                             |
+|Precondition1    |log in as a user "admin" with create user permission.                           |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                               |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                   |
+|Step1            |Click button '''Create User'''.                                                |
+|Step2            |Input a user name "test7".                                                      |
+|Step3            |Input password "123" and Confirm password "123".                                |
+|Step4            |Select "Active".                                                                |
+|Step5            |Don't Check on any role in role list.                                                    |
+|Step6            |Click '''OK'''.                                                                     |
+|Expected Result1 |Pop up message "Create user successfully".                                      |
+|Expected Result2 |Click '''OK''' to close the message, verify the new created user "test1" display in user list.|
+|Expected Result3 |Log out ,Verify log in with the new user "test7" successfully.                                   |
+|Clean Up|Remove user test7. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200|

@@ -1,0 +1,9 @@
+|Comment|
+|Test Case ID|ScheduleMgrCase7000|
+|Title|User filter condition setting also works when generate report with report schedule manger|
+|Requirement ID||
+|Priority|P3|
+|Keywords|evernt, report, parameter|
+|Prepare Test Data|!-Add report template and set user filter setting. !See .BsmSuite.ReportManagerSuite.ReportMgrCase4300-!|
+|Steps and Expected Results|!-1. login as Admin <br>2. Click "Report Schedule Manager" to go to Report Schedule Manager tab.<br>3. Double click in the grid of current date.<br>4. On the pop up New event window, click select Report button.<br>5. On the pop up Select Report window, check on one report "Boolean_report.rptdesign", then click OK.<br>6. Check on report format PDF. <br>7. Click "Set parameter value" on right side of report name "SDP_USER_table.rptdesign" <br>10. In Description, input "event6900"<br>11. In Time period first box, select a coming time point.<br>12. Click Savebutton.<br>Expected Results: Generate a report only has one line which usr_name is "admin"<br>-!|
+|Clean Up|Remove event and report template<br>|

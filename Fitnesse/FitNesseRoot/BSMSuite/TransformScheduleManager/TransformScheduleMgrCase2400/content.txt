@@ -1,0 +1,16 @@
+|Test Case ID     |TransformScheduleMgrCase2400                                                                          |
+|Title            |Event will not be delete if cancel to delete                                             |
+|Iteration        |                                                                                              |
+|Jira Story       |                                                                                              |
+|Requirement ID   |[[id][]]                                                                                      |
+|Priority         |P3                                                                                            |
+|Keywords         |event, Delete                                                             |
+|Prepare Test Data|Create a non-repeat event "event2400". !See .BsmSuite.TransformScheduleManager.TransformMgrCase0100|
+|Precondition1    |Click '''Transform Schedule Manager''' to go to Transform Schedule Manager tab.                                   |
+|Step1            |Double click "event2400"                                                                      |
+|Step2            |On the pop up window, click '''Delete''' button on the bottom of the window.        |
+|Expected Result1 |Verify pop up message "Event will be deleted permanently,are you sure?"                       |
+|Step3            |Click on '''Cancel''' on the message.                                                             |
+|Expected Result2 |Verify message box and window open in step2 close.                                            |
+|Expected Result3 |Verify "event 2400" don't display in calendar grid.                                           |
+|Clean Up         |N/A                                                                                           |

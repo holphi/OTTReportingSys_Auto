@@ -1,0 +1,13 @@
+<properties>
+	<Edit />
+	<Files />
+	<Help>System purge report older than 180 days at 12pm (noon) every day(CRON Expression:0 0 12 * * ?)</Help>
+	<Normal />
+	<Properties />
+	<RecentChanges />
+	<Refactor />
+	<Search />
+	<Suites>P2                                                                                                                                                                                                                                                                                                                               </Suites>
+	<Versions />
+	<WhereUsed />
+</properties>

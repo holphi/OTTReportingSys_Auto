@@ -1,0 +1,18 @@
+|Test Case ID     |UserMgr2800                                                                                              |
+|Title            |User can be filtered by name name.                                                                       |
+|Iteration        |                                                                                                         |
+|Jira Story       |                                                                                                         |
+|Requirement ID   |[[id][]]                                                                                                 |
+|Priority         |P3                                                                                                       |
+|Keywords         |User, filter                                                                                             |
+|Prepare Test Data|Create inactive user "test28"in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0300|
+|Precondition1    |log in as a user "admin" with view user permission.                                                      |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                  |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                                |
+|Step1            |In state filter,select "Inactive".                                                                       |
+|Expected Result1 |"test28" display in result list. "Admin" and "user" don't display in result list.                                                                        |
+|Expected Result2 |All user's state in result list is inactive.                                                             |
+|Step2            |In state filter,select "Active".                                                                         |
+|Expected Result3 |"test28" don't display in result list. "Admin" and "user" display in result list.                        |
+|Expected Result4 |All user's state in result list is active                                                                |
+|Clean Up         |Remove user test28. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                        |

@@ -1,0 +1,20 @@
+|Test Case ID     |TransformMgrCase4100                                                                                                    |
+|Title            |When extract data to mongo db,only append new data  to the existing, remove on legacy data in source db will not affact.|
+|Iteration        |                                                                                                                        |
+|Jira Story       |                                                                                                                        |
+|Requirement ID   |[[id][]]                                                                                                                |
+|Priority         |P1                                                                                                                      |
+|Keywords         |transform, execute                                                                                                      |
+|Prepare Test Data|N/A                                                                                                                     |
+|Precondition0    |MongoDB service is running.                                                                                             |
+|Precondition1    |log in as user "admin" with execute transform permission.                                                               |
+|Precondition2    |Click '''Extraction Manager''' to go to Extraction Manager tab.                                                         |
+|Precondition3    |Add transform "ToMongoDBIncremently.ktr" to Extraction Manager.                                                         |
+|Step1            |Click button '''Execute''' on the right side of one transform                                                           |
+|Expected Result1 |Verify pop up message "Execute successfully".                                                                           |
+|Expected Result2 |Verify DB transformed to has relative data.                                                                             |
+|Step2            |Delete one record in source table in Oracle DB.                                                                      |
+|Strp3|Insert one record to source table in Oracle DB.(_id is bigger than existing records.)   |
+|Step4            |Click button '''Execute''' on the right side of one transform                                                           |
+|Expected Result3 |Verify only new added record was transform to MongoDB in this execution. The deletion on source db don't affect on target DB(mongo db).                                               |
+|Clean Environment|N/A                                                                                                                     |

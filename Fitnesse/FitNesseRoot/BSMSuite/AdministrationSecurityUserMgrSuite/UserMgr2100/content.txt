@@ -1,0 +1,15 @@
+|Test Case ID     |UserMgr2100                                                                                       |
+|Title            |Cannot remove user without select a user.                                                         |
+|Iteration        |                                                                                                  |
+|Jira Story       |                                                                                                  |
+|Requirement ID   |[[id][]]                                                                                          |
+|Priority         |P3                                                                                                |
+|Keywords         |User, Remove                                                                                      |
+|Prepare Test Data|Create a user "test21"in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100|
+|Precondition1    |log in as a user "admin" with remove user permission.                                             |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                           |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                         |
+|Step1            |Click button '''Remove User'''                                                                    |
+|Expected Result1 |Pop up message "Please select a record to edit".                                                  |
+|Expected Result1 |Click OK on the message, verify the message box close.                                            |
+|Clean Up         |Remove user test21. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                 |

@@ -1,0 +1,13 @@
+|Test Case ID     |RptTransportSetCase1700                                     |
+|Title            |Field Repeat Count only accept positive integer.|
+|Iteration        |                                                            |
+|Jira Story       |                                                            |
+|Requirement ID   |                                                            |
+|Priority         |P5                                                          |
+|Keywords         |SMTP,Email                                                  |
+|Prepare Test Data|N/A                                                         |
+|Precondition1    |Click '''Administration''' to go to Administration tab.     |
+|Precondition2    |Click '''Server''' -> '''Report Transport'''                |
+|Step1            |In field Repeat Count field input "-1".                    |
+|Expected Result1 |The text field don't accept the input |
+|Clean Up         |N/A                                                         |

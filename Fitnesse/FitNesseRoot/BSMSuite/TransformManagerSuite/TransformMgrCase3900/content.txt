@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|TransformMgrCase3900|
+|Title|User only can upload zip package by Batch Upload Template.|
+|Requirement ID||
+|Priority|P3|
+|Keywords|Transform, bulk upload|
+|Prepare Test Data|!--!|
+|Precondition|!-<br>-!|
+|Steps and Expected Results|!-1. login as admin<br>2. Click '''Extraction Manager''' to Extraction Manager tab.<br>3. Click "Batch Upload Template"<br>'''Expected Results''':Verify upload window pop up.<br>4. In upload window, click add file<br>5. Browse to  SDP_BUYS.ktr select it.<br>6. click upload<br><br>Expected Results:Verify pop up message "You may upload only .zip file,please retry."<br><br>-!|
+|Clean Up|<br>|

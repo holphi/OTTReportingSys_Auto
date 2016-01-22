@@ -1,0 +1,22 @@
+|Test Case ID     |ReportMgrCase3600                                                                                           |
+|Title            |User can not upload two report templates with the same name,when he addes report template.                  |
+|Iteration        |                                                                                                            |
+|Jira Story       |                                                                                                            |
+|Requirement ID   |[[id][]]                                                                                                    |
+|Priority         |P3                                                                                                          |
+|Keywords         |Report, Add                                                                                                 |
+|Prepare Test Data|The report to be upload is ..\Fitnesse\TestResource\TestReportAdd.rptdesign                                 |
+|Precondition1    |log in as user "admin" with add report permission.                                                          |
+|Precondition2    |Click '''Report Manager''' to go to Reports Manager tab.                                                   |
+|Step1            |Click button '''Add Report Template'''.                                                                              |
+|Expected Result1 |Verify pop up window "Upload".                                                                              |
+|Step2            |Click '''Add file''' on "Upload" window.                                                                    |
+|Step3            |Browse to the report template file "TestReportAdd.rptdesign",select it and click Open.                      |
+|Step4            |Click button '''Upload'''.                                                                                  |
+|Expected Result2 |Verify after upload process complete,message "Done" display under the report name "TestReportAdd.rptdesign".|
+|Step5            |Close the window "Upload".                                                                                  |
+|Step6            |Click Click button '''Add Report Template''' again                |
+|Step7            |Click '''Add file''' on "Upload" window.                |
+|Step6            |Choose report template "TestReportAdd.rptdesign"                |
+|Expected Result3 |Verify alert window poped up "You have uploaded a report template with same name."                                                       |
+|Clean Environment|Remove report "TestReportAdd.rptdesign". !See .BsmSuite.ReportManagerSuite.ReportMgrCase0900                |

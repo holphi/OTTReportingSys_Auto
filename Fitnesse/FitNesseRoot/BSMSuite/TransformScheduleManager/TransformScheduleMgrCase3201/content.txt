@@ -1,0 +1,18 @@
+|Test Case ID     |TransformScheduleMgrCase3201                                                                                                                                               |
+|Title            |User can edit a repeat event in week view                                                                                                                                   |
+|Iteration        |                                                                                                                                                                   |
+|Jira Story       |                                                                                                                                                                   |
+|Requirement ID   |[[id][]]                                                                                                                                                           |
+|Priority         |P2                                                                                                                                                                |
+|Keywords         |event, edit,week view                                                                                                                                              |
+|Prepare Test Data|Create a repeat event "event3201". !See .BsmSuite.TransformScheduleManager.TransformScheduleMgrCase0500                                                                                                                                                              |
+|Precondition1    |Click '''Transform Schedule Manager''' to go to Transform Schedule Manager tab.                                                                                                                                                                |
+|Step1            |Click on '''Week''' on the top of calendar grids to go to week view.                                                                                               |
+|Step2            |Before the time event is triggered,click "event3200" in calendar grid                                                                                       |
+|Step3            |Click "Detail" beside "event3201"                                                                                       |
+|Step4            |In Description, append "update"                                                                                                                                   |
+|Step5            |In Time period first box, select another time which is later than current BSM server system clock.                                                                 |
+|Step6            |Click '''Save'''button.                                                                                                                                            |
+|Expected Result1 |Verify "event3201update" display in the grid of current date.                                                                                                     |
+|Expected Result2 |Verify in current date at the time selected in step5, generate transform|
+|Clean Up         |Remove "event3201update".!See .BsmSuite.TransformScheduleManager.TransformMgrCase2300 |

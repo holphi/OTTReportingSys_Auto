@@ -1,0 +1,17 @@
+|Test Case ID     |LogViewer1800                                                                                                                                        |
+|Title            |Non-admin operator is logged correctly.                                                                                                             |
+|Iteration        |                                                                                                                                                    |
+|Jira Story       |                                                                                                                                                    |
+|Requirement ID   |[[id][]]                                                                                                                                            |
+|Priority         |P5                                                     |
+|Keywords         |log                                                                                                                                        |
+|Prepare Test Data|Create a non-admin user "user1800" with Schedule Manger permission. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100.!-<br>-!User "user1800" create an event "log1800". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100. |
+|Precondition1    |log in as user "admin" with view log viewer permission .                                                                                                 |
+|Step1            |Click '''Administration''' to go to Administration tab.                                                                                                                                |
+|Step2            |Click '''Log'''->'''Log Viewer'''.                                                                 |
+|Expected Result1 |Verify there is a new record:action is "Create schedule event"                                     |
+|Expected Result2 |Verify the new record:Description contains Event id and event text.The event text is "log1800"     |
+|Expected Result3 |Verify the new record:Operator is "user1800".                                                                    |
+|Expected Result4 |Verify the new record:status is "success".                                                                    |
+|Clean Environment|Remove event"log1800". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200!-<br>-!Remove user "user1800".!See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                    |
+

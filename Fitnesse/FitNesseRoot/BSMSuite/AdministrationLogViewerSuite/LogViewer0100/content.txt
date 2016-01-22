@@ -1,0 +1,14 @@
+|Test Case ID     |LogViewer0100                                                |
+|Title            |Log viewer should display as design.                   |
+|Iteration        |                                                       |
+|Jira Story       |                                                       |
+|Requirement ID   |[[id][]]                                               |
+|Priority         |P5                                                     |
+|Keywords         |log                                                    |
+|Prepare Test Data|N/A                                                    |
+|Precondition1    |login as user "admin" with view log viewer permission. |
+|Step1            |Click '''Administration''' to go to Administration tab.|
+|Step2            |Click '''Log'''->'''Log Viewer'''.                     |
+|Expected Result1 |Verify all columns are visible.                        |
+|Expected Result2 |Verify paging bar display at bottom.                   |
+|Clean Environment|N/A                                                    |

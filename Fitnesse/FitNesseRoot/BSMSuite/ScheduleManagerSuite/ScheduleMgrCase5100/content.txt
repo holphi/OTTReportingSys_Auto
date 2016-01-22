@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|ScheduleMgrCase5100|
+|Title|User's input mismatch parameter data type will not harm on system.|
+|Requirement ID||
+|Priority|P4|
+|Keywords|evernt, report, parameter|
+|Prepare Test Data|!--!|
+|Precondition|!-1. Add reports template Float_report.rptdesign to Report Manager  !See.BsmSuite.ReportManagerSuite.ReportMgrCase0100<br>-!|
+|Steps and Expected Results|!-1. login as Admin <br>2. Click ""Report Schedule Manager"" to go to Report Schedule Manager tab.<br>3. Double click in the grid of current Float.<br>4. On the pop up New event window, click select Report button.<br>5. On the pop up Select Report window, check on one report ""Float_report.rptdesign"", then click OK.<br>6. Check on report format Excel. <br>7. Click ""Set parameter value"" on right side of report name ""Float_report.rptdesign"" <br>Expected Results: On the pop up window, verify report parameters display, DataType is Float <br>9. Input "float" into Value column, click OK.<br>10. In Description, input ""event_Float_InputWrongTypeData""<br>11. In Time period first box, select a coming time point.<br>12. Click Savebutton.<br>Expected Results: 1.In log viewer,generate report status is fail<br>2.System still can work,generate report.<br>-!|
+|Clean Up|Remove event and report template<br>|

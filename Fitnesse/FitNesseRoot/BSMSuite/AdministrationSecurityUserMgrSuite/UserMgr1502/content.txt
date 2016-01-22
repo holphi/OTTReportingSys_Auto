@@ -1,0 +1,16 @@
+|Test Case ID     |UserMgr1502                                                                                         |
+|Title            |When user change his own password,cannot input empty new password.                                  |
+|Iteration        |                                                                                                    |
+|Jira Story       |                                                                                                    |
+|Requirement ID   |[[id][]]                                                                                            |
+|Priority         |P3                                                                                                  |
+|Keywords         |User, password                                                                                      |
+|Prepare Test Data|Create a user "test1502"in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100|
+|Precondition1    |log in as user "test1502".                                                                          |
+|Step1            |Click on user name "test1502" on right top corner.                                                  |
+|Step2            |On the pop up menu,click on '''Change Password'''.                                                  |
+|Step3            |On the pop up window,input old password "123".                                                      |
+|Step4            |Don't input value in new password and Confirm Password.                                             |
+|Step5            |Click '''OK'''.                                          |                                          |
+|Expected Result1 |Pop up message "New password should not be empty"                                                   |
+|Clean Up         |Remove user test1502. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                 |

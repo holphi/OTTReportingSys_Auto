@@ -1,0 +1,17 @@
+|Test Case ID     |ReportMgrCase4500                                          |
+|Title            |User can generate and export report in TXT format manually.|
+|Iteration        |                                                           |
+|Jira Story       |                                                           |
+|Requirement ID   |[[id][]]                                                   |
+|Priority         |P2                                                         |
+|Keywords         |Report, Generate                                           |
+|Prepare Test Data|N/A                                                        |
+|Precondition1    |log in as user "admin" with generate report permission.    |
+|Precondition2    |Click '''Report Manager''' to go to Reports Manager tab.   |
+|Step1            |Click '''Generate''' link for "SDP_BUYS.rptdesign"         |
+|Step2            |Click '''OK''' on Parameter window.                        |
+|Step3            |Click on "Export Report".                                  |
+|Step4            |Choose "TXT" in Export format choose list.                 |
+|Step5            |Click "OK"                                                 |
+|Expected Result2 |"SDP_BUYS_admin" generated andcan view it by Notepad.      |
+|Clean Environment|N/A                                                        |

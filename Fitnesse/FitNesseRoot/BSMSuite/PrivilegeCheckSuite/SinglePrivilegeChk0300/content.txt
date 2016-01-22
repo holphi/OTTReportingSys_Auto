@@ -1,0 +1,21 @@
+|Test Case ID     |SinglePrivilegeChk0300                                                                                                                |
+|Title            |User only has update event privilege will only can update scheduler events.                                                     |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Schedule Manager                                                                                                                      |
+|Prepare Test Data|Creat an Event "scevent0300". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100                                                  |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "scrole0300",only check on Update event permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "scuser0300" only check on  role "scrole0300". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "scuser0300"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Schedule Manager''' tab are visiable.                                                                   |
+|Step5            |Double click "scevent0300".                                                                                                           |
+|Expected Result2 |Verify the event is display.At bottom, only two buttons '''Save''' '''Cancel''' are visiable.                                                      |
+|Step6            |Update "scevent0300".!See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2700.                                                                                                          |
+|Step7            |Double click in any other calendar grid.                                                                                                    |
+|Expected Result3 |Verify new event window pop up but at bottom only one button '''Cancel''' is visiable.                                                |
+|Clean Up         |N/A                                                                                                                                   |
+

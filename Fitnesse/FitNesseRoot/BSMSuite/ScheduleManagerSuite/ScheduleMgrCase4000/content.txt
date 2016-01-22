@@ -1,0 +1,16 @@
+|Test Case ID       |ScheduleMgrCase4000 |
+|Title              |User can not left destinaiton email field empty if chooses sending via email when create an event on report schedule manager |
+|Iteration          | |
+|Jira Story         | |
+|Requirement ID     |[id][] |
+|Priority           |P3                                                                                                                                                           |
+|Keywords           |event email  |
+|Prepare Test Data  |N/A |
+|Precondition1      |Login as admin and go to report schedule manager page |
+|Step1              |Double click grid of today |
+|Step2              |Choose a report and format on '''New event''' window. |
+|Step3              |Click '''Sending to''' button and check on Email and make sure the email address field is empty |
+|Step4              |Choose a coming time |
+|Step5              |Click '''Save''' button | 
+|Expected Result1   |Pop up a message box "Please input the Email" |
+|Clean Environment  |N/A |   

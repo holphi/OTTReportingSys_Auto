@@ -1,0 +1,16 @@
+|Test Case ID     |ReportMgrCase4200                                        |
+|Title            |User can generate Mongo DB report manually.                       |
+|Iteration        |                                                         |
+|Jira Story       |                                                         |
+|Requirement ID   |[[id][]]                                                 |
+|Priority         |P1                                                       |
+|Keywords         |Report, Generate                                         |
+|Prepare Test Data|N/A                                                      |
+|Precondition1    |Mongo service must be running.  |
+|Precondition2    |Target collection must exist in mongo db.|
+|Precondition3    |log in as user "admin" with generate report permission.  |
+|Precondition4    |Click '''Report Manager''' to go to Reports Manager tab.|
+|Step1            |Click '''Generate''' link for "Rpt_Mongo.rptdesign"       |
+|Step2            |Click '''OK''' on Parameter window.                      |
+|Expected Result2 |Generated report display without error.                  |
+|Clean Environment|N/A                                                      |

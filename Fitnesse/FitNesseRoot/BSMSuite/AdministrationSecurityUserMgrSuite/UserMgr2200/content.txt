@@ -1,0 +1,18 @@
+|Test Case ID     |UserMgr2200                                                                                       |
+|Title            |Active user can be removed.                                                                       |
+|Iteration        |                                                                                                  |
+|Jira Story       |                                                                                                  |
+|Requirement ID   |[[id][]]                                                                                          |
+|Priority         |P2                                                                                               |
+|Keywords         |User, Remove                                                                                      |
+|Prepare Test Data|Create a user "test22"in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100|
+|Precondition1    |log in as a user "admin" with remove user permission.                                             |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                           |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                         |
+|Step1            |Select user "test22".                                                                             |
+|Step2            |Click button '''Remove User'''                                                                    |
+|Expected Result1 |Pop up message "Are you sure to remove user?"                                                     |
+|Expected Result2 |Click '''OK''' on the message,Verify the message box close.                                       |
+|Expected Result3 |Verify user "test22" don't display in user list.                                                  |
+|Expected Result4 |Log out,verify login user "test22" failed.                                                        |
+|Clean Up         |N/A                                                                                              |

@@ -1,0 +1,15 @@
+|Test Case ID     |RoleMgr2200                                                                                       |
+|Title            |Role can be filter by name.                                                                       |
+|Iteration        |                                                                                                  |
+|Jira Story       |                                                                                                  |
+|Requirement ID   |[[id][]]                                                                                          |
+|Priority         |P2                                                                                                |
+|Keywords         |Role, filter                                                                                      |
+|Prepare Test Data|Create a role "role22"in BSM system. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Precondition1    |log in as a user "admin" with view role permission.                                               |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                           |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                         |
+|Step1            |In role name filter,input "22"                                                                    |
+|Expected Result1 |"role23" display in result list.                                                                  |
+|Expected Result2 |All role names in result list contains "22".                                                      |
+|Clean Up         |Remove role role22. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000.                |

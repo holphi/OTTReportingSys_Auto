@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.22" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.6.2.r262_v20110209 Build &lt;2.6.2.v20110214-1523></property>
+    <property name="units">in</property>
+    <property name="theme">defaultTheme</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="5">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+            </list-property>
+			<property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <!--
+			<property name="odaURL">jdbc:oracle:thin:@qubedb1_ip:1521:XE</property>
+            <property name="odaUser">SDP_NMP_DEMO_2_12_1_RC3_2_O</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">U0RQX05NUF9ERU1PXzJfMTJfMV9SQzNfMl9P</encrypted-property>
+            -->
+			<property name="odaJndiName">java:qube</property>
+        </oda-data-source>
+    </data-sources>
+    <themes>
+        <theme name="defaultTheme" id="4"/>
+    </themes>
+    <components>
+        <image name="default_logo" id="6">
+            <property name="height">35px</property>
+            <property name="width">90px</property>
+            <property name="source">file</property>
+            <expression name="uri" type="constant">images/default_logo.jpg</expression>
+        </image>
+    </components>
+    <page-setup>
+        <simple-master-page name="NewSimpleMasterPage" id="3"/>
+    </page-setup>
+</library>

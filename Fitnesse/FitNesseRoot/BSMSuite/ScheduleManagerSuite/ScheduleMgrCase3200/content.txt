@@ -1,0 +1,26 @@
+|Test Case ID     |ScheduleMgrCase3200                                                                                                                                                |
+|Title            |User can edit event in week view                                                                                                                                   |
+|Iteration        |                                                                                                                                                                   |
+|Jira Story       |                                                                                                                                                                   |
+|Requirement ID   |[[id][]]                                                                                                                                                           |
+|Priority         |P3                                                                                                                                                                                                                                                               |
+|Keywords         |event, edit,week view                                                                                                                                              |
+|Prepare Test Data|N/A                                                                                                                                                                |
+|Precondition1    |N/A                                                                                                                                                                |
+|Step1            |Double click in the grid of current date.                                                                                                                          |
+|Step2            |On the pop up New event window, click '''select Report''' button.                                                                                                  |
+|Step3            |On the pop up Select Report window, check on report "SDP_BUYS.rptdesign"                                                                                           |
+|Step4            |Click '''OK''' on Select Report window to close it.                                                                                                                |
+|Step5            |In Description box, input "event3200".                                                                                                                             |
+|Step6            |In Time period first box, select a coming time point.                                                                                                              |
+|Step7            |Click '''Save''' button.                                                                                                                                           |
+|Step8            |Click on '''Week''' on the top of calendar grids to go to week view.                                                                                               |
+|Step9            |Before the time in Step6 arrive,click "event3200" in calendar grid                                                                                       |
+|Step10            |Click "Detail" beside "event3200"                                                                                       |
+|Step11            |In Description, append "Updated"                                                                                                                                   |
+|Step12           |In Time period first box, select another time which is later than current BSM server system clock.                                                                 |
+|Step13           |Click '''Save'''button.                                                                                                                                            |
+|Expected Result1 |Verify "event3200Updated" display in the grid of current date.                                                                                                     |
+|Expected Result2 |Verify in current date at the time selected in step10, generate report and stored on BSM server /soft/bsmsoft/bsm1/bsm/Current/data,report name start with SDP_BUYS|
+|Expected Result3 |Verify in current date at the time selected in step6, not generate report                                                                                          |
+|Clean Up         |Remove "event3200Updated". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200 !-<br>-!Clear reports on on BSM server /soft/bsmsoft/bsm1/bsm/Current/data      |

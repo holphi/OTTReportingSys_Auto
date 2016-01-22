@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|HomeCase0900|
+|Title|Failed Extraction Schedule Events can be filter by end date.|
+|Requirement ID||
+|Priority|P3|
+|Keywords|home ,Extraction Schedule Events widget|
+|Prepare Test Data|!-Create 10 Extraction schedule events ,before the events occur remove the transform file on disk,events will fail when the event time arrive.-!|
+|Precondition|!--!|
+|Steps and Expected Results|!- 1. login as admin.<br> 2. Click "more" in Failed Extraction Schedule Events widget. <br>Expected results:verify a window pop up , all failed Extraction schedule event (event desc,transform, time)display.<br>3.Click in End Time field.<br>4.Click on a day on the calendar control.<br>Expected Result:Verify all failed event which end date is before this day display. -!|
+|Clean Up|<br>|

@@ -1,0 +1,13 @@
+<properties>
+	<Edit />
+	<Files />
+	<Help>Two event with same reports can simultaneously generate report in different format,and transports report via HTTP.</Help>
+	<Normal />
+	<Properties />
+	<RecentChanges />
+	<Refactor />
+	<Search />
+	<Suites>P1                                                                                                                                                                                                                                                </Suites>
+	<Versions />
+	<WhereUsed />
+</properties>

@@ -1,0 +1,19 @@
+|Test Case ID     |RoleMgr1300                                                                          |
+|Title            |Role name can be updated.|                                                            
+|Iteration        |                                                                                     |
+|Jira Story       |                                                                                     |
+|Requirement ID   |[[id][]]                                                                             |
+|Priority         |P3                                                                                  |
+|Keywords         |Role, Update                                                                         |
+|Prepare Test Data|Create a role "role13".!See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100.|
+|Precondition1    |log in as user "admin" with update role permission.                                  |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                              |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                            |
+|Step1            |Select role "role13".                                                                |
+|Step2            |Click button '''Update Role'''.                                                      |
+|Step3            |Input a new role name "role13new"                                                    |
+|Step4            |Click '''OK'''.                                                                      |
+|Expected Result1 |Pop up message "Update role successfully".                                           |
+|Expected Result2 |Click '''OK''' to close the message, verify "rolr13new" display in role list.        |
+|Expected Result3 |Double-click "role13new" in role list, verify the role name is "role13new"           |
+|Clean Environment|Remove "role13new" . !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000   |

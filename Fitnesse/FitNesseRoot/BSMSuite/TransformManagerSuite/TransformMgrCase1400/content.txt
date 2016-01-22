@@ -1,0 +1,23 @@
+|Test Case ID     |TransformMgrCase1100                                                                                                                                                             |
+|Title            |Paging bar works correctly on Transform Manager.                                                                                                                                 |
+|Iteration        |                                                                                                                                                                              |
+|Jira Story       |                                                                                                                                                                              |
+|Requirement ID   |[[id][]]                                                                                                                                                                      |
+|Priority         |P3                                                                                                          |
+|Keywords         |Transform, paging                                                                                                                                                                   |
+|Prepare Test Data|N/A                                                                                      |
+|Precondition1    |log in as user "admin" with view Transform Manager permission.                                                                                                                            |
+|Precondition2    |Click '''Extraction Manager''' to go to Extraction Manager tab.                                                                                                                     |
+|Expected Result1 |Verify on paging bar, display "Records from 1 to 27",'''First'''and '''Previous''' button is disabled, '''Next''' and '''Last''' button is enabled.                           |
+|Step1            |Click on '''Next'''.                                                                                                                                                          |
+|Expected Result2 |Verify on paging bar, display "Records from 28 to 32",'''First'''and '''Previous''' button is enabled, '''Next''' and '''Last''' button is disabled.                          |
+|Step2            |Click on '''First'''.                                                                                                                                                         |
+|Expected Result3 |Verify on paging bar, display "Records from 1 to 27",'''First'''and '''Previous''' button is disabled, '''Next''' and '''Last''' button is enabled.                           |
+|Step3            |Click on '''Last'''.                                                                                                                                                          |
+|Expected Result4 |Verify on paging bar, display "Records from 28 to 32",'''First'''and '''Previous''' button is enabled, '''Next''' and '''Last''' button is disabled.                          |
+|Step4            |Click on '''Previous'''.                                                                                                                                                      |
+|Expected Result5 |Verify on paging bar, display "Records from 1 to 27",'''First'''and '''Previous''' button is disabled, '''Next''' and '''Last''' button is enabled.                           |
+|Clean Environment|N/A|
+
+
+

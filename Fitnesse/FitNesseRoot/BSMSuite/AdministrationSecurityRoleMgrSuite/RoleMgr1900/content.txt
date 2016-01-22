@@ -1,0 +1,17 @@
+|Test Case ID     |RoleMgr1900                                                                       |
+|Title            |Role will not be removed if cancel remove.                                        |
+|Iteration        |                                                                                  |
+|Jira Story       |                                                                                  |
+|Requirement ID   |[[id][]]                                                                          |
+|Priority         |P4                                                                                |
+|Keywords         |Role, Remove                                                                      |
+|Prepare Test Data|Create role "role19".!See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100. |
+|Precondition1    |log in as user "admin" with remove role permission.                               |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                           |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                         |
+|Step1            |Select role "role19".                                                             |
+|Step2            |Click button '''Remove Role'''.                                                   |
+|Expected Result1 |Pop up message "Are you sure to remove role ?"                                    |
+|Expected Result2 |Click '''Cancel''',Verify the message box close.                                  |
+|Expected Result3 |Verify "role19" still display in role list                                          |
+|Clean Environment|Remove role role19. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000.|

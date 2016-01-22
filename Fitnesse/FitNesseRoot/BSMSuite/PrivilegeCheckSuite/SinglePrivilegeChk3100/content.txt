@@ -1,0 +1,22 @@
+|Test Case ID     |SinglePrivilegeChk3100                                                                                                                |
+|Title            |User who only has create transform event privilege will only can create events.                                                     |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Schedule Manager create privilege                                                                                                                      |
+|Prepare Test Data|N/A                                                 |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "role0200",only check on Create transform event permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "user0200" only check on  role "role0200". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "user0200"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Transform Schedule Manager''' tabs are visiable.                                                                   |
+|step5            |Click '''Transform Schedule Manager''' .                                                                                                                                                                                                                                         |
+|Step6            |Double click any calendar grid.                                                                                                          |
+|Expected Result2 |Verify new event window pop up.At bottom, only two buttons '''Save''' '''Cancel''' are visiable.                                                      |
+|Step7            |Creat an transform event "event3100". !See .BsmSuite.TransformScheduleManager.TransformScheduleMgrCase0100                                                                                                         |
+|Step8            |Double click "event3100".                                                                                                           |
+|Expected Result3 |Verify the event display in the grid.At bottom of the event only one button '''Cancel''' is visiable.                                                      |
+|Clean Up         |N/A                                                                                                                                   |
+

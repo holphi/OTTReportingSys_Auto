@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="BSMAutoTest" basedir="." >
+	<property environment="env"/>
+	<property name="debuglevel" value="source,lines,vars"/>
+  <property name="junit.output.dir" value="junit"/>
+	<path id="BSMAutoTest.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/bsh-1.3.0.jar"/>
+        <pathelement location="lib/cglib-nodep-2.1_3.jar"/>
+        <pathelement location="lib/commons-codec-1.6.jar"/>
+        <pathelement location="lib/commons-collections-3.2.1.jar"/>
+        <pathelement location="lib/commons-exec-1.1.jar"/>
+        <pathelement location="lib/commons-io-2.2.jar"/>
+        <pathelement location="lib/commons-jxpath-1.3.jar"/>
+        <pathelement location="lib/commons-lang3-3.1.jar"/>
+        <pathelement location="lib/commons-logging-1.1.1.jar"/>
+        <pathelement location="lib/cssparser-0.9.9.jar"/>
+        <pathelement location="lib/guava-14.0.jar"/>
+        <pathelement location="lib/hamcrest-all-1.1.jar"/>
+        <pathelement location="lib/htmlunit-2.12.jar"/>
+        <pathelement location="lib/htmlunit-core-js-2.12.jar"/>
+        <pathelement location="lib/httpclient-4.2.1.jar"/>
+        <pathelement location="lib/httpcore-4.2.1.jar"/>
+        <pathelement location="lib/httpmime-4.2.1.jar"/>
+        <pathelement location="lib/ini4j-0.5.2.jar"/>
+        <pathelement location="lib/jcommander-1.29.jar"/>
+        <pathelement location="lib/jna-3.4.0.jar"/>
+        <pathelement location="lib/jna-platform-3.4.0.jar"/>
+        <pathelement location="lib/json-20080701.jar"/>
+        <pathelement location="lib/junit-dep-4.11.jar"/>
+        <pathelement location="lib/log4j-1.2.17.jar"/>
+        <pathelement location="lib/nekohtml-1.9.17.jar"/>
+        <pathelement location="lib/operadriver-1.2.jar"/>
+        <pathelement location="lib/protobuf-java-2.4.1.jar"/>
+        <pathelement location="lib/sac-1.3.jar"/>
+        <pathelement location="lib/selenium-java-2.32.0.jar"/>
+        <pathelement location="lib/selenium-java-2.32.0-srcs.jar"/>
+        <pathelement location="lib/serializer-2.7.1.jar"/>
+        <pathelement location="lib/testng-6.0.1-nobsh-noguice.jar"/>
+        <pathelement location="lib/xalan-2.7.1.jar"/>
+        <pathelement location="lib/xercesImpl-2.10.0.jar"/>
+        <pathelement location="lib/xml-apis-1.4.01.jar"/>
+        <pathelement location="lib/hsqldb-1.8.0.10.jar"/>
+        <pathelement location="lib/commons-net-3.1.jar"/>
+        <pathelement location="lib/sshxcute-1.0.jar"/>
+        <pathelement location="lib/mongo-java-driver-2.5.3.jar"/>        
+		<pathelement location="lib/jsch-0.1.49.jar"/>
+		<pathelement location="lib/mail.jar"/>
+		<pathelement location="lib/sardine.jar"/>
+		<pathelement location="lib/slf4j-log4j12-1.5.2.jar"/>
+		<pathelement location="lib/slf4j-api-1.5.2.jar"/>
+		<pathelement location="lib/ojdbc14-10.2.0.2.0.jar"/>
+  </path>
+  <target name="sendreport" description="Send automation test report to target users" depends="mkzip">
+  	<echo message="Send automation report project team members" />
+    <mail mailhost="antares.hq.k.grp" mailport="25" subject="BSM Integration Test Report" user="#YOURACCOUNTNAME#" password="#YOURPASSWORD#">
+      <from address="BSMAutoTest@nagra.com" name="BSM Automation Robot"/>
+      <fileset dir="${junit.output.dir}" >
+        <include name="**/BSMTestResult.zip"/>
+      </fileset>
+      <to address="jacky.yi@nagra.com" />
+      <to address="shuangjiang.li@nagra.com" />
+      <to address="phoebe.ma@nagra.com" />
+      <to address="ivan.che@nagra.com" />
+      <to address="walter.xu@nagra.com" />
+      <to address="jianhua.zhou@nagra.com" />
+      <message>This test report is sent by BSM Automation robot automatically, pls check the attachment for details. BSM Test team</message>
+    </mail>
+  </target>
+	<target name="mkzip" description="Compress HTML report to ZIP file" depends="generatereport">
+		<echo message="Compress HTML report to ZIP file"/>
+		<jar destfile="${junit.output.dir}/BSMTestResult.zip">
+			<fileset dir="${junit.output.dir}">
+				<include name="**/*.html" />
+				<include name="**/*.css" />
+				<include name="**/*.txt" />
+			</fileset>
+		</jar>
+	</target>
+	<target name="generatereport" description="Convert XML format report to HTML report">
+		<echo message="Convert XML format report to HTML report"/>
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+	</target>
+	<target name="init">
+		<echo message="Initialize BSMAutoTest project"/>
+		<mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+	</target>
+	<target name="build" depends="init">
+		<echo message="Start build BSMAutoTest project."/>
+		<echo message="${ant.project.name}: ${ant.file}"/>
+        <mkdir dir="bin"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="on">
+            <src path="src"/>
+            <classpath refid="BSMAutoTest.classpath"/>
+        </javac>
+    </target>
+  <target name="runsanitycheck" depends="build">
+     <delete dir="${junit.output.dir}"/>
+     <mkdir dir="${junit.output.dir}"/>
+     <echo message="Run sanity check, you could have a cup of coffee..."/>
+     <junit fork="yes" printsummary="false" maxmemory="256M">
+         <formatter type="brief" extension=".html" usefile="true"/>
+         <formatter type="xml"/>
+         <test name="com.nagra.bsm.tests.SanityTestSuite" todir="${junit.output.dir}"/>
+         <classpath refid="BSMAutoTest.classpath"/>
+      </junit>
+      <antcall target="generatereport"/>
+   </target>
+   <target name="runalltests" depends="build">
+      <delete dir="${junit.output.dir}"/>
+      <mkdir dir="${junit.output.dir}"/>
+      <echo message="Run all tests, you can go home now...."/>
+        <junit fork="yes" printsummary="false" maxmemory="512M">
+        	<jvmarg value="-Xms512m"/> 
+        	<jvmarg value="-XX:NewSize=256m"/>
+        	<formatter type="plain" usefile="true"/>
+        	<formatter classname="org.apache.tools.ant.taskdefs.optional.junit.TearDownOnVmCrash" usefile="false"/>
+        	<formatter type="brief" extension=".html" usefile="true"/>
+        	<formatter type="xml"/>        	
+        	<test name="com.nagra.bsm.tests.RoleMgrTests" todir="${junit.output.dir}"/>
+        	<test name="com.nagra.bsm.tests.UserMgrTests" todir="${junit.output.dir}"/>
+        	<test name="com.nagra.bsm.tests.RptTransportTests" todir="${junit.output.dir}"/>
+        	<test name="com.nagra.bsm.tests.BakTransportTests" todir="${junit.output.dir}"/>        	        	      	
+			<test name="com.nagra.bsm.tests.RptScheduleMgrTests" todir="${junit.output.dir}"/>
+        	<test name="com.nagra.bsm.tests.RptScheduleMgrTestPart2" todir="${junit.output.dir}"/>
+        	<test name="com.nagra.bsm.tests.ReportsMgrTests" todir="${junit.output.dir}"/>  
+            <test name="com.nagra.bsm.tests.LogViewerTests" todir="${junit.output.dir}"/>            
+            <test name="com.nagra.bsm.tests.ExtractionMgrTests" todir="${junit.output.dir}"/> 
+        	<test name="com.nagra.bsm.tests.ExtraScheduleMgrTest" todir="${junit.output.dir}"/>
+        	<test name="com.nagra.bsm.tests.PrivilegeCheckTests" todir="${junit.output.dir}"/>
+        	<test name="com.nagra.bsm.tests.FrontPageConfTests" todir="${junit.output.dir}"/>
+            <classpath refid="BSMAutoTest.classpath"/>
+        </junit>    	
+    	<antcall target="mkzip"/>
+    </target>
+</project>

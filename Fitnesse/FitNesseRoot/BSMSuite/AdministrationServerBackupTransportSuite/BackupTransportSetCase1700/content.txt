@@ -1,0 +1,18 @@
+|Test Case ID     |BackupTransportSetCase1700                                                                                                                                                                                                  |
+|Title            |Report transport setting is different for different users                                                                                                                                                                   |
+|Iteration        |                                                                                                                                                                                                                            |
+|Jira Story       |                                                                                                                                                                                                                            |
+|Requirement ID   |                                                                                                                                                                                                                            |
+|Priority         |P2                                                                                                                                                                                                                          |
+|Keywords         |                                                                                                                                                                                                                            |
+|Prepare Test Data|Create a role "role1" with permission of administration.!See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0400.Create a user "user1" granted to "role1".!See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100|
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                                                                                                                                     |
+|Precondition2    '''System Maintenance'''-> '''Backup Transport Configuration'''                                                                                                                                                              |
+|Step1            |Set SMTP configuration.!See .BsmSuite.AdministrationServerReportTransportSuite.BackupTransportSetCase0100                                                                                                                   |
+|Step2            |Set Email configuration.!See .BsmSuite.AdministrationServerReportTransportSuite.BackupTransportSetCase1000                                                                                                                  |
+|Step3            |Set ftp configuration. !See .BsmSuite.AdministrationServerReportTransportSuite.BackupTransportSetCase0300                                                                                                                   |
+|Step4            |Set http configuration. !See .BsmSuite.AdministrationServerReportTransportSuite.BackupTransportSetCase0500 |
+|Step6   |Logout and login as user1                                                                     |
+|Step7   |Go to '''Administration'''->'''Report Transport'''                                            |
+|Step8   |Settings in the smtp/email/ftp/http/report repeat times configuration on the page are display.|
+|Clean Up|N/A    |                                                                                       |

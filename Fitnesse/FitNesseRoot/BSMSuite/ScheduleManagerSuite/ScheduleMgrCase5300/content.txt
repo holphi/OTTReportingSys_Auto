@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|ScheduleMgrCase5300|
+|Title|In one event can select multiple reports and set parameter for each report.|
+|Requirement ID||
+|Priority|P3|
+|Keywords|evernt, report, parameter|
+|Prepare Test Data|!--!|
+|Precondition|!-1. Add reports template Boolean_report.rptdesign,Integer_report.rptdesign, to Report Manager  !See.BsmSuite.ReportManagerSuite.ReportMgrCase0100<br>-!|
+|Steps and Expected Results|!-1. login as Admin <br>2. Click ""Report Schedule Manager"" to go to Report Schedule Manager tab.<br>3. Double click in the grid of current date.<br>4. On the pop up New event window, click select Report button.<br>5. On the pop up Select Report window, check on one report ""Boolean_report.rptdesign"" and "Integer_report.rptdesign", then click OK.<br>6. Check on report format Excel for each selected reports. <br>7. Click ""Set parameter value"" on right side of report name ""Boolean_report.rptdesign"" <br>Expected Results: On the pop up window, verify report parameter display: parameter Name is Integer, DataType is Integer <br>8. Input ""False"" into Value column, click OK.<br>9. Click ""Set parameter value"" on right side of report name ""Integer_report.rptdesign"" <br>Expected Results: On the pop up window, verify report parameter display:  DataType is Integer <br>11. Input ""15"" into Value column, click OK.<br>12. In Description, input ""Boolean and Integer""<br>13. In Time period first box, select a coming time point.<br>14. Click Save button.<br>Expected Results: Generate a report which name start with ""Boolean_report"" stored on on BSM server /soft/bsmsoft/bsm1/bsm/Current/data,in report, the value in column C_Boolean is false.<br>Expected Results: Generate a report which name start with ""Integer_report"" stored on on BSM server /soft/bsmsoft/bsm1/bsm/Current/data,in report, the value in column C_Integer is 15. <br><br><br>-!|
+|Clean Up|Remove event and report template<br>|

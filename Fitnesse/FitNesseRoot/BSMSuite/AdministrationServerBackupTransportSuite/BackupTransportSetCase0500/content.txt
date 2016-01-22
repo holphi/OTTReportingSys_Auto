@@ -1,0 +1,19 @@
+|Test Case ID     |BackupTransportSetCase0500                                                                                                            |
+|Title            |If input valid http settings,test connection will return success.                                                                        |
+|Iteration        |                                                                                                                                   |
+|Jira Story       |                                                                                                                                   |
+|Requirement ID   |                                                                                                                                   |
+|Priority         |P2                                                                                                                                 |
+|Keywords         |SMTP                                                                                                                               |
+|Prepare Test Data|N/A                                                                                                                                |
+|Precondition0|Please make sure the http server(webdav) to be test is available.|
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                                            |
+|Precondition2    |Click '''System Maintenance'''-> '''Backup Transport Configuration'''                                                                                       |
+|Step1            |In Http Server Url field, input http url "http://vm81653/incoming/"                                                                      |
+|Step2            |In Http Server Login User Name field , input username "xampp"                                                                                |
+|Step3            |In Http Server Login Password field,input password "xampp"                  |
+|Step5            |Click '''Save'''                                                                                                                   |
+|Expected Result1 |Verify return message "Save Successfully"                                                                                          |
+|Step6            |Click '''Test Http'''                                                                                                              |
+|Expected Result2 |Verify returns message "Test successfully"                                                                                          |
+|Clean Up         |N/A                                                                                                                                |

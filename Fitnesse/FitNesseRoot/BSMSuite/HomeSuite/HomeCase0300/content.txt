@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|HomeCase0300|
+|Title|Failed Report Schedule Events widget list failed report schedule events info.|
+|Requirement ID||
+|Priority|P1|
+|Keywords|home ,Report Schedule Events widget|
+|Prepare Test Data|!-Create some report schedule events ,before the events occur remove the report template file on disk,events will fail when the event time arrive.-!|
+|Precondition|!--!|
+|Steps and Expected Results|!- 1. login as admin.<br>Verify failed report schedule events display in Failed Report Schedule Events widget. -!|
+|Clean Up|<br>|

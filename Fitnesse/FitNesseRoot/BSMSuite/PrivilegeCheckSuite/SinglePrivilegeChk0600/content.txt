@@ -1,0 +1,29 @@
+|Test Case ID     |SinglePrivilegeChk0600                                                                                                                |
+|Title            |User only has view Report Manager privilege will only can view Report Manager.                                                    |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Report Manager                                                                                                                     |
+|Prepare Test Data|N/A                                                |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "scrole0600",only check on View Report Manager permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "scuser0600" only check on  role "scrole0600". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "scuser0600"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Report Manager''' tab are visiable.                                                                   |
+|Step5            |Click '''Report Manager''' to go to Report Manager page                                                                                 |
+|Expected Result2 |Verify there are no '''Add Report''', '''Remove Report''' buttons on Report Manager page                                                                                 |
+|Step6            |Click '''Update''' button on Report Manager page| 
+|Expected Result3 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step6            |Click '''Update''' button on Report Manager page| 
+|Expected Result3 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step7            |Click '''Generate''' button on Report Manager page|
+|Expected Result4 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step8            |Click '''Set Schedule''' buttonon on Report Manager page|
+|Expected Result5 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step9            |Click '''View''' button on Report Manager page|
+|Expected Result6 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step10           |Click "Activation_count.rptdesign" on Report Manager page| 
+|Expected Result7 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Clean Up         |N/A                                                                                                                                   |

@@ -1,0 +1,16 @@
+|Test Case ID     |LogViewer2300                                                                                            |
+|Title            |Operation upload front page image from administration is logged correctly.                                  |
+|Iteration        |                                                                                                   |
+|Jira Story       |                                                                                                   |
+|Requirement ID   |[[id][]]                                                                                           |
+|Priority         |P5                                                     |
+|Keywords         |log                                                                                                |
+|Prepare Test Data|Upload front page image.!See .BsmSuite.AdministrationServerFrontPageSuite.FrontPageConfigCase0100   |
+|Precondition1    |login as user "admin" with view log viewer permission.                                             |
+|Step1            |Click '''Administration''' to go to Administration tab.                                            |
+|Step2            |Click '''Log'''->'''Log Viewer'''.                                                                 |
+|Expected Result1 |Verify there is a new record:action is "Upload front page image"                                     |
+|Expected Result2 |Verify the new record:description contains image uploaded info     |
+|Expected Result3 |Verify the new record:Operator is "admin".                                                                    |
+|Expected Result4 |Verify the new record:status is "success".                                                                    |
+|Clean Environment|                    |

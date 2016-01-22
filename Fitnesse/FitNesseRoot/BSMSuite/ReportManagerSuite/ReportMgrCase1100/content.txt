@@ -1,0 +1,23 @@
+|Test Case ID     |ReportMgrCase1100                                                                                                                                                             |
+|Title            |Paging bar works correctly on Report Manager.                                                                                                                                 |
+|Iteration        |                                                                                                                                                                              |
+|Jira Story       |                                                                                                                                                                              |
+|Requirement ID   |[[id][]]                                                                                                                                                                      |
+|Priority         |P3                                                                                                                                                                            |
+|Keywords         |Report, paging                                                                                                                                                                   |
+|Prepare Test Data|Add four reports to Reports Manager. !See .BsmSuite.ReportManagerSuite.ReportMgrCase0300                                                                                      |
+|Precondition1    |log in as user "admin" with view Reports Manager permission.                                                                                                                            |
+|Precondition2    |Click '''Report Manager''' to go to Reports Manager tab.                                                                                                                     |
+|Expected Result1 |Verify on paging bar, display "Records from 1 to 27",'''First'''and '''Previous''' button is disabled, '''Next''' and '''Last''' button is enabled.                           |
+|Step1            |Click on '''Next'''.                                                                                                                                                          |
+|Expected Result2 |Verify on paging bar, display "Records from 28 to 32",'''First'''and '''Previous''' button is enabled, '''Next''' and '''Last''' button is disabled.                          |
+|Step2            |Click on '''First'''.                                                                                                                                                         |
+|Expected Result3 |Verify on paging bar, display "Records from 1 to 27",'''First'''and '''Previous''' button is disabled, '''Next''' and '''Last''' button is enabled.                           |
+|Step3            |Click on '''Last'''.                                                                                                                                                          |
+|Expected Result4 |Verify on paging bar, display "Records from 28 to 32",'''First'''and '''Previous''' button is enabled, '''Next''' and '''Last''' button is disabled.                          |
+|Step4            |Click on '''Previous'''.                                                                                                                                                      |
+|Expected Result5 |Verify on paging bar, display "Records from 1 to 27",'''First'''and '''Previous''' button is disabled, '''Next''' and '''Last''' button is enabled.                           |
+|Clean Environment|Remove report "TestReportAdd2.rptdesign","TestReportAdd3.rptdesign","TestReportAdd4.rptdesign","TestReportAdd5.rptdesign". !See .BsmSuite.ReportManagerSuite.ReportMgrCase0900|
+
+
+

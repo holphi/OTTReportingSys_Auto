@@ -1,0 +1,20 @@
+|Test Case ID     |SinglePrivilegeChk3300                                                                                                                |
+|Title            |User who only has delete transform event privilege will only can delete transform events.                                                    |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Schedule Manager delete privilege                                                                                                                     |
+|Prepare Test Data|Creat an transform event "event3300". !See .BsmSuite.TransformScheduleManager.TransformScheduleMgrCase0100                                                |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "role0400",only check on delete transform event permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "user0400" only check on  role "role0400". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "user0400"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Schedule Manager''' tab are visiable.                                                                   |
+|Step5            |Double click "event0400".                                                                                                           |
+|Expected Result2 |Verify the event display in the grid.At bottom only two buttons '''Cancel''' '''Delete''' are visiable.                                                      |
+|Step6            |Remove event3300. !See .BsmSuite.TransformScheduleManager.TransformScheduleMgrCase2300                                                                                                     |
+|Step7            |Double click in any calendar grid.                                                                                                    |
+|Expected Result3 |Verify new event window pop up but at bottom, only two buttons '''Cancel''' '''Delete''' are visiable.                                                |
+|Clean Up         |N/A                                                                                                                                   |

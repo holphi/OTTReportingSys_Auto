@@ -1,0 +1,16 @@
+|Test Case ID     |LogViewer2500                                                                                            |
+|Title            |Operation save report transport configuration from administration is logged correctly.                                  |
+|Iteration        |                                                                                                   |
+|Jira Story       |                                                                                                   |
+|Requirement ID   |[[id][]]                                                                                           |
+|Priority         |P5                                                     |
+|Keywords         |log                                                                                                |
+|Prepare Test Data|Config report transport(smtp).!See .BsmSuite.AdministrationServerReportTransportSuite.RptTransportSetCase0100   |
+|Precondition1    |login as user "admin" with view log viewer permission.                                             |
+|Step1            |Click '''Administration''' to go to Administration tab.                                            |
+|Step2            |Click '''Log'''->'''Log Viewer'''.                                                                 |
+|Expected Result1 |Verify there is a new record:action is "Save report transport configuration"                                     |
+|Expected Result2 |Verify the new record:description contains configuration info     |
+|Expected Result3 |Verify the new record:Operator is "admin".                                                                    |
+|Expected Result4 |Verify the new record:status is "success".                                                                    |
+|Clean Environment|                    |

@@ -1,0 +1,14 @@
+|Test Case ID     |LogViewer0201                                                                                            |
+|Title            |Failed Operation create event from Schedule Manager is logged correctly.                                  |
+|Iteration        |                                                                                                   |
+|Jira Story       |                                                                                                   |
+|Requirement ID   |[[id][]]                                                                                           |
+|Priority         |P5                                                     |
+|Keywords         |log                                                                                                |
+|Prepare Test Data|N/A                                                                                                |
+|Precondition1    |login as user "admin" with view log viewer permission.                                             |
+|Step1            |Create event "log0201" on a date before current date in Schedule Manager. !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase3500|
+|Step2            |Click '''Administration''' to go to Administration tab.                                            |
+|Step3            |Click '''Log'''->'''Log Viewer'''.                                                                 |
+|Expected Result1 |Verify there is no new record for create event log0201.                                     |
+|Clean Environment|N/A                    |

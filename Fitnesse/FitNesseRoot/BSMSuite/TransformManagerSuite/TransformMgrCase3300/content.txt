@@ -1,0 +1,13 @@
+|Test Case ID     |TransformMgrCase3300                                                                                           |
+|Title            |User must choose one or more transforms if he want to set public transform to private                          |
+|Iteration        |                                                                                                            |
+|Jira Story       |                                                                                                            |
+|Requirement ID   |[[id][]]                                                                                                    |
+|Priority         |P3                                                                                                          |
+|Keywords         |Transform, Remove                                                                                                 |
+|Prepare Test Data|Upload a transform "TestTransformAdd.ktr" as admin|
+|Precondition1    |log in as user "admin" .                                                          |
+|Precondition2    |Click '''Extraction Manager''' to go to Extraction Manager tab.                                                   |
+|Step1            |Click button '''Set to Private'''.                                                                              |
+|Expected Result1 |Verify pop up window "Please select transforms to operate".                                                                              |
+|Clean Environment|Remove "TestTransformAdd1.ktr".!See .BsmSuite.TransformManagerSuite.TransformMgrCase0600                |

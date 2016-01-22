@@ -1,0 +1,17 @@
+|Test Case ID     |TransformScheduleMgrCase2601                                                                          |
+|Title            |User can delete a repeat event in Day view.                                             |
+|Iteration        |                                                                                              |
+|Jira Story       |                                                                                              |
+|Requirement ID   |[[id][]]                                                                                      |
+|Priority         |P2                                                                                            |
+|Keywords         |event, Delete                                                             |
+|Prepare Test Data|Create a repeat event "event2601". !See .BsmSuite.TransformScheduleManager.TransformMgrCase0500|
+|Precondition1    |Click '''Transform Schedule Manager''' to go to Transform Schedule Manager tab.                                   |
+|Precondition2    |Click on '''Day''' on the top of calendar grids to go to Day view.                                  |
+|Step1            |Click "Detail" of any instance of "event2601"                                                                      |
+|Step2            |On the pop up window, click '''Delete''' button on the bottom of the window.        |
+|Expected Result1 |Verify pop up message "Event will be deleted permanently,are you sure?"                       |
+|Step3            |Click on '''OK''' on the message.                                                             |
+|Expected Result2 |Verify message box and window open in step2 close.                                            |
+|Expected Result3 |Verify "event 2601" don't display in calendar grid.                                           |
+|Clean Up         |N/A                                                                                           |

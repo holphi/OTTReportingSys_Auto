@@ -1,0 +1,28 @@
+|Test Case ID     |ScheduleMgrCase0100                                                                                                                                                         |
+|Title            |User can create an non-repeat event with one report, generate report in Excel format,and transport report via Email.                                                        |
+|Iteration        |                                                                                                                                                                            |
+|Jira Story       |                                                                                                                                                                            |
+|Requirement ID   |[[id][]]                                                                                                                                                                    |
+|Priority         |P1                                                                                                                                                                          |
+|Keywords         |event, Create, Excel, Email                                                                                                                                                 |
+|Prepare Test Data|N/A                                                                                                                                                                         |
+|Precondition1    |Configure SMTP Settings.  !See .BsmSuite.AdministrationServerReportTransportSuite.RptTransportSetCase0100                                                                   |
+|Precondition2    |Configure default destination email address. !See .BsmSuite.AdministrationServerReportTransportSuite.RptTransportSetCase1400                                                |
+|Precondition3    |Click '''Schedule Manager''' to go to Schedule Manager tab.                                                                                                                 |
+|Step1            |Double click in the grid of current date.                                                                                                                                   |
+|Step2            |On the pop up New event window, click '''select Report''' button.                                                                                                           |
+|Step3            |On the pop up Select Report window, check on one report "Activation_count.rptdesign"                                                                                        |
+|Step4            |Click '''OK''' on Select Report window to close it.                                                                                                                         |
+|Expected Result1 |Verify report "Activation_count.rptdesign" display in selected report list.                                                                                                 |
+|Step6            |On the right side of selected report "Activation_count.rptdesign",check on the check box of Excel.                                                                          |
+|Step7            |Click '''Sending to''' to got to Sending to tab.                                                                                                                            |
+|Step8            |Check on Email.                                                                                                                                                             |
+|Expected Result3 |Verify email address configured in Precondition2 display and enable.                                                                                                        |
+|Step9            |In Description box, input "event0100".                                                                                                                                      |
+|Step10           |In Time period first box, select a coming time point.                                                                                                                       |
+|Step11           |Click '''Save'''button.                                                                                                                                                     |
+|Expected Result4 |Verify "event0100" display in the grid of current date.                                                                                                                     |
+|Expected Result5 |Verify in current date at the time selected in step10, generate a report which name start with "Activation_count" stored on on BSM server /soft/bsmsoft/bsm1/bsm/Current/data|
+|Expected Result6 |Verify the Generated report is in Excel format and can be opened successfully by software MS Excel.                                                                         |
+|Expected Result7 |Verify the email address configured in Precondition2 receive an eamil,the email attachment is the generated report and can be viewed by MS Excel.                           |
+|Clean Up         |Remove event0100. !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200 !-<br>-!Clear reports on on BSM server /soft/bsmsoft/bsm1/bsm/Current/data                        |

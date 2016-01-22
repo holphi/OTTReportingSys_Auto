@@ -1,0 +1,16 @@
+|Test Case ID     |LogViewer2000                                                                                            |
+|Title            |Operation download report from Report Manager is logged correctly.                                  |
+|Iteration        |                                                                                                   |
+|Jira Story       |                                                                                                   |
+|Requirement ID   |[[id][]]                                                                                           |
+|Priority         |P5                                                     |
+|Keywords         |log                                                                                                |
+|Prepare Test Data|Download a report from Report Manager.!See .BsmSuite.ReportManagerSuite.ReportMgrCase0500   |
+|Precondition1    |login as user "admin" with view log viewer permission.                                             |
+|Step1            |Click '''Administration''' to go to Administration tab.                                            |
+|Step2            |Click '''Log'''->'''Log Viewer'''.                                                                 |
+|Expected Result1 |Verify there is a new record:action is "Downloaded report template"                                     |
+|Expected Result2 |Verify the new record:description contains report template name     |
+|Expected Result3 |Verify the new record:Operator is "admin".                                                                    |
+|Expected Result4 |Verify the new record:status is "success".                                                                    |
+|Clean Environment|                    |

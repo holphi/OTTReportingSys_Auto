@@ -1,0 +1,21 @@
+|Test Case ID     |SinglePrivilegeChk3200                                                                                                                |
+|Title            |User who only has update transform event privilege will only can update transform schedule events.                                                     |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Schedule Manager update privilege                                                                                                                     |
+|Prepare Test Data|Creat an transform event "event3200". !See .BsmSuite.TransformScheduleManager.TransformScheduleMgrCase0100                                                  |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "role0300",only check on Update transform event permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "user0300" only check on  role "role0300". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "user0300"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Transform Schedule Manager''' tabs are visiable.                                                                   |
+|Step5            |Double click "event3200".                                                                                                           |
+|Expected Result2 |Verify the event display in the grid.At bottom only two buttons '''Save''' '''Cancel''' are visiable.                                                      |
+|Step6            |Update "event3200".!See .BsmSuite.TransformScheduleManager.TransformScheduleMgrCase2700.                                                                                                          |
+|Step7            |Double click in any other calendar grid.                                                                                                    |
+|Expected Result3 |Verify new event window pop up but at bottom only one button '''Cancel''' is visiable.                                                |
+|Clean Up         |N/A                                                                                                                                   |
+

@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|TransformMgrCase3700|
+|Title|Transforms(.ktr) can be batch uploaded |
+|Requirement ID||
+|Priority|P2|
+|Keywords|Transform, bulk upload|
+|Prepare Test Data|!--!|
+|Precondition|!-<br>-!|
+|Steps and Expected Results|!-1. login as admin<br>2. Click '''Extraction Manager''' to Extraction Manager tab.<br>3. Click "Batch Upload Template"<br>'''Expected Results''':Verify upload window pop up.<br>4. In upload window, click add file<br>5. Browse to transform zip package "Transforms.zip" select it.<br> '''Expected Results''':1.Veirfy "Add file" button gray out.<br>6. Click Upload button.<br>'''Expected Results''':2. Verify "Done" display under package name in Upload window.<br>2. Verify all transforms are uploaded to Extraction Manager.<br><br><br>-!|
+|Clean Up|<br>|

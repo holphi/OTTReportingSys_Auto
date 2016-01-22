@@ -1,0 +1,13 @@
+<properties>
+  <Edit />
+  <Files />
+  <Help>User leave an required parameter blank on a report which don't have default value will not harm on system.</Help>
+  <Normal />
+  <Properties />
+  <RecentChanges />
+  <Refactor />
+  <Search />
+  <Suites>P4</Suites>
+  <Versions />
+  <WhereUsed />
+</properties>

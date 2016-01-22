@@ -1,0 +1,21 @@
+|Test Case ID     |LogViewer2600                                                                                            |
+|Title            |Operation save report purge configuration from administration is logged correctly.                                  |
+|Iteration        |                                                                                                   |
+|Jira Story       |                                                                                                   |
+|Requirement ID   |[[id][]]                                                                                           |
+|Priority         |P5                                                     |
+|Keywords         |log                                                                                                |
+|Prepare Test Data|Config report purge.!See .BsmSuite.AdministrationScheduledTasksReportPurgeSuite.PurgeReportCase0100  |
+|Precondition1    |login as user "admin" with view log viewer permission.                                             |
+|Step1            |Click '''Administration''' to go to Administration tab.                                            |
+|Step2            |Click '''Log'''->'''Log Viewer'''.                                                                 |
+|Expected Result1 |Verify there is two new records.                                   |
+|Expected Result2 |Verify action of first record is save report purge configuration    |
+|Expected Result3 |Verify description of first record contains configuration info .                                                                    |
+|Expected Result4 |Verify operator of first record is admin.                                                                    |
+|Expected Result5 |Verify status of first record is "success".                                                                    |
+|Expected Result6 |Verify action of second record is purge report    |
+|Expected Result7 |Verify description of first record contains purge report older than [] days .                                                                    |
+|Expected Result8 |Verify operator of first record is system.                                                                    |
+|Expected Result9 |Verify status of first record is "success".                                                                    |
+|Clean Environment|                    |

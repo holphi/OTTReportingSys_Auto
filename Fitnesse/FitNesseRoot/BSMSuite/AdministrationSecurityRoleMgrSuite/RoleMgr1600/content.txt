@@ -1,0 +1,19 @@
+|Test Case ID     |RoleMgr1600                                                                                  |
+|Title            |Role comment can be updated. |                                                                                     
+|Iteration        |                                                                                             |
+|Jira Story       |                                                                                             |
+|Requirement ID   |[[id][]]                                                                                     |
+|Priority         |P3                                                                                           |
+|Keywords         |Role, Update                                                                                 |
+|Prepare Test Data|Create a role "role17",content of comment box is "role17". !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100.|
+|Precondition1    |log in as user "admin" with update role permission.                                          |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                      |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                                    |
+|Step1            |Select role "role17".                                                                        |
+|Step2            |Click button '''Update Role'''.                                                              |
+|Step3            |Clear text in comment box and input "update role comment"                                   |
+|Step4            |Click '''OK'''.                                                                              |
+|Expected Result1 |Pop up message "Update role successfully".                                                   |
+|Expected Result2 |Click '''OK''', verify the message box close.                                                |
+|Expected Result3 |Double-click "role17" in role list, verify content of comment box is "update role comment"  |                             
+|Clean Environment|Remove role role17 . !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000           |

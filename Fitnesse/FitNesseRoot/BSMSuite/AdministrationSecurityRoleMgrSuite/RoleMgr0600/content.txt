@@ -1,0 +1,21 @@
+|Test Case ID     |RoleMgr0600                                                                                                                                                                   |
+|Title            |User can be granted to new created role.                                                                                                                                     |
+|Iteration        |                                                                                                                                                                              |
+|Jira Story       |                                                                                                                                                                              |
+|Requirement ID   |[[id][]]                                                                                                                                                                      |
+|Priority         |P1                                                                                                                                                                            |
+|Keywords         |Role, Create                                                                                                                                                                  |
+|Prepare Test Data|N/A                                                                                                                                                                           |
+|Precondition1    |log in as user "admin" with create role permission.                                                                                                                           |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                                                                                       |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                                                                                                                     |
+|Step1            |Click button '''Create Role'''.                                                                                                                                               |
+|Step2            |Input a role name "role6".                                                                                                                                                    |
+|Step3            |Check on permissions "Schedule Manager","Administration"on the Permission tree.                                                                                               |
+|Step4            |Type "role6" in Comment box.                                                                                                                                                  |
+|Step5            |Click '''OK'''.                                                                                                                                                               |
+|Step6            |Click '''OK''' on the message "Create role successfully."                                                                                                                     |
+|Step7            |Create a user "userrole6",grant role6 to the user. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100                                                              |
+|Expected Result1 |Log in successfully with the user<test1>.                                                                                                                                     |
+|Expected Result2 |Verify user test1's permissions are "Schedule Manager","Administration".                                                                                                      |
+|Clean Environment|Remove role role6. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000.!-<br>-!Remove user userrole6. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200.|

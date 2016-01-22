@@ -1,0 +1,18 @@
+|Test Case ID     |RoleMgr1400                                                                                 |
+|Title            |Updated role name cannot duplicated with existing.                                          |
+|Iteration        |                                                                                            |
+|Jira Story       |                                                                                            |
+|Requirement ID   |[[id][]]                                                                                    |
+|Priority         |P3                                                                                          |
+|Keywords         |Role, Update                                                                                |
+|Prepare Test Data|Create role "role14","role15".!See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100.|
+|Precondition1    |log in as user "admin" with update role permission.                                         |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                     |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                                   |
+|Step1            |Select role "role14".                                                                       |
+|Step2            |Click button '''Update Role'''.                                                             |
+|Step3            |Input a new role name "role15".                                                             |
+|Step4            |Click '''OK'''.                                                                             |
+|Expected Result1 |Pop up message "The role name you entered exits,please choose another one".                 |
+|Expected Result2 |Click '''OK''' , verify message box closed.                                                 |
+|Clean Environment|Remove role role14,role15 . !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000   |

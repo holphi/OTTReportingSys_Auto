@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|BackupandRestoreCase0100|
+|Title|BSM configuration can be backup manually.|
+|Requirement ID||
+|Priority|P1|
+|Keywords|backup,BSM configuration|
+|Prepare Test Data|!--!|
+|Precondition|!-1. Upload a picture to replace frontpage !See .BsmSuite.AdministrationServerFrontPageSuite.FrontPageConfigCase0100<br>2. Create a role br0100. !See BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100<br>3. Create a user bu0100. !See BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100<br>-!|
+|Steps and Expected Results|!-1. login as admin<br>2. Click '''Administration''' to go to Administration tab.<br>3. On left pane, Click '''System Maintenance''' -> '''BSM Configuration'''->''BSM Configuration Backup'''<br>4. In section '''Select Operation Type''',select '''Manually'''<br>5. Click button '''Execute Backup'''<br>6. Click Save button,save the backup file to disk.<br>'''Expected Results''':1. bsmconf.zip save to disk.<br>2. In log viewer, Action Backup BSM Configuration Manually is success<br><br><br>-!|
+|Clean Up|<br>|

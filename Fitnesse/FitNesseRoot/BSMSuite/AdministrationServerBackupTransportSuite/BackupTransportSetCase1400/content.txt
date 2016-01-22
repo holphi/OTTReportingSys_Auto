@@ -1,0 +1,16 @@
+|Test Case ID     |BackupTransportSetCase1400                                                                                                            |
+|Title            |Destination Email Address can be reset.                                                           |
+|Iteration        |                                                                                                                                   |
+|Jira Story       |                                                                                                                                   |
+|Requirement ID   |                                                                                                                                   |
+|Priority         |P3                                                                                                                                 |
+|Keywords         |SMTP,Email                                                                                                                               |
+|Prepare Test Data|N/A                                                                                                                                |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                                            |
+|Precondition2    |Click '''System Maintenance'''-> '''Backup Transport Configuration'''                                                                                       |
+|Step1            |In Destination Email Address field, input an valid Email address(Usually, use tester's company email address).                                                                     |
+|Step2            |Click '''Save'''                                                                                                    |
+|Expected Result1 |Verify return message "Save Successfully"                                                                                          |
+|Step3            |Click '''Reset'''                                                                                                    |
+|Expected Result1 |Verify Destination Email Address are blank.                                                                                          |
+|Clean Up         |N/A                                                                                                                                |

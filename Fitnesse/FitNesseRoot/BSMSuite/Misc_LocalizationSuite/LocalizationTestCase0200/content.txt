@@ -1,0 +1,6 @@
+Check lists for home page:
+1.Words in header image:company logo?, "enabling digital tv convergence", product logo, "User","logout"
+2.Words in header: "Home","Schedule Manager","Reports Manager" "Help"
+3.Home page content:company logo? "Web-Based" Business Security Monitoring"
+4.Words in footer:"...ALL RIGHTS RESERVED"
+5.Browser Header "Welcome|Business and Security Monitoring"

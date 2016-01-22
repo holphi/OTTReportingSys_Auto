@@ -1,0 +1,26 @@
+|Test Case ID     |SinglePrivilegeChk1100                                                                                                                |
+|Title            |User only has generated files privilege on Report Manager will only can view generated files.                                                   |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Report Manager                                                                                                                     |
+|Prepare Test Data|N/A                                                |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "scrole1100",only check on view generated files permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "scuser1100" only check on  role "scrole1100". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "scuser1100"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Report Manager''' tab are visiable.                                                                   |
+|Step5            |Click '''Report Manager''' to go to Report Manager page                                                                                 |
+|Expected Result2 |Verify '''Add Report''', '''Remove Report''' buttons do not display above "Report Name".                                                                |
+|Step6            |View generated files !See .BsmSuite.ReportManagerSuite.ReportMgrCase0800| 
+|Step7            |Click "Activation_count.rptdesign" on Report Manager page|
+|Expected Result3 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step8            |Click '''Update''' button on Report Manager page|
+|Expected Result4 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step9            |Click '''Set Schedule''' button on Report Manager page| 
+|Expected Result5 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step10           |Click '''Generate''' button on Report Manager page|
+|Expected Result6 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Clean Up         |N/A                                                                                                                                   |

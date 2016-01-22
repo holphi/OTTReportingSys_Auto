@@ -1,0 +1,16 @@
+|Test Case ID     |UserMgr3300                                                                                        |
+|Title            |User admin cannot be updated by other users.                                                                    |
+|Iteration        |                                                                                                   |
+|Jira Story       |                                                                                                   |
+|Requirement ID   |[[id][]]                                                                                           |
+|Priority         |P2                                                                                                 |
+|Keywords         |User, Update                                                                                       |
+|Prepare Test Data|Create a user "test33" in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100|
+|Precondition1    |log in as a user "test33" with update user permission.                                             |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                            |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                          |
+|Step1            |Select user "admin".                                                                               |
+|Step2            |Click button '''Update User'''                                                                     |
+|Expected Result1 |Pop up message "Only admin user can edit his profile."                                                        |
+|Expected Result2 |Click '''OK''' on the message,Verify the message box close.                                        |
+|Clean Up         |Remove user test33. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                  |

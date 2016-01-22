@@ -1,0 +1,16 @@
+|Test Case ID       |ScheduleMgrCase4002|
+|Title              |User can not left http field empty if chooses sending via http when create an event on report schedule manager|
+|Iteration          ||
+|Jira Story         ||
+|Requirement ID     |[id][]|
+|Priority           |P3                                                                                                                                                           |
+|Keywords           |event http|
+|Prepare Test Data  |N/A|
+|Precondition1      |Login as admin and go to report schedule manager page|
+|Step1              |Double click grid of today|
+|Step2              |Choose a report and format on '''New event''' window.|
+|Step3              |Click '''Sending to''' button and check on Http and make sure the http ip field is empty|
+|Step4              |Choose a coming time|
+|Step5              |Click '''Save''' button| 
+|Expected Result1   |Pop up a message box "Please input the WebDav Url"|
+|Clean Environment  |N/A|   

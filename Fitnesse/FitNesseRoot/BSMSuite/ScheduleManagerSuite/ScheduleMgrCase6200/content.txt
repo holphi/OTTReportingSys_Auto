@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|ScheduleMgrCase6200|
+|Title|[Repeat report event vs repeat extraction event]First report event occurrence after first extraction event occurrence but second report event occurrence before second extraction event occurrence, First report event occurrence will succeed,second report event occurrence will fail.|
+|Requirement ID||
+|Priority|P3|
+|Keywords|report event,extraction event|
+|Prepare Test Data|!--!|
+|Precondition|!-1.Add report template:TransformAndReport.rptdesign <br>2.Add transform:TransformExecuteToOracle.ktr<br>-!|
+|Steps and Expected Results|!-1. login as admin<br>2. On Extraction Schedule Manager,in grid of current date create an repeat event "extraction_event8" with transform ,repeat every 1 week at 00:05. TransformExecuteToOracle.ktr(transform data to table fortest)<br>3. On Report Schedule Manager,in grid of current date double click on calendar grid to open new event window<br>4. Click "Select Report" and check on TransformAndReport.rptdesign(retrieve data both from table fortest and cor_device_test) ,then click OK<br>5. Click "Select Extraction event" and check on event created in step2 "extraction_event8",then click OK.<br>6. Check on format Excel.<br>7. Input event descript "report_even8"<br>8. Click Disable button to set report event repeat every 1 day at 01:10 ( which is after transform event "extraction_event8"). <br><br>Expected Results:<br>1. extraction_event8 occured on time for each occurrence.<br>2. report_even8 first occurrence will occurd on time.<br>3. report_even8 occurrence will not occurd on time. <br><br><br><br><br>-!|
+|Clean Up|1.Clean data transformed in extraction_event1 in target tables fortest and cor_device_test.<br>|

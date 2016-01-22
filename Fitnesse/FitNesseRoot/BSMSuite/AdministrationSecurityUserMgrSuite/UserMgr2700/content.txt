@@ -1,0 +1,15 @@
+|Test Case ID     |UserMgr2700                                                                                       |
+|Title            |User can be filtered by name name.                                                                |
+|Iteration        |                                                                                                  |
+|Jira Story       |                                                                                                  |
+|Requirement ID   |[[id][]]                                                                                          |
+|Priority         |P3                                                                                                |
+|Keywords         |User, filter                                                                                      |
+|Prepare Test Data|Create a user "test27"in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100|
+|Precondition1    |log in as a user "admin" with view user permission.                                               |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                           |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                         |
+|Step1            |In user name filter,input "27"                                                                    |
+|Expected Result1 |"test27" display in result list.                                                                  |
+|Expected Result2 |All user names in result list contains "27".                                                      |
+|Clean Up         |Remove user test27. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                 |

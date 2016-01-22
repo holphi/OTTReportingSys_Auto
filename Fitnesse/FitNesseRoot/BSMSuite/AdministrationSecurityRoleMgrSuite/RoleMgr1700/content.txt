@@ -1,0 +1,18 @@
+|Test Case ID     |RoleMgr1700                                                                         |
+|Title            |Role will not be update if click cancel. |                                           
+|Iteration        |                                                                                    |
+|Jira Story       |                                                                                    |
+|Requirement ID   |[[id][]]                                                                            |
+|Priority         |P4                                                                                  |
+|Keywords         |Role, Update                                                                        |
+|Prepare Test Data|Create a role "role17"!See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100.|
+|Precondition1    |log in as user "admin" with update role permission.                                 |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                             |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                           |
+|Step1            |Select role "role17".                                                               |
+|Step2            |Click button '''Update Role'''.                                                     |
+|Step3            |Input a new role name "role17new"                                                   |
+|Step4            |Click '''Cancel'''.                                                                 |
+|Expected Result1 |Verify role edit dialog box close.                                                  |
+|Expected Result2 |Double-click role "role17" in role list,verify role name is still "role17".         |
+|Clean Environment|Remove role role17. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000   |

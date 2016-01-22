@@ -1,0 +1,17 @@
+|Test Case ID     |TransformScheduleMgrCase3500                                        |
+|Title            |An event at least has one transform.                          |
+|Iteration        |                                                           |
+|Jira Story       |                                                           |
+|Requirement ID   |[[id][]]                                                   |
+|Priority         |P3                                                        |
+|Keywords         |event, edit,                                           |
+|Prepare Test Data|N/A                                                        |
+|Precondition1    |N/A                                                        |
+|Step1            |Double click in the grid of current date.                  |
+|Step2            |On the pop up window,in Description box, input "event3400".|
+|Step3            |In Time period first box, select a coming time point.      |
+|Step4            |Click '''Save''' button.                                   |
+|Expected Result1 |Verify pop up message "Please select a transform."            |
+|Step5            |Click '''OK''' on the message box.                         |
+|Expected Result2 |The message box close.                                     |
+|Clean Up         |N/A                                                        |

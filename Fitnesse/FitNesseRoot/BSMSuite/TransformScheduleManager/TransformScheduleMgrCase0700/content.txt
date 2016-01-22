@@ -1,0 +1,26 @@
+|Test Case ID     |TransformScheduleMgrCase0700                                                                                                                                                           |
+|Title            |Repeat every 15 day event with one transform run correctly when cross year .                                                     |
+|Iteration        |                                                                                                                                                                            |
+|Jira Story       |                                                                                                                                                                            |
+|Requirement ID   |[[id][]]                                                                                                                                                                    |
+|Priority         |P3                                                                                                                                                                         |
+|Keywords         |event, Create, repeat event, Daily                                                                                                                          |
+|Prepare Test Data|N/A                                                                                                                                                                         |
+|Precondition1    |Click '''Transform Schedule Manager''' to go to Transform Schedule Manager tab.                                                                                                                 |
+|Step1            |Double click in the grid of a coming day in December of current year..                                                                                                                                   |
+|Step2            |On the pop up New event window, click '''Select Transform''' button.                                                                                                           |
+|Step3            |On the pop up Select Transform window, check on three transform                                                                                        |
+|Step4            |Click '''OK''' on Select Transform window to close it.                                                                                                                         |
+|Expected Result1 |Verify transform selected in step3 display in selected transform list.                                                                                                 |
+|Step5            |In Description box, input "event0700".                                                                                                                                      |
+|Step6            |Click button '''Disable'''                                                                                                                                                  |
+|Step7            |In the expand Repeat event,select radio button "Daily"                                                                                                                      |
+|Step8            |Select "every [] day" and input 15                                                                                                                                           |
+|Step9            |Select "After [] occurrences" and input 3                                                                                                                                              |
+|Step10           |In Time period first box, select a coming time point.                                                                                                                       |
+|Step11           |Click '''Save''' button.                                                                                                                                                     |
+|Expected Result2 |Verify "event0700" display in the grids of each expected occurrences date.                                                                                                                     |
+|Expected Result3 |Verify DB which is transformed to has no relative records before event is triggered.                                                                                                                    |
+|Expected Result4 |Verify start from current date,every 15 day at the time selected in step10, event is triggered and transform is generated.|
+|Expected Result5 |Verify every time transform generated, it has relative records on log viewer page.|
+|Clean Up         |Remove "event0700" !See .BsmSuite.TransformScheduleManager.TransformScheduleMgrCase2300                                                                                           |

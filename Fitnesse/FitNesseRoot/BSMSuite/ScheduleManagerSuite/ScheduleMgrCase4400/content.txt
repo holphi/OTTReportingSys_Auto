@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|ScheduleMgrCase4400|
+|Title|User can set decimal parameter when create report event.|
+|Requirement ID||
+|Priority|P3|
+|Keywords|evernt, report, parameter|
+|Prepare Test Data|!--!|
+|Precondition|!-1. Add reports template Decimal_report.rptdesign to Report Manager  !See.BsmSuite.ReportManagerSuite.ReportMgrCase0100<br>-!|
+|Steps and Expected Results|!-1. login as Admin <br>2. Click "Report Schedule Manager" to go to Report Schedule Manager tab.<br>3. Double click in the grid of current Decimal.<br>4. On the pop up New event window, click select Report button.<br>5. On the pop up Select Report window, check on one report "Decimal_report.rptdesign", then click OK.<br>6. Check on report format Excel. <br>7. Click "Set parameter value" on right side of report name "Decimal_report.rptdesign" <br>Expected Results: On the pop up window, verify two report parameters display, DataType is Decimal <br>9. In first row,Input "-1" into Value column, click OK.<br>10. In Description, input "event_Decimal"<br>11. In Time period first box, select a coming time point.<br>12. Click Savebutton.<br>Expected Results: Generate a report which name start with "Decimal_report" stored on on BSM server /soft/bsmsoft/bsm1/bsm/Current/data<br>Expected Results: Verify in report, the value in column C_Decimal is -10.<br>-!|
+|Clean Up|Remove event and report template<br>|

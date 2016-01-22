@@ -1,0 +1,18 @@
+|Test Case ID     |TransformScheduleMgrCase3000                                                                          |
+|Title            |User can change repeat event to non-repeat event when edit event.                                             |
+|Iteration        |                                                                                              |
+|Jira Story       |                                                                                              |
+|Requirement ID   |[[id][]]                                                                                      |
+|Priority         |P3                                                                                            |
+|Keywords         |event, edit                                                             |
+|Prepare Test Data|Create a repeat event "event3000". !See .BsmSuite.TransformScheduleManager.TransformMgrCase0500|
+|Precondition1    |Click '''Transform Schedule Manager''' to go to Transform Schedule Manager tab.                                   |
+|Step1            |Change BSM server system clock to make "event3000" occur once.                                                                                                          |
+|Step2            |Double click on any instance of "event3000" in calendar grid                                                                                                            |
+|Step3            |In Description, append "update"                                                                                                                                        |
+|Step4            |Click button '''Enabled'''                                                                                                                                              |
+|Step5            |Click '''Save'''button.                                                                                                                                                 |
+|Expected Result1 |Verify "event3000update" display in the grids of each expected occurrences date.                                                                                                                     |
+|Expected Result2 |Verify the event will not occur in following two days, not generate reports.|
+|Expected Result3 |Verify it has relative log on log viewer page(update event).|
+|Clean Up         |Remove "event3000update".!See .BsmSuite.TransformScheduleManager.TransformMgrCase2300                                                                                          |

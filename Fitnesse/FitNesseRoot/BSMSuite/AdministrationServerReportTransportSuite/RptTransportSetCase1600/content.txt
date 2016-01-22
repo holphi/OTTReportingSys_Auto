@@ -1,0 +1,17 @@
+|Test Case ID     |RptTransportSetCase1600                                                                                       |
+|Title            |If leave required field Repeat Count blank,cannot save Sending report repeat times                            |
+|Iteration        |                                                                                                              |
+|Jira Story       |                                                                                                              |
+|Requirement ID   |                                                                                                              |
+|Priority         |P3                                                                                                            |
+|Keywords         |SMTP,Email                                                                                                    |
+|Prepare Test Data|N/A                                                                                                           |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                       |
+|Precondition2    |Click '''Server''' -> '''Report Transport'''                                                                  |
+|Step1            |Leave field Repeat Count field blank.                                                                  |
+|Step2            |Click '''Save'''                                                                                              |
+|Expected Result1 |Verify returns message "This field is required" on the right side of field Repeat Count.         |
+|Step3            |In Repeat Count field, input a number "3"|
+|Step4            |Click '''Save'''                                                                                              |
+|Expected Result2 |Verify return message "Save Successfully".                                                                    |
+|Clean Up         |N/A                                                                                                           |

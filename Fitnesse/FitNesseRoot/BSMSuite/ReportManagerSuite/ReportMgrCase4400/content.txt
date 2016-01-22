@@ -1,0 +1,15 @@
+|Test Case ID     |ReportMgrCase4400                                       |
+|Title            |User doesn't has Data filter setting permission cannot see "Setting" link  |
+|Iteration        |                                                        |
+|Jira Story       |                                                        |
+|Requirement ID   |[[id][]]                                                |
+|Priority         |P4                                                      |
+|Keywords         |Report, Generate                                        |
+|Prepare Test Data|N/A                                                     |
+|Precondition1    |Add report template SDP_USERS_table.rptdesign           |
+|Precondition2    |log in as user "admin" with generate report permission. |
+|Step1            |Create a role testR  which doesn't has has Data filter setting permission but has all other permission on report manager |
+|Step2            |create a user usrR and grant role testR to it.     |
+|Step3            |login as usrR.                                                     |
+|Expected Result2 |"Setting" link is not display.               |
+|Clean Environment|N/A                                                     |

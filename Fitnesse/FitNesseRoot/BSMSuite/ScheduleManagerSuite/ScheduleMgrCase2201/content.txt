@@ -1,0 +1,17 @@
+|Test Case ID     |ScheduleMgrCase2201                                                                           |
+|Title            |Event will not be delete if cancel to delete.                                                 |
+|Iteration        |                                                                                              |
+|Jira Story       |                                                                                              |
+|Requirement ID   |[[id][]]                                                                                      |
+|Priority         |P3                                                                                            |
+|Keywords         |event, Delete, cancel                                                              |
+|Prepare Test Data|Create a non-repeat event "event2201". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100|
+|Precondition1    |Click '''Schedule Manager''' to go to Schedule Manager tab.                                   |
+|Step1            |Double click "event2201"                                                                      |
+|Step2            |On the pop up window, click '''Delete''' button on the bottom of the window.                  |
+|Expected Result1 |Verify pop up message "Event will be deleted permanently,are you sure?"                       |
+|Step3            |Click on '''Cancel''' on the message.                                                         |
+|Expected Result2 |Verify message box close, return to window open in step2.                                     |
+|Step4            |Click '''Cancel''' button on the bottom of the window.                                                                                              |
+|Expected Result3 |Verify "event 2201" still display in calendar grid.                                           |
+|Clean Up         |Remove event2201. !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200                                                                                            |

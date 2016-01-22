@@ -1,0 +1,8 @@
+!contents 
+Check list for Report Manager:
+1."Start Date","End Date",date component(month name,day of week name)
+2."Report Name","Update Report","Update","Generate Report","Generate"
+3."Add a Report",dialog name"Upload","add file","Upload","Clean","OK""Cancel",upload results"Done""Fail"
+4.Generate :dialog name,birt report
+5.How about hover tool tips?
+6.How about Report template name,Report header,description??

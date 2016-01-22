@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="host_name">172.22.2.189</entry>
+	<entry key="host_username">root</entry>
+	<entry key="host_password">Superuser</entry>
+	<entry key="username">admin</entry>
+	<entry key="password">admin</entry>
+	<entry key="browser">ie</entry>
+	<entry key="db_username">SA</entry>
+	<entry key="db_password">nagra</entry>
+	<entry key="smpt_server">srv-smtp1.hq.k.grp</entry>
+	<entry key="smpt_port">25</entry>
+	<entry key="smpt_sender">BSM@nagra.com</entry>
+	<entry key="ftp_url">172.22.2.93</entry>
+	<entry key="ftp_username">bsm</entry>
+	<entry key="ftp_password">bsm</entry>
+	<entry key="ftp_savepath">/report</entry>
+	<entry key="http_url">http://172.22.2.93/incoming</entry>
+	<entry key="http_username">xampp</entry>
+	<entry key="http_password">xampp</entry>
+	<entry key="buildbranch">http://vm81657:8080/jenkins/job/bsm_main/</entry>
+	<entry key="artifact">bsm_1.5STD1-Lx86.64.RH5.5_bin.tar.gz</entry>
+	<!--Following configuration are used for test propose-->
+	<entry key="domain_username">#YOUR_DOMAIN_ALIAS#</entry>
+	<entry key="domain_password">#YOUR_PASSWORD#</entry>
+	<entry key="des_email">#YOUR_DESTINATION_EMAIL_ADDR#</entry>
+</properties>

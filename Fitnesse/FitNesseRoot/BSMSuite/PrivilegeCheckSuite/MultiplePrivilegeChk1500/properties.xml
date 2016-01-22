@@ -1,0 +1,13 @@
+<properties>
+	<Edit />
+	<Files />
+	<Help>A user which has multiple privileges( view schedule manager, create and update event) on Schedule manager and multiple privileges(Generate report and view generated File) on Report Manager can view schedule manager, create and update event,Generate report and view generated File.</Help>
+	<Normal />
+	<Properties />
+	<RecentChanges />
+	<Refactor />
+	<Search />
+	<Suites>P4                                                                                                                                                                                  </Suites>
+	<Versions />
+	<WhereUsed />
+</properties>

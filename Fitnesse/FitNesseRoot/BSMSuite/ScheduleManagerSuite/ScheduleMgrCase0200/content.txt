@@ -1,0 +1,27 @@
+|Test Case ID     |ScheduleMgrCase0200                                                                                                                                                           |
+|Title            |User can create an non-repeat event with one report, generate report in PDF format,and transport report via FTP.                                                            |
+|Iteration        |                                                                                                                                                                            |
+|Jira Story       |                                                                                                                                                                            |
+|Requirement ID   |[[id][]]                                                                                                                                                                    |
+|Priority         |P1                                                                                                                                                                          |
+|Keywords         |event, Create, non-repeat event,PDF, FTP                                                                                                                           |
+|Prepare Test Data|N/A                                                                                                                                                                         |
+|Precondition1    |Configure default FTP Settings.  !See .BsmSuite.AdministrationServerReportTransportSuite.RptTransportSetCase0300                                                            |
+|Precondition2    |Click '''Schedule Manager''' to go to Schedule Manager tab.                                                                                                                 |
+|Step1            |Double click in the grid of current date.                                                                                                                                   |
+|Step2            |On the pop up New event window, click '''select Report''' button.                                                                                                           |
+|Step3            |On the pop up Select Report window, check on one report "Activation_count.rptdesign"                                                                                        |
+|Step4            |Click '''OK''' on Select Report window to close it.                                                                                                                         |
+|Expected Result1 |Verify report "Activation_count.rptdesign" display in selected report list.                                                                                                 |
+|Step5            |On the right side of report "Activation_count.rptdesign" , check on the check box of PDF.                                                                                 |
+|Step6            |Click '''Sending to''' to got to Sending to tab.                                                                                                                            |
+|Step7            |Check on FTP.                                                                                                                                                               |
+|Expected Result2 |Verify default FTP settings configured in Precondition1 display and enable.                                                                                                 |
+|Step8            |In Description box, input "event0200".                                                                                                                                      |
+|Step9            |In Time period first box, select a coming time point.                                                                                                                       |
+|Step10           |Click '''Save'''button.                                                                                                                                                     |
+|Expected Result3 |Verify "event0200" display in the grid of current date.                                                                                                                     |
+|Expected Result4 |Verify in current date at the time selected in step9, generate a report which name start with "Activation_count" stored on on BSM server /soft/bsmsoft/bsm1/bsm/Current/data|
+|Expected Result5 |Verify the Generated report is in PDF format and can be opened successfully by PDF Reader.                                                                                  |
+|Expected Result6 |Verify the generated report is uploaded to FTP server configured in Precondition1 and can be viewed by PDF Reader.                                                          |
+|Clean Up         |Remove event0200. !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200 !-<br>-!Clear reports on on BSM server /soft/bsmsoft/bsm1/bsm/Current/data                                                                                            |

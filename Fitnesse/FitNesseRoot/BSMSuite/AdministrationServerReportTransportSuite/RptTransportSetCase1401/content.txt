@@ -1,0 +1,18 @@
+|Test Case ID     |RptTransportSetCase1401                                                                                                            |
+|Title            |If input multiple valid destination Email address,test Email will return success.                                                           |
+|Iteration        |                                                                                                                                   |
+|Jira Story       |                                                                                                                                   |
+|Requirement ID   |                                                                                                                                   |
+|Priority         |P3                                                                                                                                 |
+|Keywords         |SMTP,Email                                                                                                                               |
+|Prepare Test Data|N/A                                                                                                                                |
+|Precondition0    |Configure SMTP Settings.  !See .BsmSuite.AdministrationServerReportTransportSuite.RptTransportSetCase0100                          |
+|Precondition1    |Click '''Administration''' to go to Administration tab.                                                                            |
+|Precondition2    |Click '''Server''' -> '''Report Transport'''                                                                                       |
+|Step1            |In Destination Email Address field, input multiple valid Email address,separate by ";"for example "abc@nagra.com;efg@nagra.com;hij@nagra.com".                                                                     |
+|Step2            |Click '''Save'''                                                                                                    |
+|Expected Result1 |Verify return message "Save Successfully"                                                                                          |
+|Step3            |Click '''Test Email'''                                                                                                              |
+|Expected Result2 |Verify returns message "Email was successfully sent"                                                                               |
+|Expected Result3 |The Email address input in Step1 receive test email.                                                                               |
+|Clean Up         |N/A                                                                                                                                |

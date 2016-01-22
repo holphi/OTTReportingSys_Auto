@@ -1,0 +1,17 @@
+|Test Case ID     |MultiplePrivilegeChk1900                                                                                                                                                     |
+|Title            |User who has privilege to create a transform schedule and view tranform manager can set schedule on transform manager .|
+|Iteration        |                                                                                                                                                                             |
+|Jira Story       |                                                                                                                                                                             |
+|Requirement ID   |                                                                                                                                                                             |
+|Priority         |P3                                                                                                                                                                                  |
+|Keywords         |Schedule Manager,Report Manager                                                                                                                                                             |
+|Prepare Test Data|N/A                                                                                        |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                                                              |
+|Step1            |Create role "role1600",check on permissions :Create tranform event under Transfrom Schedule Manager and View Tranform Manager under Transform Manager. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100           |
+|Step2            |Create user "user1600" only check on  role "role1600". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100                                                     |
+|Step3            |Log out "admin".                                                                                                                                                             |
+|Step4            |Log in user "user1600"                                                                                                                                                     |
+|Expected Result1 |Verify only '''Home''' and '''Transform Schedule Manager''','''Transform Manager''' tabs are visible.                                                                                                          |
+|Step5            |Click '''Transform Manager''' to go to Tranform Manager tab.                                                                                                                            |
+|Expected Result2 |Verify user "user1600" can set schedule for a certain transform. !See .BsmSuite.TransformManagerSuite.TransformMgrCase1200                                                     |
+|Clean Up         |N/A|                                                                                                                                                                     |

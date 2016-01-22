@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|BackupandRestoreCase0600|
+|Title|Report Template can be backup by scheduler and transport backup file by email,FTP and HTTP.|
+|Requirement ID||
+|Priority|P1|
+|Keywords|backup,BSM configuration,scheduler|
+|Prepare Test Data|!--!|
+|Precondition|!-1. Add three reports template to Report Manager  !See.BsmSuite.ReportManagerSuite.ReportMgrCase0300<br>2. Configure Backup Transport Configuration<br>-!|
+|Steps and Expected Results|!-1. login as admin<br>2. Click '''Administration''' to go to Administration tab.<br>3. On left pane, Click '''System Maintenance''' -> '''Report Template'''->''Report Template Backup'''<br>4. In section '''Select Operation Type''',select '''Scheduler'''<br>5. In '''CORN Expression''', Input a expression "0 0 12 * * ? "<br>6. Change the BSM server time to 11:59:55<br><br>'''Expected Results''': 1.From log Viewer, Report tempalte is backuped On 12:00.<br>2.Report Template backup file is transport by types configured in Precondition2.<br>3. In log viewer, Action Backup Report Template scheduler is success<br>4. In log viewer, Action transport Report Template backup is success<br>-!|
+|Clean Up|<br>|

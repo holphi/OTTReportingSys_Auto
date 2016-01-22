@@ -1,0 +1,22 @@
+|Test Case ID     |SinglePrivilegeChk2800                                                                                                                |
+|Title            |A user only has Upload Front Page Image privilege will only upload Front Page image.                    |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Administration                                                                                                                      |
+|Prepare Test Data|N/A                                                 |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "scrole2800",only check on Upload Front Page Image permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "scuser2800" only check on  role "scrole2800". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "scuser2800"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Administration''' tab are visiable.                                                                   |
+|Step5            |Click '''Administration'''.                                                                                                           |
+|Expected Result2 |Verify go to Front Page page.                                                    |
+|Expected Result3 |Verify only '''Front Page''' under '''Server''' display on the left side of Front Page page.                  |
+|Expected Result4 |Verify there is no '''Save''' button under "Login box" on Front Page page.                   |
+|Expected Result5 |Verify there are '''Browse''','''Upload''' buttons under "Front page configuration" on Front Page page.                   |
+|Expected Result6 |Upload Front page configuration. !See .BsmSuite.AdministrationServerFrontPageSuite.FrontPageConfigCase0100            |
+|Clean Up         |N/A                                                                                                                                   |
+

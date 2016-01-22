@@ -1,0 +1,18 @@
+|Test Case ID     |TransformScheduleMgrCase2800                                                                          |
+|Title            |User can change event time period when edit event.                                             |
+|Iteration        |                                                                                              |
+|Jira Story       |                                                                                              |
+|Requirement ID   |[[id][]]                                                                                      |
+|Priority         |P3                                                                                            |
+|Keywords         |event, edit                                                             |
+|Prepare Test Data|Create a non-repeat event "event2800". !See .BsmSuite.TransformScheduleManager.TransformMgrCase0100|
+|Precondition1    |Click '''Transform Schedule Manager''' to go to Transform Schedule Manager tab.                                   |
+|Step1            |Double click "event2800"(verify it does not gengerate).                                                                      |
+|Step2            |In Time period first box, select another time which is later than current BSM server system clock.                                                                     |
+|Step5            |Append "update" in description field                                                             |
+|Step6            |Click "Save" on new event window                                                          |
+|Expected Result1 |Verify "event2800update" display in the grid of current date.                                                                                                                     |
+|Expected Result2|Verify data base which is trasformed to has no relative records before event triggered.                                                                                                                     |
+|Expected Result3 |Verify date base which is transformed to has exactly the same number of records with the transform selected in step3 |
+|Expected Result4 |Verify it has relative log on log viewer page(including update event and generate event).                                                                         |
+|Clean Up         |Remove "event2800update".!See .BsmSuite.TransformScheduleManager.TransformMgrCase2300                      |

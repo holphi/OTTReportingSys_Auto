@@ -1,0 +1,17 @@
+|Test Case ID     |SinglePrivilegeChk2100                                                                                                                |
+|Title            |User only has help privilege will only can view hlep.                                                    |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Help                                                                                                                     |
+|Prepare Test Data|N/A                                                |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "scrole2100",only check on Help permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "scuser2100" only check on  role "scrole2100". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "scuser2100"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Help''' tab are visiable.                                                                   |
+|Step5            |Click '''Help''' to go to Help page.                                                                                                           |
+|Expected Result2 |Verify '''Home''','''Schedule Manager''', '''Report Manager''', '''Settings''' on the left side of Help page.                |
+|Clean Up         |N/A                                                                                                                                   |

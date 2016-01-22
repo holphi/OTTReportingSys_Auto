@@ -1,0 +1,17 @@
+|Test Case ID     |ScheduleMgrCase3301                                                                                                                                                |
+|Title            |User can edit an repeat event in Day view                                                                                                                                   |
+|Iteration        |                                                                                                                                                                   |
+|Jira Story       |                                                                                                                                                                   |
+|Requirement ID   |[[id][]]                                                                                                                                                           |
+|Priority         |P3                                                                                                                                                                                                                                                               |
+|Keywords         |event, edit,Day view                                                                                                                                              |
+|Prepare Test Data|Create an repeat event in Day view "event3301". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2100 !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0600.                                                                                                                                                                |
+|Precondition1    |N/A                                                                                                                                                                |
+|Step1            |Click on '''Day''' on the top of calendar grids to go to week view.                             |
+|Step2           |Click "Detail" beside of any instance of "event3301"                                                                                       |
+|Step3            |In Description, append "Updated"                                                                                                                                   |
+|Step4           |In Time period first box, select another time which is later than current BSM server system clock.                                                                 |
+|Step5           |Click '''Save'''button.                                                                                                                                            |
+|Expected Result1 |Verify "event3301Updated" display in the grid of current date.                                                                                                     |
+|Expected Result2 |Verify in current date at the time selected in step4,generate report.                                                                                          |
+|Clean Up         |Remove "event3301Updated". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200 !-<br>-!Clear reports on on BSM server /soft/bsmsoft/bsm1/bsm/Current/data      |

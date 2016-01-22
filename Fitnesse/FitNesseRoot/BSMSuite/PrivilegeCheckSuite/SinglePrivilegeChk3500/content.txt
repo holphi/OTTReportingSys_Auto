@@ -1,0 +1,27 @@
+|Test Case ID     |SinglePrivilegeChk3500                                                                                                                |
+|Title            |User only has add transform privilege on transform Manager will only can add transform.                                                   |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |Transform Manager                                                                                                                     |
+|Prepare Test Data|N/A                                                |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "role0700",only check on Add Transform permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "user0700" only check on  role "role0700". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "user0700"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Tramsform Manager''' tabs are visiable.                                                                   |
+|Step5            |Click '''Transform Manager''' to go to Transform Manager page                                                                                 |
+|Expected Result2 |Verify '''Add Transform''' button displays above "Transform Name".                                                                          |
+|Expected Result3 |Verify '''Remove Transform''' button does not display on Transform Manager page.                                                                          |
+|Step6            |Add a transform. !See .BsmSuite.TransformManagerSuite.TransformMgrCase0100|
+|Step7            |Click '''Update''' button on Transform Manager page|
+|Expected Result4 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step8            |Click '''Execute''' button on Transform Manager page|
+|Expected Result5 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step9            |Click '''Set Schedule''' button on Transform Manager page| 
+|Expected Result6 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step10           |Click certain transform on transform Manager page| 
+|Expected Result7 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Clean Up         |N/A                                                                                                                                   |

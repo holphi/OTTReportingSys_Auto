@@ -1,0 +1,20 @@
+|Test Case ID     |UserMgr0800                                                                    |
+|Title            |Cannot ceate user with an existing username.                            |
+|Iteration        |                                                                                |
+|Jira Story       |                                                                                |
+|Requirement ID   |[[id][]]                                                                        |
+|Priority         |P3                                                                             |
+|Keywords         |User, Create                                                                    |
+|Prepare Test Data|Create user "test8" in BSM system.                                                                             |
+|Precondition1    |log in as a user "admin" with create user permission.                           |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                               |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                   |
+|Step1            |Click button '''Create User'''.                                                |
+|Step2            |Input a user name "test8".                                                      |
+|Step3            |Input password "123" and Confirm password "123".                                |
+|Step4            |Select "Active".                                                                |
+|Step5            |Check on "Admin" in role list.                                                    |
+|Step6            |Click '''OK'''.                                                                     |
+|Expected Result1 |Pop up message "The username you entered already exists,please choose another one".                                      |
+|Expected Result2 |Click '''OK''' to close the message, verify return to create user dialog.|
+|Clean Up|Remove user test8. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200|

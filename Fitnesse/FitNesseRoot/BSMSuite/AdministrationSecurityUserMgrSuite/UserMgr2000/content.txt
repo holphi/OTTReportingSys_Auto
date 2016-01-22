@@ -1,0 +1,18 @@
+|Test Case ID     |UserMgr2000                                                                                                    |
+|Title            |User will not be updated if click cancel.                                                                      |
+|Iteration        |                                                                                                               |
+|Jira Story       |                                                                                                               |
+|Requirement ID   |[[id][]]                                                                                                       |
+|Priority         |P4                                                                                                             |
+|Keywords         |User, Update                                                                                                   |
+|Prepare Test Data|Create a user "test20"in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100             |
+|Precondition1    |log in as user "admin" with update user permission.                                                            |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                        |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                                      |
+|Step1            |Select user "test20".                                                                                          |
+|Step2            |Click button '''Update User'''.                                                                                |
+|Step3            |In Role List, check off "Admin" and check on "USER"                                                            |
+|Step4            |Click '''Cancel'''.                                                                                                |
+|Expected Result1 |Verify user edit dialog box close.                                                                             |
+|Expected Result2 |Double-click user "test20" in user list,verify in Role List "Admin" is still checked on, "USER" is checked off.|
+|Clean Up         |Remove user test20. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                              |

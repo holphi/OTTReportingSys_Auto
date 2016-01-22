@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|HomeCase0400|
+|Title|Failed Report Schedule Events widget list failed report schedule events info.|
+|Requirement ID||
+|Priority|P1|
+|Keywords|home ,Report Schedule Events widget|
+|Prepare Test Data|!-Create some extraction schedule events ,before the events occur remove the transform file on disk,events will fail when the event time arrive.-!|
+|Precondition|!--!|
+|Steps and Expected Results|!- 1. login as admin.<br>Verify failed extraction schedule events display in Failed Extraction Schedule Events widget. -!|
+|Clean Up|<br>|

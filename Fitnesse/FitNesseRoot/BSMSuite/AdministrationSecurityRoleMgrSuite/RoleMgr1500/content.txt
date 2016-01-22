@@ -1,0 +1,19 @@
+|Test Case ID     |RoleMgr1500                                                                                                                       |
+|Title            |Role permissions can be updated.                                                                                                  |
+|Iteration        |                                                                                                                                  |
+|Jira Story       |                                                                                                                                  |
+|Requirement ID   |[[id][]]                                                                                                                          |
+|Priority         |P2                                                                                                                                |
+|Keywords         |Role, Update                                                                                                                      |
+|Prepare Test Data|Create a role "role16",permission of the role is "Schedule Manager" !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100.|
+|Precondition1    |log in as user "admin" with update role permission.                                                                               |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                                           |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                                                                         |
+|Step1            |Select role "role16".                                                                                                             |
+|Step2            |Click button '''Update Role'''.                                                                                                   |
+|Step3            |Check off "Schedule Manager",check on "Help" on the permission tree                                                               |
+|Step4            |Click '''OK'''.                                                                                                                   |
+|Expected Result1 |Pop up message "Update role successfully".                                                                                        |
+|Expected Result2 |Click '''OK''', verify the message box close.                                                                                     |
+|Expected Result3 |Double-click "role16" in role list, verify "Schedule Manager" checked off,"Help" checked on on permission tree.                   |
+|Clean Environment|Remove role role16 . !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000                                                |

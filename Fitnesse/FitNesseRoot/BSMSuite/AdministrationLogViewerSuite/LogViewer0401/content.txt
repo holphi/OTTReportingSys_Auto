@@ -1,0 +1,14 @@
+|Test Case ID     |LogViewer0401                                                                                            |
+|Title            |Failed Operation delete event from Schedule Manager is logged correctly.                                  |
+|Iteration        |                                                                                                   |
+|Jira Story       |                                                                                                   |
+|Requirement ID   |[[id][]]                                                                                           |
+|Priority         |P5                                                     |
+|Keywords         |log                                                                                                |
+|Prepare Test Data|N/A                                                                                                |
+|Precondition1    |login as user "admin" with view log viewer permission.                                             |
+|Step1            |Delete an event but cancel on confirm message. !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2201|
+|Step2            |Click '''Administration''' to go to Administration tab.                                            |
+|Step3            |Click '''Log'''->'''Log Viewer'''.                                                                 |
+|Expected Result1 |Verify there is no new record for delete event operation in step1.                                     |
+|Clean Environment|N/A                    |

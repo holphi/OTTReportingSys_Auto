@@ -1,0 +1,21 @@
+|Test Case ID     |RoleMgr1100                                                                                                             |
+|Title            |User can leave comment blank when create role.                                                                          |
+|Iteration        |                                                                                                                        |
+|Jira Story       |                                                                                                                        |
+|Requirement ID   |[[id][]]                                                                                                                |
+|Priority         |P3                                                                                                                      |
+|Keywords         |Role, Create                                                                                                            |
+|Prepare Test Data|N/A                                                                                                                     |
+|Precondition1    |log in as user "admin" with create role permission.                                                                     |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                                 |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                                                               |
+|Step1            |Click button '''Create Role'''.                                                                                         |
+|Step2            |Input a role name "role11".                                                                                             |
+|Step3            |Check on permissions "View Schedule Manager","View Report Manager"on the Permission tree.                               |
+|Step4            |Leave"Comment" box blank                                                                                                |
+|Step5            |Click '''OK'''.                                                                                                         |
+|Expected Result1 |Pop up message "Create role successfully".                                                                              |
+|Expected Result2 |Click '''OK''' to close the message, verify the new created role display in role list.                                  |
+|Expected Result3 |Double-click "role11" in role list, verify permissions "View Schedule Manager","View Report Manager" are checked on.    |      
+|Expected Result4 |verify comment box is blank.                                                                                            |                            
+|Clean Environment|Remove role role11. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000                                       |

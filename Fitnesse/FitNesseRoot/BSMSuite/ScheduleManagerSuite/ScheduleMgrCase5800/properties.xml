@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<properties>
+	<Edit/>
+	<Files/>
+	<Help>[Non-repeat report event vs non-repeat extraction event]Report event after one of two extraction event done but before the other extraction event done will not generate report.</Help>
+	<Normal/>
+	<Properties/>
+	<RecentChanges/>
+	<Refactor/>
+	<Search/>
+	<Suites>P3</Suites>
+	<Versions/>
+	<WhereUsed/>
+</properties>

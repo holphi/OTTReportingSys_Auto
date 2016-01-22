@@ -1,0 +1,17 @@
+|Test Case ID     |ReportMgrCase3700                                                                                           |
+|Title            |User can only view files which are generated in the event created by himself.                   |
+|Iteration        |                                                                                                            |
+|Jira Story       |                                                                                                            |
+|Requirement ID   |[[id][]]                                                                                                    |
+|Priority         |P1                                                                                                          |
+|Keywords         |Report, view generated files                                                                                |
+|Prepare Test Data|Create role "role1" with permission of Report Manager and Report Schedule Manager.!See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100.Create a user "user1","user2" granted to role "role1". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100   |
+|Precondition1    |Create an event "eventuser1"with report template "SDP_NMP.rptdesign"as "user1".Create an event "eventuser2" with report template "SDP_NMP.rptdesign" as "user2".   |
+|Precondition2    |Set the server time to trigger events "eventuser1","eventuser2"                                             |
+|Step1            |Login as user1                                                                    |
+|Step2            |Click '''View''' in the row of "SDP_NMP.rptdesign"                                                                   |
+|Expected Result1 |Only file generated in the event "eventuser1" list in the window.                    |
+|Step3            |Log out and login as user2                                                                                 |
+|Step4            |Click '''View''' in the row of "SDP_NMP.rptdesign"                                                                                  |
+|Expected Result2 |Only file generated in the event "eventuser2" list in the window                |
+|Clean Environment|N/A               |

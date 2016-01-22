@@ -1,0 +1,16 @@
+|Test Case ID     |LogViewer0300                                                                                            |
+|Title            |Operation update event from Schedule Manager is logged correctly.                                  |
+|Iteration        |                                                                                                   |
+|Jira Story       |                                                                                                   |
+|Requirement ID   |[[id][]]                                                                                           |
+|Priority         |P5                                                     |
+|Keywords         |log                                                                                                |
+|Prepare Test Data|Create event "log0300" in Schedule Manager. !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100.!-<br>-!Update event "log0300" in Schedule Manager.!See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2600|
+|Precondition1    |login as user "admin" with view log viewer permission.                                             |
+|Step1            |Click '''Administration''' to go to Administration tab.                                            |
+|Step2            |Click '''Log'''->'''Log Viewer'''.                                                                 |
+|Expected Result1 |Verify there is a new record:action is "Update schedule event"                                     |
+|Expected Result2 |Verify the new record:Description contains Event id and event text.The event text is "log0300"     |
+|Expected Result3 |Verify the new record:Operator is "admin".                                                                    |
+|Expected Result4 |Verify the new record:status is "success".                                                                    |
+|Clean Environment|Remove eventlog0300. !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200                    |

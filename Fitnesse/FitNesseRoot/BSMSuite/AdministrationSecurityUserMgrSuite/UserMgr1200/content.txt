@@ -1,0 +1,15 @@
+|Test Case ID     |UserMgr1200                                                                    |
+|Title            |Cannot update user without select a user.                             |
+|Iteration        |                                                                                |
+|Jira Story       |                                                                                |
+|Requirement ID   |[[id][]]                                                                        |
+|Priority         |P3                                                                              |
+|Keywords         |User, Update                                                                    |
+|Prepare Test Data|N/A                                                                             |
+|Precondition1    |log in as a user "admin" with update user permission.                           |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                               |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                   |
+|Step1            |Click button '''Update User'''.                                                |
+|Expected Result1 |Pop up message "Please select a record to edit".                                      |
+|Expected Result2 |Click '''OK''' on the message, verify the message box close.|
+|Clean Up         |N/A                                                                      |

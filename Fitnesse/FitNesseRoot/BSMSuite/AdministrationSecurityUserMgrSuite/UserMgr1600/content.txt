@@ -1,0 +1,19 @@
+|Test Case ID     |UserMgr1600                                                                                       |
+|Title            |User cannot enter different value in field password and confirm password when update user.        |
+|Iteration        |                                                                                                  |
+|Jira Story       |                                                                                                  |
+|Requirement ID   |[[id][]]                                                                                          |
+|Priority         |P3                                                                                                |
+|Keywords         |User, Update                                                                                      |
+|Prepare Test Data|Create a user "test16"in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100|
+|Precondition1    |log in as user "admin" with update user permission.                                               |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                           |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                         |
+|Step1            |Select user "test16".                                                                             |
+|Step2            |Click button '''Update User'''.                                                                   |
+|Step3            |Click in Password field, input "456".                                                             |
+|Step4            |Click in Confirm Password field, input "567".                                                     |
+|Step5            |Click '''OK'''.                                                                                   |
+|Expected Result1 |Pop up message "The password you entered do not match.Please try again."                          |
+|Expected Result2 |Click '''OK''' on the message, verify the message box close.                                      |
+|Clean Up         |Remove user test16. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                 |

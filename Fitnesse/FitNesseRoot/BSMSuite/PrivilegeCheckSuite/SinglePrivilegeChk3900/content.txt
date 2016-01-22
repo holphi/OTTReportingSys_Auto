@@ -1,0 +1,25 @@
+|Test Case ID     |SinglePrivilegeChk3900                                                                                                                |
+|Title            |User only has download transform privilege will only can download transform.                                                    |
+|Iteration        |                                                                                                                                      |
+|Jira Story       |                                                                                                                                      |
+|Requirement ID   |                                                                                                                                      |
+|Priority         |P5                                                                                                                                    |
+|Keywords         |transform Manager                                                                                                                     |
+|Prepare Test Data|N/A                                                |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                       |
+|Step1            |Create role "role0600",only check on View Transform Manager permission. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100|
+|Step2            |Create user "user0600" only check on  role "role0600". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100              |
+|Step3            |Log out "admin".                                                                                                                      |
+|Step4            |Log in user "user0600"                                                                                                              |
+|Expected Result1 |Verify only '''Home''' and '''Transform Manager''' tabs are visiable.                                                                   |
+|Step5            |Click '''Transform Manager''' to go to Transform Manager page                                                                                 |
+|Expected Result2 |Verify there are no '''Add Tranform''', '''Remove Transform''' buttons on Transform Manager page                                                                                 |
+|Step6            |Click '''Update''' button on Transform Manager page| 
+|Expected Result3 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step6            |Click '''Execute''' button on Transform Manager page| 
+|Expected Result3 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step7            |Click '''Set Schedule''' button on Transform Manager page|
+|Expected Result4 |Verify pop up a message box "You have not sufficient priviledge to access this operation"   |
+|Step10           |Click certain transform on Transform Manager page| 
+|Expected Result7 |Verify user download transform successfully. !See .BsmSuite.TransformManagerSuite.TransformMgrCase0500  |
+|Clean Up         |N/A                                                                                                                                   |

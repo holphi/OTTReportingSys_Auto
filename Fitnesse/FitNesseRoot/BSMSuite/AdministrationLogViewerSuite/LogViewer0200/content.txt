@@ -1,0 +1,22 @@
+|Test Case ID     |LogViewer0200                                                                                            |
+|Title            |Operation create event from Schedule Manager is logged correctly.                                  |
+|Iteration        |                                                                                                   |
+|Jira Story       |                                                                                                   |
+|Requirement ID   |[[id][]]                                                                                           |
+|Priority         |P5                                                     |
+|Keywords         |log                                                                                                |
+|Prepare Test Data|N/A                                                                                                |
+|Precondition1    |login as user "admin" with view log viewer permission.                                             |
+|Step1            |Create event "log0200" in Schedule Manager and make sure event happen. !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100|
+|Step2            |Click '''Administration''' to go to Administration tab.                                            |
+|Step3            |Click '''Log'''->'''Log Viewer'''.                                                                 |
+|Expected Result1 |Verify there are two new record                                                                    |
+|Expected Result2 |Verify action of first record is "Create schedule event"                                     |
+|Expected Result3 |Verify description of first record contains Event id and event text.The event text is "log0200"     |
+|Expected Result4 |Verify Operator of first record is "admin".                                                                    |
+|Expected Result5 |Verify status of first record is "success".                                                                    |
+|Expected Result6 |Verify action of second record is "Create schedule event"                                     |
+|Expected Result7 |Verify description of second record contains report template name and file name.     |
+|Expected Result8 |Verify Operator of secondrecord is "system".                                                                    |
+|Expected Result9 |Verify status of second record is "success".                                                                    |
+|Clean Environment|Remove eventlog0200. !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200                    |

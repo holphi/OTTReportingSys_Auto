@@ -1,0 +1,21 @@
+|Test Case ID     |TransformScheduleMgrCase3900                                                                                                                                          |
+|Title            |Paging bar on select transform window works well.                                                                                                               |
+|Iteration        |                                                                                                                                                             |
+|Jira Story       |                                                                                                                                                             |
+|Requirement ID   |[[id][]]                                                                                                                                                     |
+|Priority         |P3                                                        |
+|Keywords         |paging                                                                                                                                                       |
+|Prepare Test Data|N/A                                                                                                                                                          |
+|Precondition1    |Click '''Transform Schedule Manager''' to go to Transform Schedule Manager tab.                                                                                                                                                           |
+|Step1            |Double click in the grid of current date.                                                                                                                    |
+|Step2            |On the pop up New event window, click '''select Transform''' button.                                                                                            |
+|Expected Result1 |Verify on paging bar, display "Records from 1 to 20",'''First'''and '''Previous''' button is disabled, '''Next''' and '''Last''' button is enabled.          |
+|Step3           |Click '''Next''' button on paging bar .                                                                                                                      |
+|Expected Result2 |Verify on paging bar, display "Records from 21 to 28",'''First'''and '''Previous''' button is enabled, '''Next''' and '''Last''' button is disabled.         |
+|Step4            |Click on '''First''' button on paging bar .                                                                                                                  |
+|Expected Result3 |Verify on paging bar, display "Records from 1 to 20",'''First'''and '''Previous''' button is disabled, '''Next''' and '''Last''' button is enabled.          |
+|Step5            |Click on '''Last'''button on paging bar .                                                                                                                    |
+|Expected Result4 |Verify on paging bar, display "Records from 21 to 28",'''First'''and '''Previous''' button is enabled, '''Next''' and '''Last''' button is disabled.         |
+|Step6            |Click on '''Previous'''button on paging bar .                                                                                                                |
+|Expected Result5 |Verify on paging bar, display "Records from 1 to 20",'''First'''and '''Previous''' button is disabled, '''Next''' and '''Last''' button is enabled.          |
+|Clean Up         |N/A|

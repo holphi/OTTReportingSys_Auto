@@ -1,0 +1,21 @@
+|Test Case ID     |LogViewer1700                                                                                                                                        |
+|Title            |Operation transport report by HTTP is logged correctly.                                                                                                             |
+|Iteration        |                                                                                                                                                    |
+|Jira Story       |                                                                                                                                                    |
+|Requirement ID   |[[id][]]                                                                                                                                            |
+|Priority         |P5                                                     |
+|Keywords         |log                                                                                                                                        |
+|Prepare Test Data|create an event "log1700" ,generate report in html format and transport report via HTTP. !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0300. |
+|Precondition1    |log in as user "admin" with view log viewer permission .                                                                                                 |
+|Step1            |Click '''Administration''' to go to Administration tab.                                                                                                                                |
+|Step2            |Click '''Log'''->'''Log Viewer'''.                                                                 |
+|Expected Result1 |Verify there is three new records.                                    |
+|Expected Result2 |Verify The first record is create event. !See .BsmSuite.AdministrationLogLogViewerSuite.LogViewer0200   |
+|Expected Result3 |Verify action of second record is Generate html erport file.                                                                    |
+|Expected Result4 |Verify description of second record contains template name and generate file name.                                   |
+|Expected Result5 |Verify operation of second record is System                                                                    |
+|Expected Result6 |Verify action of third record is send report to http server   |
+|Expected Result7 |Verify description of third record contains event description "log1700" and http url.                                                                   |
+|Expected Result8 |Verify operation of third record is System.                                                                   |
+|Clean Environment|Remove eventlog1700. !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200.                 |
+

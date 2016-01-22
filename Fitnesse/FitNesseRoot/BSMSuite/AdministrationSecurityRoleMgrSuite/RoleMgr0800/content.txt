@@ -1,0 +1,21 @@
+|Test Case ID     |RoleMgr0800                                                                                                              |
+|Title            |Check on high level permission, all sub permission should check on automaticlly.After that user can change sub permission|
+|Iteration        |                                                                                                                         |
+|Jira Story       |                                                                                                                         |
+|Requirement ID   |[[id][]]                                                                                                                 |
+|Priority         |P3                                                                                                                       |
+|Keywords         |Role, Create                                                                                                             |
+|Prepare Test Data|N/A                                                                                                                      |
+|Precondition1    |log in as user "admin" with create role permission.                                                                      |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                                  |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                                                                |
+|Step1            |Click button '''Create Role'''.                                                                                          |
+|Step2            |Input a role name "role8".                                                                                               |
+|Step3            |Check on permissions "Schedule Manager" on the Permission tree.                                                          |
+|Expected Result1 |Verify all sub permissions of Schedule Manager are checked on automatically.                                             |
+|Expected Result2 |Verify click on any sub permissions of Schedule Manager can check it off.                                                |
+|Step4            |Check on permissions "Report Manager" on the Permission tree.                                                            |
+|Expected Result3 |Verify all sub permissions of Report Manager are checked on automatically.                                               |
+|Expected Result4 |Verify click on any sub permissions of Report Manager can check it off.                                                  |
+|Clean Environment|N/A                                                                                                                          |
+

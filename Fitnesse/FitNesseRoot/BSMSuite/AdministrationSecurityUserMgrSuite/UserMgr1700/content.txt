@@ -1,0 +1,19 @@
+|Test Case ID     |UserMgr1700                                                                    |
+|Title            |User status can be updated.                             |
+|Iteration        |                                                                                |
+|Jira Story       |                                                                                |
+|Requirement ID   |[[id][]]                                                                        |
+|Priority         |P3                                                                              |
+|Keywords         |User, Update                                                                   |
+|Prepare Test Data|Create a user "test17"in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100                                                                            |
+|Precondition1    |log in as user "admin" with update user permission.                           |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                               |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                   |
+|Step1            |Select user "test17".                                                 |
+|Step2            |Click button '''Update User'''.                                                      |
+|Step3            |Select status "Inactive".                                                                |
+|Step4            |Click '''OK'''.                                                                     |
+|Expected Result1 |Pop up message "Update user successfully.".                                      |
+|Expected Result2 |Click '''OK''' to close the message, verify the message box close.|
+|Expected Result3 |Log out , verify log in with user "test17" failed.(Inactive user cannot log in.)                                   |
+|Clean Up|Remove user test17. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200|

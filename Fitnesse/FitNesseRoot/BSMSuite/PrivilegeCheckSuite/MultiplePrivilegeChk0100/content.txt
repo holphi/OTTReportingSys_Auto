@@ -1,0 +1,20 @@
+|Test Case ID     |MultiplePrivilegeChk0100                                                                                                                                                     |
+|Title            |User has multiple privileges on Schedule Manager :view schedule Manager, Create event and Update event will can view event,create event and update event on Schedule Manager.|
+|Iteration        |                                                                                                                                                                             |
+|Jira Story       |                                                                                                                                                                             |
+|Requirement ID   |                                                                                                                                                                             |
+|Priority         |P3                                                                                                                                                                           |
+|Keywords         |Schedule Manager                                                                                                                                                             |
+|Prepare Test Data|Creat an Event "mcevent0100". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100                                                                                        |
+|Precondition1    |Log in as "admin" which has permission to create role and user.                                                                                                              |
+|Step1            |Create role "mcrole0100",check on permissions :View Schedule Manager, Create event and Update event. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100           |
+|Step2            |Create user "mcuser0100" only check on  role "mcrole0100". !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100                                                     |
+|Step3            |Log out "admin".                                                                                                                                                             |
+|Step4            |Log in user "mcuser0100"                                                                                                                                                     |
+|Expected Result1 |Verify only '''Home''' and '''Schedule Manager''' tab are visible.                                                                                                          |
+|step5|Click '''Schedule Manager''' to go to Schedule tab.|
+|Step6            |Double click "mcevent0100".                                                                                                                                                  |
+|Expected Result2 |Verify the event is display.At bottom, only two button '''Cancel''' and '''Save''' are visible. '''Delete''' button is not visible.                                        |
+|Expected Result3 |Verify user "mcuser0100" can Update event "mcevent0100".!See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2700.                                                             |
+|Expected Result4 |Verify user "mcuser0100" can create an event "mcevent0100a". !See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase0100                                                                                      |
+|Clean Up         |Remove "mcevent0100" and "mcevent0100a".!See .BsmSuite.ScheduleManagerSuite.ScheduleMgrCase2200 !-<br>-!Remove user "mcuser0100".!See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200!-<br>-!Remove role "mcrole0100" !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000                                                                                                                                                                     |

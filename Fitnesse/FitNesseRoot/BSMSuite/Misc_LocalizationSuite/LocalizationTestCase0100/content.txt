@@ -1,0 +1,5 @@
+Check Lists for login page:
+1.Words in image:"BSM Administration","KUDELSKI GROUP"
+2.Words on button: "OK","Cancel"
+3.Words for prompt:"username","password"
+4.Browser title:"Login"

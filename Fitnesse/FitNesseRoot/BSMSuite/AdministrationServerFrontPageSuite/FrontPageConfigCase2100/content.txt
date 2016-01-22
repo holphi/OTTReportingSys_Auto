@@ -1,0 +1,21 @@
+|Test Case ID     |FrontPageConfigCase2100                                                                   |
+|Title            |User can upload a gif image to replace the default header image.  |
+|Iteration        |                                                                                                          |
+|Jira Story       |                                                                                                          |
+|Requirement ID   |[[id][]]                                                                                                  |
+|Priority         |P3                                                                                                        |
+|Keywords         |Front page                                                                                                |
+|Prepare Test Data|The image to be upload is ..\Fitnesse\TestResource\1024x99.gif                                            |
+|Precondition1    |log in as user "admin" with Upload Header Image permission.                                           |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                   |
+|Precondition3    |Click '''Server'''->'''Front Page'''.                                                                     |
+|Step1            |Click button '''Browse''' besides Upload header image field,navigate to the folder which store image 1024x99.gif      |
+|Step2            |Select image 1024x99.gif and click '''open'''.                                                            |
+|Step3            |Click button '''Upload'''.                                                                                |
+|Expected Result1 |Display message "imgs/general/1024x99.gif" besides Current Header Image                                         |
+|Expected Result2 |Display message "Upload successfully".                                          |
+|Expected Result3 |log out and log in again,the header change to be the uploaded image.                             |
+|Expected Result4 |Verify the image's width is equal to the page's width.                                                                         |
+|Expected Result5 |Verify the menu bar is not covered by the header image|
+|Expected Result6 |Verify user link in header work normally|
+|Clean Up         |N/A                                                                                      |

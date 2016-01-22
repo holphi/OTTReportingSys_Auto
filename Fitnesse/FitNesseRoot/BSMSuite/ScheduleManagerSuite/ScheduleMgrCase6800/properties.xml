@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<properties>
+	<Edit/>
+	<Files/>
+	<Help>User can create repeat every 1 day event with Mongo DB report, generate report in PDF format,and transport report via Email.</Help>
+	<Normal/>
+	<Properties/>
+	<RecentChanges/>
+	<Refactor/>
+	<Search/>
+	<Suites>P1</Suites>
+	<Versions/>
+	<WhereUsed/>
+</properties>

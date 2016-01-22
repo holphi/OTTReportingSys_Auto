@@ -1,0 +1,16 @@
+|Test Case ID     |UserMgr1300                                                                                       |
+|Title            |User name can not be updated.                                                                     |
+|Iteration        |                                                                                                  |
+|Jira Story       |                                                                                                  |
+|Requirement ID   |[[id][]]                                                                                          |
+|Priority         |P3                                                                                               |
+|Keywords         |User, Update                                                                                      |
+|Prepare Test Data|Create a user "test13"in BSM system. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100|
+|Precondition1    |log in as a user "admin" with update user permission.                                             |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                           |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                         |
+|Step1            |Select a user "test13".                                                                           |
+|Step2            |Click button '''Update User'''.                                                                   |
+|Step3            |Click in username field, try to clear username and input a new username.                          |
+|Expected Result1 |Verify the field username is not editable, cannot clear and input new value.                      |
+|Clean Up         |Remove user test13. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200                 |

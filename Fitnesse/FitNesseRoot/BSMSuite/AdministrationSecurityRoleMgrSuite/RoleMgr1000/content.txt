@@ -1,0 +1,17 @@
+|Test Case ID     |RoleMgr1000                                                                                                                             |
+|Title            |One sub permission is check on,high level permission should check on automaticlly.                                                      |
+|Iteration        |                                                                                                                                        |
+|Jira Story       |                                                                                                                                        |
+|Requirement ID   |[[id][]]                                                                                                                                |
+|Priority         |P3                                                                                                                                      |
+|Keywords         |Role, Create                                                                                                                            |
+|Prepare Test Data|N/A                                                                                                                                     |
+|Precondition1    |log in as user "admin" with create role permission.                                                                                     |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                                                 |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                                                                               |
+|Step1            |Click button '''Create Role'''.                                                                                                         |
+|Step2            |Input a role name "role10".                                                                                                             |
+|Step3            |Check on second permissions "View Schedule Manageron" the Permission tree.                                                              |
+|Expected Result1 |Verify first level permission "Schedule Manager" check on automatically                                                                 |
+|Expected Result2 |Verify Other second level permission of same first level permission "Schedule Manager":"Update Event","Remove Event","Create Event" still not check on.         |
+|Clean Environment|N/A                                                      |

@@ -1,0 +1,18 @@
+|Comment|
+|Test Case ID|Installation_0600|
+|Iteration|1|
+|Jira Story| |
+|Requirement ID|[[id][]]|
+|Priority| P3|
+|Keywords|Install,Upgrade|
+|User Role|Admin/op|
+|Title|Verify can upgrade install from higher version than BSM1.7STD1 to latest version version by version.|
+|Precondition|1.Stop existing BSM service.|
+|Steps|1. install next version of existing BSM |
+|Steps|2. start BSM service.|
+|Steps|3. create an report schedule event.|
+|Steps|4. stop BSM service.|
+|Steps|5. repeat step1~ step4 for each version.|
+|Expected Result|!-1. BSM service is running.<br>2. All inherited features and new features works well.-!|
+|Execution| manual|
+|Remarks|  h|

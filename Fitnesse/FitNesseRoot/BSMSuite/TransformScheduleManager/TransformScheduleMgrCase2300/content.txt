@@ -1,0 +1,16 @@
+|Test Case ID     |TransformScheduleMgrCase2300                                                                          |
+|Title            |User can delete a non-repeat event in month view.                                             |
+|Iteration        |                                                                                              |
+|Jira Story       |                                                                                              |
+|Requirement ID   |[[id][]]                                                                                      |
+|Priority         |P1                                                                                            |
+|Keywords         |event, Delete                                                             |
+|Prepare Test Data|Create a non-repeat event "event2300". !See .BsmSuite.TransformScheduleManager.TransformMgrCase0100|
+|Precondition1    |Click '''Transform Schedule Manager''' to go to Transform Schedule Manager tab.                                   |
+|Step1            |Double click "event2300"                                                                      |
+|Step2            |On the pop up window, click '''Delete''' button on the bottom of the window.        |
+|Expected Result1 |Verify pop up message "Event will be deleted permanently,are you sure?"                       |
+|Step3            |Click on '''OK''' on the message.                                                             |
+|Expected Result2 |Verify message box and window open in step2 close.                                            |
+|Expected Result3 |Verify "event 2300" don't display in calendar grid.                                           |
+|Clean Up         |N/A                                                                                           |

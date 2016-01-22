@@ -1,0 +1,10 @@
+|Comment|
+|Test Case ID|BackupandRestoreCase1000|
+|Title|PDI transform can be backup by scheduler and transport backup file by email,FTP and HTTP.|
+|Requirement ID||
+|Priority|P1|
+|Keywords|backup,transform,scheduler|
+|Prepare Test Data|!--!|
+|Precondition|!-1. Add three PDI Transform to Extraction Manager  !See.BsmSuite.ReportManagerSuite.ReportMgrCase0300<br>2. Configure Backup Transport Configuration<br>-!|
+|Steps and Expected Results|!-1. login as admin<br>2. Click '''Administration''' to go to Administration tab.<br>3. On left pane, Click '''System Maintenance''' -> '''PDI Transform'''->''PDI Transform Backup'''<br>4. In section '''Select Operation Type''',select '''Scheduler'''<br>5. In '''CORN Expression''', Input a expression "0 0 12 * * ? "<br>6. Change the BSM server time to 11:59:55<br><br>'''Expected Results''': 1.From log Viewer, PDI Transform is backuped On 12:00.<br>2.PDI Transform backup file is transport by types configured in Precondition2.<br>3. In log viewer, Action Backup PDI Transform scheduler is success<br>4. In log viewer, Action transport PDI Transform backup is success<br>-!|
+|Clean Up|<br>|

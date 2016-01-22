@@ -1,0 +1,15 @@
+|Test Case ID     |TransformMgrCase1100                                                                                                      |
+|Title            |User can execute a transform.                                                                                   |
+|Iteration        |                                                                                                                       |
+|Jira Story       |                                                                                                                       |
+|Requirement ID   |[[id][]]                                                                                                               |
+|Priority         |P1                                                                                                                     |
+|Keywords         |transform, execute                                                                                                       |
+|Prepare Test Data|N/A                                                                                                                    |
+|Precondition1    |log in as user "admin" with execute transform permission.                                                                     |
+|Precondition2    |Click '''Extraction Manager''' to go to Extraction Manager tab.                                                              |
+|Step1            |Click button '''Execute''' on the right side of one transform                                                        |
+|Expected Result1 |Verify pop up message "Execute successfully".                                                                                    |
+|Expected Result2 |Verify DB transformed to has relative data.|
+|Expected Result3|Verify it has relative records on log viewer page           |
+|Clean Environment|N/A                          |

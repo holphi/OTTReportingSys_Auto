@@ -1,0 +1,20 @@
+|Test Case ID     |ReportMgrCase0100                                                                                           |
+|Title            |User can add a report template.                                                                             |
+|Iteration        |                                                                                                            |
+|Jira Story       |                                                                                                            |
+|Requirement ID   |[[id][]]                                                                                                    |
+|Priority         |P1                                                                                                          |
+|Keywords         |Report, Add                                                                                                 |
+|Prepare Test Data|The report to be upload is ..\Fitnesse\TestResource\TestReportAdd.rptdesign                                 |
+|Precondition1    |log in as user "admin" with add report permission.                                                          |
+|Precondition2    |Click '''Report Manager''' to go to Reports Manager tab.                                                   |
+|Step1            |Click button '''Add Report Template'''.                                                                              |
+|Expected Result1 |Verify pop up window "Upload".                                                                              |
+|Step2            |Click '''Add file''' on "Upload" window.                                                                    |
+|Step3            |Browse to the report template file "TestReportAdd.rptdesign",select it and click Open.                      |
+|Step4            |Click button '''Upload'''.                                                                                  |
+|Expected Result2 |Verify after upload process complete,message "Done" display under the report name "TestReportAdd.rptdesign".|
+|Step5            |Close the window "Upload".                                                                                  |
+|Step6            |Press '''F5''' to refresh page and click '''Reports Manager''' to go to Reports Manager tab.                |
+|Expected Result3 |Verify "TestReportAdd.rptdesign" list in Report list.                                                       |
+|Clean Environment|Remove report "TestReportAdd.rptdesign". !See .BsmSuite.ReportManagerSuite.ReportMgrCase0900                |

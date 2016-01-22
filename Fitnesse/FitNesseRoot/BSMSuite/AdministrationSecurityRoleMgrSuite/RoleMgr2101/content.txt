@@ -1,0 +1,18 @@
+|Test Case ID     |RoleMgr2101                                                                                                         |
+|Title            |A role already granted to a user will not be removed if cancel remove.                                              |
+|Iteration        |                                                                                                                    |
+|Jira Story       |                                                                                                                    |
+|Requirement ID   |[[id][]]                                                                                                            |
+|Priority         |P4                                                                                                                 |
+|Keywords         |Role, Remove                                                                                                        |
+|Prepare Test Data|Create role "role22".!See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr0100.!-<br>-! Create user "test22",grant "role22" to "test22".!See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr0100       |
+|Precondition1    |log in as user "admin" with remove role permission.                                                                 |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                                                             |
+|Precondition3    |Click '''Security'''->'''Role Manager'''.                                                                           |
+|Step1            |Select the role "role22".                                                                                           |
+|Step2            |Click button '''Remove Role'''.                                                                                     |
+|Expected Result1 |Pop up message "some users has been assigned to this role,still remove role?"                                       |
+|Step3            |Click '''Cancel''' on the message "some users has been assigned to this role,still remove role?"                    |
+|Expected Result2 |Verify the message box close.                                                                    |
+|Expected Result3 |The role "role22" stll lists in role list.                                                                            |
+|Clean Environment|Remove role role22. !See .BsmSuite.AdministrationSecurityRoleMgrSuite.RoleMgr2000.Remove user test22. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200.|

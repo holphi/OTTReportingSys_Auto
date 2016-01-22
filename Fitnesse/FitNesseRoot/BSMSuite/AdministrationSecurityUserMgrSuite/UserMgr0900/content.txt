@@ -1,0 +1,21 @@
+|Test Case ID     |UserMgr0900                                                                    |
+|Title            |Can recreate a user after remove it.                             |
+|Iteration        |                                                                                |
+|Jira Story       |                                                                                |
+|Requirement ID   |[[id][]]                                                                        |
+|Priority         |P3                                                                              |
+|Keywords         |User, Create                                                                    |
+|Prepare Test Data|Create user "test9" in BSM system and remove the user "test9".                                                                             |
+|Precondition1    |log in as a user "admin" with create user permission.                           |
+|Precondition2    |Click '''Administration''' to go to Administration tab.                               |
+|Precondition3    |Click '''Security'''->'''User Manager'''.                                                   |
+|Step1            |Click button '''Create User'''.                                                |
+|Step2            |Input a user name "test9".                                                      |
+|Step3            |Input password "123" and Confirm password "123".                                |
+|Step4            |Select "Active".                                                                |
+|Step5            |Check on "Admin" in role list.                                                    |
+|Step6            |Click '''OK'''.                                                                     |
+|Expected Result1 |Pop up message "Create user successfully".                                      |
+|Expected Result2 |Click '''OK''' to close the message, verify the new created user "test9" display in user list.|
+|Expected Result3 |Log out ,Verify log in with the new user "test1" successfully.                                   |
+|Clean Up|Remove user test1. !See .BsmSuite.AdministrationSecurityUserMgrSuite.UserMgr2200|
